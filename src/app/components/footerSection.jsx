@@ -129,16 +129,16 @@ const FooterSection = () => {
               >
                 <div className="p-4 flex flex-col gap-2 -mt-5">
                   <a href="#" className="text-color-dark">
-                        
+                        Design
+                  </a>
+                  <a href="#" className="text-color-dark">
+                        Web Solutions
                   </a>
                   <a href="#" className="text-color-dark">
                         Services 1
                   </a>
                   <a href="#" className="text-color-dark">
-                        Services 1
-                  </a>
-                  <a href="#" className="text-color-dark">
-                        Services 1
+                        Video Production
                   </a>
                   
                 </div>
@@ -187,17 +187,9 @@ const FooterSection = () => {
               >
                 <div className="p-4 flex flex-col gap-2 -mt-5">
                   <a href="#" className="text-color-dark">
-                        about 1
+                        Profile
                   </a>
-                  <a href="#" className="text-color-dark">
-                        about 1
-                  </a>
-                  <a href="#" className="text-color-dark">
-                        about 1
-                  </a>
-                  <a href="#" className="text-color-dark">
-                        about 1
-                  </a>
+                  
                   
                 </div>
               </motion.div>
@@ -245,16 +237,16 @@ const FooterSection = () => {
               >
                 <div className="p-4 flex flex-col gap-2 -mt-5">
                   <a href="#" className="text-color-dark">
-                        Quick Links 1
+                        Privacy Policy
                   </a>
                   <a href="#" className="text-color-dark">
-                    Quick Links 1
+                    Terms of use
                   </a>
                   <a href="#" className="text-color-dark">
-                  Quick Links 1
+                    Refund Policy
                   </a>
                   <a href="#" className="text-color-dark">
-                  Quick Links 1
+                    Copyrights Policy
                   </a>
                   
                 </div>
@@ -288,31 +280,32 @@ const FooterSection = () => {
           <div className="flex-1">
             <span className="text-xl font-bold text-color-dark">Projects</span>
             <div className="flex flex-col gap-1">
-              <span>Project 1</span>
-              <span>Project 2</span>
-              <span>Project 3</span>
-              <span>Project 4</span>
-              <span>Project 4</span>
+              <span>In development</span>
+              
             </div>
           </div>
           <div className="flex-1">
             <span className="text-xl font-bold text-color-dark">Services</span>
             <div className="flex flex-col gap-1">
-              <span>Services 1</span>
-              <span>Services 2</span>
-              <span>Services 3</span>
-              <span>Services 4</span>
-              <span>Services 4</span>
+            <a href="#" className="text-color-dark">
+                        Design
+                  </a>
+                  <a href="#" className="text-color-dark">
+                        Web Solutions
+                  </a>
+                  <a href="#" className="text-color-dark">
+                        Services 1
+                  </a>
+                  <a href="#" className="text-color-dark">
+                        Video Production
+                  </a>
             </div>
           </div>
           <div className="flex-1">
             <span className="text-xl font-bold text-color-dark">About</span>
             <div className="flex flex-col gap-1">
-              <span>About 1</span>
-              <span>About 2</span>
-              <span>About 3</span>
-              <span>About 4</span>
-              <span>About 4</span>
+              <span>Company Profile</span>
+              
             </div>
           </div>
           <div className="flex-1">
@@ -320,11 +313,18 @@ const FooterSection = () => {
               Quick Links
             </span>
             <div className="flex flex-col gap-1">
-              <span>Link 1</span>
-              <span>Link 2</span>
-              <span>Link 3</span>
-              <span>Link 4</span>
-              <span>link 4</span>
+            <a href="#" className="text-color-dark">
+                        Privacy Policy
+                  </a>
+                  <a href="#" className="text-color-dark">
+                    Terms of use
+                  </a>
+                  <a href="#" className="text-color-dark">
+                    Refund Policy
+                  </a>
+                  <a href="#" className="text-color-dark">
+                    Copyrights Policy
+                  </a>
             </div>
           </div>
         </div>
