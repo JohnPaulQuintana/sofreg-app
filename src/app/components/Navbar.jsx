@@ -427,7 +427,7 @@ const Navbar = () => {
         </div>
         {isOpen && (
           <div className="absolute bottom-10 flex flex-col gap-5 w-full px-2">
-            <div className="text-xl flex flex-col gap-5">
+            {/* <div className="text-xl flex flex-col gap-5">
               <motion.a
                 href="#"
                 initial={randomTextVariant.initial}
@@ -448,7 +448,7 @@ const Navbar = () => {
                 <span>Phone:</span>
                 <span>+12345678901</span>
               </motion.div>
-            </div>
+            </div> */}
             <motion.button
               initial={randomTextVariant.initial}
               animate={randomTextVariant.animate}

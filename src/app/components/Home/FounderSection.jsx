@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import founder from '../../../assets/founder.png'
+import founder from '../../../assets/founder-1.png'
 const FounderSection = () => {
   const containerVariant = {
     initial: {
@@ -20,14 +20,14 @@ const FounderSection = () => {
       initial="initial"
       whileInView="animate" // Animate when in view
       viewport={{ once: false, amount: 0.5 }} // Trigger when 50% of the element is in view
-      className="relative w-full"
+      className="relative w-full border p-5 md:p-0 border-color-sky rounded-md flex flex-col md:flex-row md:items-center"
     >
-      <div className="text-white text-4xl text-center mb-14">
-        <h1 className="uppercase">Meet The Founder</h1>
+      <div className="text-white text-4xl md:text-center">
+        <h1 className="uppercase text-color-sky mb-5">Meet The Founder</h1>
       </div>
-      <div className="w-full h-[400px] flex flex-col md:flex-row items-center gap-2"> {/* Container for the animated box */}
-        <div className="text-2xl">
-          <h1 className="text-white text-4xl mb-5">Reginald King Barawid</h1>
+      <div className="w-full flex flex-col md:flex-row items-center gap-2"> {/* Container for the animated box */}
+        <div className="text-xl">
+          <h1 className="text-white text-3xl mb-5">Reginald King Barawid</h1>
           <p className="text-white mx-auto">Founder, Head of Sofreg solutions.
           Information Technology, Software Engineer expert.</p>
         </div>
@@ -35,9 +35,9 @@ const FounderSection = () => {
           // variants={fillVariants}
           // initial="initial"
           // animate="animate"
-          className="w-full h-fit"
+          className="w-full h-fit flex items-center justify-center"
         >
-          <img className="w-full h-[400px] rounded-md"  src={founder} alt="" />
+          <img className="w-[400px] md:w-full h-[300px] rounded-md"  src={founder} alt="" />
           {/* This is where the animation happens */}
         </motion.div>
       </div>

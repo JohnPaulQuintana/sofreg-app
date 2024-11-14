@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-
+import testImage from "../../../assets/services/test.png";
+import { Link } from "react-router-dom";
 // Parent animation variant (for example, fade in)
 const inViewContainer = {
   initial: {
@@ -51,21 +52,111 @@ const ServiceSection = () => {
 
       {/* Conditional rendering of child content based on animation completion */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
-        {animationComplete && (
-          <>
-            {/* Motion div with animation */}
-            <motion.div
-              variants={inViewChild}
-              initial="initial"
-              animate="animate"
-              className="h-[400px] bg-gray-400 rounded-md"
-            ></motion.div>
+        {/* Motion div with animation */}
+        <Link
+          to="/services/design"
+          state={{
+            serviceType: "Design",
+            description: "We have Designed for over 260 projects.",
+          }}
+        >
+          <motion.div
+            variants={inViewChild}
+            initial="initial"
+            animate="animate"
+            className="h-[400px] bg-color-sky hover:cursor-pointer rounded-sm pt-5 relative overflow-hidden transition ease-in shadow-2xl  hover:scale-105"
+          >
+            <div className="flex flex-col gap-2 items-center justify-center">
+              <h1 className="text-color-dark font-bold text-3xl">Design</h1>
+              <p className="text-semibold text-color-dark px-2 text-center">
+                Handcraft the user experience on design
+              </p>
+              <div className="flex gap-3 text-sm">
+                <span>UX-UI</span>
+                <span>•</span>
+                <span>WEB</span>
+                <span>•</span>
+                <span>Mobile</span>
+              </div>
 
-            {/* Other static divs */}
-            <div className="h-[400px] bg-gray-400 rounded-md"></div>
-            <div className="h-[400px] bg-gray-400 rounded-md"></div>
-          </>
-        )}
+              <div className="w-full h-[250px] absolute bottom-0">
+                <img className="h-full" src={testImage} alt="" />
+              </div>
+            </div>
+          </motion.div>
+        </Link>
+        {/* Motion div with animation */}
+        <Link
+          to="/services/web"
+          state={{
+            serviceType: "Web Solutions",
+            description:
+              "We have designed Web Solutions for over 260 projects.",
+          }}
+        >
+          <motion.div
+            variants={inViewChild}
+            initial="initial"
+            animate="animate"
+            className="h-[400px] bg-color-magenta hover:cursor-pointer shadow-2xl rounded-sm pt-5 relative overflow-hidden transition ease-in delay-75 hover:scale-105"
+          >
+            <div className="flex flex-col gap-2 items-center justify-center">
+              <h1 className="text-color-dark font-bold text-3xl">
+                Web Solutions
+              </h1>
+              <p className="text-semibold text-color-dark px-2 text-center">
+                Handcraft the user experience on design
+              </p>
+              <div className="flex gap-3 text-sm">
+                <span>UX-UI</span>
+                <span>•</span>
+                <span>WEB</span>
+                <span>•</span>
+                <span>Mobile</span>
+              </div>
+
+              <div className="w-full h-[250px] shadow-2xl absolute bottom-0">
+                <img className="h-full" src={testImage} alt="" />
+              </div>
+            </div>
+          </motion.div>
+        </Link>
+        {/* Motion div with animation */}
+        <Link
+          to="/services/video"
+          state={{
+            serviceType: "Video Production",
+            description:
+              "We have designed Video Production for over 260 projects.",
+          }}
+        >
+          <motion.div
+            variants={inViewChild}
+            initial="initial"
+            animate="animate"
+            className="h-[400px] bg-color-yellow hover:cursor-pointer shadow rounded-sm pt-5 relative overflow-hidden transition ease-in  hover:scale-105"
+          >
+            <div className="flex flex-col gap-2 items-center justify-center">
+              <h1 className="text-color-dark font-bold text-3xl">
+                Video Production
+              </h1>
+              <p className="text-semibold text-color-dark px-2 text-center">
+                Handcraft the user experience on design
+              </p>
+              <div className="flex gap-3 text-sm">
+                <span>UX-UI</span>
+                <span>•</span>
+                <span>WEB</span>
+                <span>•</span>
+                <span>Mobile</span>
+              </div>
+
+              <div className="w-full h-[250px] absolute bottom-0">
+                <img className="h-full" src={testImage} alt="" />
+              </div>
+            </div>
+          </motion.div>
+        </Link>
       </div>
     </motion.div>
   );

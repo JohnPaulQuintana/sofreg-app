@@ -3,7 +3,7 @@ import quote from "../../../assets/quote.svg";
 import { FaStar } from "react-icons/fa";
 import React, { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-
+import { FaQuoteLeft } from "react-icons/fa";
 const containerVariant = {
   initial: {
     opacity: 0,
@@ -120,17 +120,13 @@ const ClientSaySection = () => {
                       What Clients Say
                     </h1>
                     <div className="flex items-center gap-4 mb-2">
-                      <img
-                        className="w-[30px] h-[30px]"
-                        src={quote}
-                        alt="Quote"
-                      />
+                      <FaQuoteLeft className="text-color-sky size-8"/>
                       <span className="flex gap-3 text-gray-800">
-                        <FaStar />
-                        <FaStar />
-                        <FaStar />
-                        <FaStar />
-                        <FaStar />
+                        <FaStar className="text-color-sky"/>
+                        <FaStar className="text-color-sky"/>
+                        <FaStar className="text-color-sky"/>
+                        <FaStar className="text-color-sky"/>
+                        <FaStar className="text-color-sky"/>
                       </span>
                     </div>
                     <p className="text-2xl ps-10 w-full">
