@@ -159,7 +159,7 @@ const Logo = () => {
           opacity: largeCircleOpacity,
           scale: largeCircleScale,
         }}
-        className="p-12 flex items-center justify-center absolute -left-32"
+        className="p-12 flex items-center justify-center absolute -left-32 -bottom-10"
       >
         <div className="">
           <motion.img 
@@ -176,7 +176,7 @@ const Logo = () => {
           opacity: largeCircleOpacity,
           scale: largeCircleScale,
         }}
-        className="p-12 flex items-center justify-center absolute -bottom-24"
+        className="p-12 flex items-center justify-center absolute -right-32 -bottom-14"
       >
         <div className="">
           <motion.img 

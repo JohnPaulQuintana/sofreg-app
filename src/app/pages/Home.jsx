@@ -161,7 +161,7 @@ const Home = () => {
         </div>
 
         {/* Card Section */}
-        <div className="content md:col-span-2 p-5 h-48 md:h-56 rounded-md bg-gray-500 mt-15 relative flex items-center justify-center mb-20">
+        <div className="content md:col-span-2 p-5 h-48 md:h-56 rounded-md bg-gray-500 mt-15 relative z-10 flex items-center justify-center mb-20">
           {/* <h2 className="absolute text-5xl text-white">SVG Animated</h2> */}
         </div>
 

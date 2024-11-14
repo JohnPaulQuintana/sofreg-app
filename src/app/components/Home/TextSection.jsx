@@ -17,7 +17,8 @@ const TextVariants = {
 const TextSection = () => {
   // console.log(props)
   return (
-    <motion.div
+    <div className="flex flex-col">
+      <motion.div
       variants={TextVariants}
       initial="hidden"
       animate="visible"
@@ -29,11 +30,18 @@ const TextSection = () => {
         Revolutionize
       </h1>
 
-      <p className="text-slate-100 text-base md:text-xl mt-4 leading-relaxed">
+      <p className="text-slate-100 text-base md:text-xl mt-4 mb-5 leading-relaxed">
         Unlock your brand’s potential with innovative solutions that elevate
         your visuals and online presence. Stand out today!
       </p>
+
+      
     </motion.div>
+
+    <div className="ps-5">
+    <button className="bg-color-sky p-4 rounded-md font-bold text-slate-800 w-[200px] transition ease-in delay-75 hover:scale-105" type="button">Design A Quote</button>
+    </div>
+    </div>
   );
 };
 

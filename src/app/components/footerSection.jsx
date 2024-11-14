@@ -294,7 +294,7 @@ const FooterSection = () => {
                         Web Solutions
                   </a>
                   <a href="#" className="text-color-dark">
-                        Services 1
+                        Services
                   </a>
                   <a href="#" className="text-color-dark">
                         Video Production

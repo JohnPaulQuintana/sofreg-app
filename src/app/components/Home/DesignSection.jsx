@@ -1,8 +1,9 @@
 import { motion, useScroll } from "framer-motion";
 import { useState, useEffect, useRef } from "react";
 
-import hero1 from "../../../assets/hero1.png";
-
+// import hero1 from "../../../assets/hero1.png";
+import hero1 from "../../../assets/gif/Design3.gif"
+import LazyLoadGif from "./GIF/Gifimage";
 const logoVariants = {
   hidden: { opacity: 0, width: "100%" },
   visible: { opacity: 1, width: "100%", transition: { duration: 1 } },
@@ -156,7 +157,7 @@ const DesignSection = () => {
               variants={circleVariants}
               initial="initial"
               animate="animate"
-              className="border border-dashed border-cobg-color-sky rounded-full flex items-center justify-center relative w-[60px] h-[50px]"
+              className="border border-dashed border-cobg-color-sky rounded-full flex items-center justify-center relative p-2"
             >
               <div className="bg-color-sky p-3 rounded-xl"></div>
 
@@ -198,7 +199,7 @@ const DesignSection = () => {
           animate={determineAnimation}
           className="flex justify-center"
         >
-          <div className="flex items-center justify-center w-64 md:w-72 h-64 md:h-72 relative">
+          <div className="flex items-center justify-center w-64 md:w-96 h-64 md:h-96 relative z-0">
             {/* Animated dashed border */}
             <motion.div
               className="absolute w-full h-full border-2 border-dashed border-color-sky rounded-full"
@@ -212,10 +213,11 @@ const DesignSection = () => {
               variants={logoVariants}
               initial="hidden"
               animate="visible"
-              className="p-12 flex items-center justify-center"
+              className="flex items-center justify-center"
             >
-              <div className="text-xl font-semibold text-white">
-                <img className="" src={hero1} alt="" />
+              <div className="">
+              <LazyLoadGif className="" src={hero1} alt="Lazy Loaded GIF" />
+                {/* <img className="border w-full" src={hero1} alt="" /> */}
               </div>
             </motion.div>
           </div>
