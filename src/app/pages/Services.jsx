@@ -237,7 +237,7 @@ const ServicesPage = () => {
                   {category.items.map((service, idx) => (
                     <motion.div
                       key={idx}
-                      className="text-xl font-semibold mb-2 p-3 flex flex-col gap-5"
+                      className="text-xl font-semibold mb-2 p-3 flex flex-col gap-5 hover:cursor-pointer transition ease-in duration-300 delay-75 hover:scale-105"
                       variants={childVariants}
                       whileInView="animate"
                       initial="initial"
