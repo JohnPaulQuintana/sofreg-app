@@ -68,10 +68,10 @@ const ClientSection = () => {
               variants={ClientBorderVariants}
               initial="initial"
               animate="animate"
-              className={`border ${index % 3 === 0 ? 'border-color-sky' : index % 3 === 1 ? 'border-color-magenta' : 'border-color-yellow'} border-dashed rounded-full relative w-[72px] md:w-[88px] h-[72px] md:h-[89px]`}
+              className={`border ${index % 3 === 0 ? 'border-color-sky' : index % 3 === 1 ? 'border-color-magenta' : 'border-color-yellow'} border-dashed rounded-full relative w-[72px] md:w-[100px] h-[72px] md:h-[100px]`}
             />
             <svg
-              className="size-16 md:size-20 bg-color-sky text-color-dark rounded-full p-1 absolute inset-1"
+              className="size-16 md:size-24 text-white rounded-full p-1 absolute inset-1"
               // width="109"
               // height="25"
               viewBox="0 0 109 25"
