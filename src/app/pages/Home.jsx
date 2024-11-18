@@ -15,6 +15,7 @@ import FrequentlySection from "../components/Home/FrequentlySection";
 import QuotationSection from "../components/QuotationSection";
 import FooterSection from "../components/footerSection";
 import Navbar from "../components/Navbar";
+import GlobalModal from "../components/GlobalModal";
 // const triangleVariant = {
 //   initial: {
 //     opacity: 1,
@@ -22,6 +23,7 @@ import Navbar from "../components/Navbar";
 //   animate: {},
 // };
 const Home = () => {
+  
   // const { scrollY } = useScroll(); // Use scroll position tracking from framer-motion
   // const [targetPosition, setTargetPosition] = useState({ x: 0, y: 0 }); // Store x and y position of the target element
   // const [hasReachedTarget, setHasReachedTarget] = useState(false); // Flag to stop triangle movement once it reaches target
@@ -248,6 +250,7 @@ const Home = () => {
             transition={{ duration: 0.5 }}
           >
             <QuotationSection />
+            
           </motion.div>
         </div>
 
@@ -263,6 +266,8 @@ const Home = () => {
           <FooterSection />
         </motion.div>
       </div>
+       {/* Global Modal */}
+       <GlobalModal />
     </div>
   );
 };

@@ -1,6 +1,10 @@
 import { useState, useEffect, useRef } from 'react';
 import { useLocation } from "react-router-dom";
+// import GlobalModal from './GlobalModal';
+import { useModal } from './Modal';
 const QuotationSection = (props) => {
+  const { openModal } = useModal();
+
   const location = useLocation();
   // console.log(props.background)
   const bg = useRef(props.background)
@@ -49,21 +53,22 @@ const QuotationSection = (props) => {
         </h1>
 
         {/* Hoverable link with animated background color */}
-        <a
-          href="#"
+        <button
+           onClick={openModal}
           className="relative overflow-hidden bg-white p-2 font-bold text-2xl rounded-md group"
         >
           Design A Quote
           {/* The span used to animate background color */}
           <span className="absolute inset-0 bg-black transform scale-y-0 group-hover:scale-y-100 origin-bottom transition-all duration-500 ease-in-out"></span>
           {/* Text inside the link */}
-          <span
+          <a
             className={`absolute inset-0 flex justify-center items-center text-2xl font-bold text-black group-hover:text-white transition-all duration-500 ease-in-out`}
           >
             Design A Quote
-          </span>
-        </a>
+          </a>
+        </button>
       </div>
+     
     </div>
   );
 };
