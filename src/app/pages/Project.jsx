@@ -240,6 +240,25 @@ const ProjectSection = () => {
           ))}
         </motion.div>
       </div>
+      <div className="md:col-span-2 w-full relative z-10">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+        >
+          <QuotationSection key={location.key} background={"color-sky"} />
+        </motion.div>
+      </div>
+
+      <div className="md:col-span-2 w-full relative z-10">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+        >
+          <FooterSection />
+        </motion.div>
+      </div>
     </>
   );
 };
