@@ -1,38 +1,13 @@
 import Navbar from "../components/Navbar";
 import FooterSection from "../components/footerSection";
 import QuotationSection from "../components/QuotationSection";
-import { useLocation } from "react-router-dom";
-import { GoDotFill } from "react-icons/go";
-import { Link } from "react-router-dom";
+import { IoIosArrowRoundForward } from "react-icons/io";
 import { motion } from "framer-motion";
 import testImage from "../../assets/services/test.png";
-import { IoIosArrowRoundForward } from "react-icons/io";
+import { Link } from "react-router-dom";
+import { GoDotFill } from "react-icons/go";
 import { useEffect, useState, useRef } from "react";
-const ServicesPage = () => {
-  const location = useLocation();
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [location]);
-  const { serviceType, description } = location.state || {};
-
-  // Determine color class based on service type
-  const colorClass =
-    serviceType === "Design"
-      ? "text-color-sky"
-      : serviceType === "Web Solutions"
-      ? "text-color-magenta"
-      : serviceType === "Video Production"
-      ? "text-color-yellow"
-      : "text-white"; // Default color if none match
-  const colorBackClass =
-    serviceType === "Design"
-      ? "color-sky"
-      : serviceType === "Web Solutions"
-      ? "color-magenta"
-      : serviceType === "Video Production"
-      ? "color-yellow"
-      : "white"; // Default color if none match
-
+const ProjectSection = () => {
   const [isInView, setIsInView] = useState(false);
   const elementRef = useRef(null); // Reference for the element
   // Set up IntersectionObserver to detect when the element is in view
@@ -60,6 +35,7 @@ const ServicesPage = () => {
       }
     };
   }, []);
+
   const containerVariants = {
     initial: {
       opacity: 0,
@@ -90,7 +66,7 @@ const ServicesPage = () => {
     },
   };
 
-  const services = [
+  const projects = [
     {
       category: "Design",
       items: [
@@ -159,13 +135,12 @@ const ServicesPage = () => {
       ],
     },
   ];
-
   return (
     <>
       <Navbar />
       <div className="p-10"></div>
 
-      <div className="relative border-l-8 border-color-dark flex flex-col gap-10 items-center justify-center p-6 md:p-12 max-w-5xl mx-auto">
+      <div className="relative border-l-8 flex flex-col border-color-dark p-6 md:p-12 max-w-5xl mx-auto">
         <motion.div
           key={location.key} // Forces the component to re-mount on route change
           ref={elementRef}
@@ -180,9 +155,9 @@ const ServicesPage = () => {
         >
           <motion.span
             variants={childVariants}
-            className={`block text-4xl font-bold tracking-wide ${colorClass}`}
+            className={`block text-4xl font-bold tracking-wide text-color-sky`}
           >
-            {serviceType}
+            Projects
           </motion.span>
           <motion.div
             variants={childVariants}
@@ -190,7 +165,7 @@ const ServicesPage = () => {
           >
             <Link
               // key={location.key}
-              className={`text-xl text-slate-200 hover:${colorClass}`}
+              className={`text-xl text-slate-200 hover:text-color-sky`}
               to="/"
             >
               <span>Home</span>
@@ -198,14 +173,14 @@ const ServicesPage = () => {
             <span className="text-slate-400">
               <GoDotFill />
             </span>
-            <span className="text-slate-400">{serviceType}</span>
+            <span className="text-slate-400">Projects</span>
           </motion.div>
 
           <motion.div
             variants={childVariants}
             className="mt-5 text-6xl font-bold text-white"
           >
-            <h1>{description}</h1>
+            <h1>We have designed experiences for over 260 projects.</h1>
           </motion.div>
 
           <motion.button
@@ -218,6 +193,7 @@ const ServicesPage = () => {
           </motion.button>
         </motion.div>
 
+        {/* projects sample */}
         <motion.div
           ref={elementRef}
           //  key={location.key} // Forces the component to re-mount on route change
@@ -227,12 +203,12 @@ const ServicesPage = () => {
           animate={isInView ? "animate" : "initial"}
           exit="initial"
           whileInView="animate"
-          viewport={{ once: false, amount: 0.3 }}
+          // viewport={{ once: false, amount: 0.3 }}
           className="flex-1 w-full"
         >
-          {services.map((category, index) => (
+          {projects.map((category, index) => (
             <div key={index} className="mb-8">
-              {category.category === serviceType && (
+              {category.category && (
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5 rounded-md">
                   {category.items.map((service, idx) => (
                     <motion.div
@@ -241,7 +217,7 @@ const ServicesPage = () => {
                       variants={childVariants}
                       whileInView="animate"
                       initial="initial"
-                      viewport={{ once: false }} // Animation triggers every time the element enters the viewport
+                      viewport={{ once: false, amount: 0.3 }} // Animation triggers every time the element enters the viewport
                     >
                       <span className="text-3xl font-bold text-slate-300">
                         {service.title}
@@ -264,28 +240,8 @@ const ServicesPage = () => {
           ))}
         </motion.div>
       </div>
-
-      <div className="md:col-span-2 w-full relative z-10">
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5 }}
-        >
-          <QuotationSection key={location.key} background={colorBackClass} />
-        </motion.div>
-      </div>
-
-      <div className="md:col-span-2 w-full relative z-10">
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5 }}
-        >
-          <FooterSection />
-        </motion.div>
-      </div>
     </>
   );
 };
 
-export default ServicesPage;
+export default ProjectSection;

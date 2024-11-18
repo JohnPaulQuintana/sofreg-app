@@ -83,9 +83,9 @@ const Navbar = () => {
 
         {/* Full navigation (only visible on larger screens) */}
         <nav className="hidden md:flex space-x-4">
-          <a href="#" className="text-white">
+          <Link to="/project" className="text-white">
             Projects
-          </a>
+          </Link>
           <div
             className="group"
             onMouseEnter={handleMouseEnter}
