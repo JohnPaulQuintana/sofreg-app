@@ -4,13 +4,20 @@ const Header = () => {
   return (
     <header className="startup-header overflow-hidden" data-scroll-index="0">
       <div
-        className="valign bg-img relative"
+        className="valign bg-img bg-gradient-to-tl from-[#1c1c1c] via-[#1c1c1c] to-[#243447] relative"
         // style={{
         //   background: `url(${backgroundImage})`,
         //   backgroundSize: "cover",
         //   backgroundPosition: "center",
         //   position: "relative",
         // }}
+        // style={{
+        //   backgroundImage: "radial-gradient(at center center, #1d2d41 0%, #146BCF) 74%) !important",
+        //   height: '100vh',
+        //   width: '100%',
+        //   border: '1px solid red'
+        // }}
+        
       >
         <div className="animation-wrapper absolute right-[10%]">
             <div className="sphere-animation">
