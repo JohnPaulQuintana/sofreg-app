@@ -1067,7 +1067,7 @@ figure {
 }
 
 .main-marq.lrg .box .item h4 {
-  font-size: 5vw;
+  font-size: 12vw;
 }
 
 .main-marq.xlrg .box .item {
@@ -3150,8 +3150,8 @@ body.loaded {
 }
 
 .navbar.nav-crev {
-  width: calc(100% - 80px);
-  left: 40px;
+  width: calc(100% - 30px);
+  left: 30px;
   top: 30px;
   /* background: rgba(255, 255, 255, 0.05); */
   /* border: 1px solid rgba(255, 255, 255, 0.1); */
@@ -3476,7 +3476,7 @@ body.loaded {
 }
 
 .navbar .menu-icon {
-  padding: 25px 30px;
+  padding: 25px 10px;
 }
 
 .navbar .dropdown-toggle:after {
