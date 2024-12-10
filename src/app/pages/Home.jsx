@@ -4,10 +4,13 @@ import Navbar from "../components/Navbar"
 import Sidebar from "../components/Sidebar"
 import Header from "../components/Header"
 import Services from "../components/Services"
+import AboutSection from "../components/AboutSection"
 // import "/assets/css/satoshi.css"
 // import "/assets/css/plugins.css"
 // import "/assets/css/style.css"
 import ProgressScrollButton from "../components/ProgressScrollButton";
+import MarqueeSection from "../components/Marquee"
+import PortfolioTab from "../components/PortfolioTab"
 
 const Home = () => {
   return (
@@ -40,6 +43,15 @@ const Home = () => {
 
               {/* Services */}
               <Services />
+
+              {/* About */}
+              <AboutSection />
+
+              {/* Marquee */}
+              <MarqueeSection />
+
+              {/* Portfolio */}
+              <PortfolioTab />
             </main>
 
         </div>

@@ -11,10 +11,17 @@ const Navbar = () => {
     ];
 
     return (
-        < nav className = "laptop:px-80 navbar navbar-expand-lg nav-crev" >
+        < nav className="desktop:px-80 navbar navbar-expand-lg nav-crev" 
+            // style={{
+            //     width: "100% !important",
+            //     left: '0px !important',
+            //     top: '0px !important',
+            //     paddingLeft: "20px"
+            // }}
+            >
             <div className="container">
                 {/* Logo */}
-                <a className="logo w-[180px] desktop:w-[150px]" href="#">
+                <a className="logo w-[150px] desktop:w-[150px]" href="#">
                     <img src="/assets/imgs/logo-light.png" alt="logo" />
                 </a>
 

@@ -3,8 +3,9 @@ import React from "react";
 const Header = () => {
   return (
     <header className="startup-header overflow-hidden" data-scroll-index="0">
+      {/* bg-gradient-to-tl from-[#1c1c1c] via-[#1c1c1c] to-[#243447] */}
       <div
-        className="valign bg-img bg-gradient-to-tl from-[#1c1c1c] via-[#1c1c1c] to-[#243447] relative"
+        className="valign bg-img relative"
         // style={{
         //   background: `url(${backgroundImage})`,
         //   backgroundSize: "cover",
@@ -54,18 +55,19 @@ const Header = () => {
             </div>
           </div>
         <div
-          className="container pt-40 laptop:px-40"
-          style={{ paddingTop: "40px", paddingLeft: "40px", paddingRight: "40px" }}
+          id="hero"
+          className="container pt-40 wide:px-40"
+          // style={{ paddingTop: "40px", paddingRight: "40px" }}
         >
           <div className="caption" style={{ textAlign: "center", color: "white" }}>
             <div className="lg-text fw-600" style={{ fontWeight: 600, fontSize: "2.5rem" }}>
               <div className="text d-flex align-items-center">
-                <span className="laptop:text-[2.5em]">Discover,</span>
+                <span className="text-[0.8em] laptop:text-[1.5em] desktop:text-[2.5em] pe-2">Discover, </span>
               </div>
-              <div className="text laptop:text-[3.5em] text-color-primary-blue">Elevate</div>
-              <div className="text laptop:text-[2.5em]">Revolutionize</div>
+              <div className="text text-[0.8em] laptop:text-[2.5em] desktop:text-[3.5em] text-color-primary-blue pe-2">Elevate</div>
+              <div className="text text-[0.8em] laptop:text-[1.7em] desktop:text-[2.5em]">Revolutionize</div>
             </div>
-            <p className="text-2xl text-slate-100">
+            <p className="text-[1em] desktop:text-2xl text-slate-100">
               Unlock your brand’s potential with innovative solutions that elevate your visuals and
               online presence. Stand out today!
             </p>

@@ -6,15 +6,15 @@ const Sidebar = () => {
         "Services",
         "About",
         "Portfolio",
-        "Team",
-        "Blog",
+        // "Team",
+        // "Blog",
         "Contact",
     ];
 
     return (
         <div className="hamenu one-scroll">
-            <div className="logo icon-img-100">
-                <img src='/assets/imgs/logo-light.png' alt="" />
+            <div className="logo icon-img-250">
+                <img className="" src='/assets/imgs/logo-light.png' alt="" />
             </div>
             <div className="close-menu cursor-pointer ti-close"></div>
             <div className="container">
@@ -51,14 +51,14 @@ const Sidebar = () => {
                             <div className="item mb-50">
                                 <h6 className="sub-title mb-15 opacity-7">Address</h6>
                                 <h5>
-                                    541 Melville Geek,
-                                    <br /> Palo Alto, CA 94301
+                                Metro Manila,
+                                    <br /> Philippines
                                 </h5>
                             </div>
                             <div className="item mb-50">
                                 <h6 className="sub-title mb-15 opacity-7">Social Media</h6>
                                 <ul className="rest social-text">
-                                    {["Facebook", "Twitter", "LinkedIn", "Instagram"].map(
+                                    {["Facebook", "WhatsApp", "LinkedIn", "Email"].map(
                                         (social, index) => (
                                             <li className="mb-10" key={index}>
                                                 <a href="#0" className="hover-this">
@@ -72,10 +72,11 @@ const Sidebar = () => {
                             <div className="item mb-40">
                                 <h6 className="sub-title mb-15 opacity-7">Contact Us</h6>
                                 <h5>
-                                    <a href="#0">Hello@email.com</a>
+                                    <a href="#0">info@sofregsolutions.com</a>
                                 </h5>
                                 <h5 className="underline mt-10">
-                                    <a href="#0">+1 840 841 25 69</a>
+                                    {/* <a href="#0">+1 840 841 25 69</a> */}
+                                    <a href="#0">+639177070531</a>
                                 </h5>
                             </div>
                         </div>

@@ -74,7 +74,7 @@ const servicesData = [
 const Services = () => {
   return (
     <section className="services-crev section-padding" data-scroll-index="1">
-      <div className="container lg:px-40">
+      <div className="container wide:px-40">
         <div className="sec-head mb-80">
           <h6 className="sub-title main-color mb-25 font-bold">Our Specialize</h6>
           <div className="bord pt-25 bord-thin-top d-flex align-items-center">
@@ -89,33 +89,39 @@ const Services = () => {
             </div>
           </div>
         </div>
-        <div className="row">
+        <div className="grid grid-cols-1 laptop:grid-cols-2 gap-6">
           {servicesData.map((service) => (
-            <div key={service.id} className="col-lg-6">
-              <div className="item-box mb-30">
-                <div className="d-flex align-items-end">
-                  <div>
-                    <span className="num fz-20">{service.number}</span>
-                    <div className="icon mr-80">
+            <div key={service.id} className="h-full flex">
+              <div className="relative item-box mb-6 shadow-md rounded-lg p-6 flex flex-col justify-between w-full">
+                    <span className="text-2xl font-bold text-gray-600 w-fit absolute right-10">{service.number}</span>
+                <div className="flex flex-col">
+                  <div className=''>
+                    <div className="icon">
                       {/* If service.icon contains inline SVG code */}
                       <div dangerouslySetInnerHTML={{ __html: service.icon }} />
                     </div>
                   </div>
                   <div>
-                    <h5 className="text-4xl font-bold">{service.title}</h5>
-                    <div className="text mt-30">
-                      <p className="mb-80">{service.description}</p>
-                    </div>
-                    <a href={service.link}>
-                      <span>View More</span>
-                      <span className="icon ti-arrow-top-right"></span>
-                    </a>
+                    <h5 className="text-4xl font-bold mb-4">{service.title}</h5>
                   </div>
+                </div>
+                <div className="mt-4 flex-grow">
+                  <p className="text-slate-400">{service.description}</p>
+                </div>
+                <div className="mt-4">
+                  <a
+                    href={service.link}
+                    className="text-color-primary-blue font-medium flex items-center hover:underline"
+                  >
+                    <span>View More</span>
+                    <span className="icon ml-2 ti-arrow-top-right"></span>
+                  </a>
                 </div>
               </div>
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );
