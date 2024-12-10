@@ -1,7 +1,7 @@
 /* Define CSS variables inside the :root selector */
 :root {
   /* Color variables */
-  --background-color: #1E1D1D;
+  --background-color: #1e1b1b;
 }
 body{
   background-color: var(--background-color);
