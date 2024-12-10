@@ -1,5 +1,5 @@
 import React from "react";
-import '../../assets/css/sphere.css'
+// import '/assets/css/sphere.css'
 const Header = () => {
   return (
     <header className="startup-header overflow-hidden" data-scroll-index="0">

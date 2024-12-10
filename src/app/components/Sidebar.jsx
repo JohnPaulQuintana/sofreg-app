@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../../assets/imgs/logo-light.png"
+// import Logo from "../../assets/imgs/logo-light.png"
 const Sidebar = () => {
     const menuItems = [
         "Home",
@@ -14,7 +14,7 @@ const Sidebar = () => {
     return (
         <div className="hamenu one-scroll">
             <div className="logo icon-img-100">
-                <img src={Logo} alt="" />
+                <img src='/assets/imgs/logo-light.png' alt="" />
             </div>
             <div className="close-menu cursor-pointer ti-close"></div>
             <div className="container">

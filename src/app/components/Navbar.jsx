@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../../assets/imgs/logo-light.png"
+// import Logo from "../../assets/imgs/logo-light.png"
 const Navbar = () => {
     const menuItems = [
         "Home",
@@ -15,7 +15,7 @@ const Navbar = () => {
             <div className="container">
                 {/* Logo */}
                 <a className="logo w-[180px] desktop:w-[150px]" href="#">
-                    <img src={Logo} alt="logo" />
+                    <img src="/assets/imgs/logo-light.png" alt="logo" />
                 </a>
 
                 {/* Toggler Button */}

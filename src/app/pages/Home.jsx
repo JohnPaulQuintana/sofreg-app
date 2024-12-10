@@ -4,9 +4,9 @@ import Navbar from "../components/Navbar"
 import Sidebar from "../components/Sidebar"
 import Header from "../components/Header"
 import Services from "../components/Services"
-import "../../assets/css/satoshi.css"
-import "../../assets/css/plugins.css"
-import "../../assets/css/style.css"
+// import "/assets/css/satoshi.css"
+// import "/assets/css/plugins.css"
+// import "/assets/css/style.css"
 import ProgressScrollButton from "../components/ProgressScrollButton";
 
 const Home = () => {
