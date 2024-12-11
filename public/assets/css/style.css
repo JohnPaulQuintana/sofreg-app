@@ -1067,7 +1067,7 @@ figure {
 }
 
 .main-marq.lrg .box .item h4 {
-  font-size: 12vw;
+  font-size: 5vw;
 }
 
 .main-marq.xlrg .box .item {
@@ -1892,7 +1892,8 @@ img.left {
 }
 
 .fz-12 {
-  font-size: 12px !important;
+  font-size: 14px !important;
+  /* color: #146bcf; */
 }
 
 .fz-13 {
@@ -6021,7 +6022,7 @@ footer.clean-footer.crev:before {
 }
 
 .page-header-error .main-marq .item h4 {
-  font-size: 20vw;
+  font-size: 3vw;
   line-height: 1;
   color: transparent !important;
   -webkit-text-stroke: 0.5px #fff !important;
@@ -8513,7 +8514,7 @@ footer.clean-footer.crev:before {
   right: 5px;
   -webkit-transform: rotate(8deg);
   -ms-transform: rotate(8deg);
-  transform: rotate(8deg);
+  transform: rotate(5deg);
 }
 
 .team .item .img {
@@ -8547,7 +8548,7 @@ footer.clean-footer.crev:before {
   right: 60px;
   bottom: 40px;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  background: #1d1d1d;
+  background: #202020;
   border-radius: 10px;
   -webkit-transition: all .4s;
   -o-transition: all .4s;
@@ -8557,7 +8558,7 @@ footer.clean-footer.crev:before {
 .team .item .social .links {
   position: absolute;
   top: 15px;
-  right: 15px;
+  right: 20px;
 }
 
 .team .item .social .links a {
@@ -8566,16 +8567,18 @@ footer.clean-footer.crev:before {
   height: 40px;
   line-height: 40px;
   text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  /* border: 1px solid rgba(255, 255, 255, 0.3); */
   border-radius: 50%;
   margin-bottom: 5px;
   -webkit-transition: all .4s;
   -o-transition: all .4s;
   transition: all .4s;
+  font-weight: 700;
+  /* color: #146BCF; */
 }
 
 .team .item .social .links a:hover {
-  background: #14cf93;
+  background: #145fcf;
   border-color: #14cf93;
   color: #111;
 }
@@ -9355,6 +9358,7 @@ footer.clean-footer.crev:before {
   }
   .fz-120 {
     font-size: 90px !important;
+    
   }
   .fz-80 {
     font-size: 60px !important;
@@ -10268,6 +10272,11 @@ footer.clean-footer.crev:before {
     display: none !important;
     
   }
+}
+
+/* footer added */
+.footer-text{
+  font-size: 1.5em !important;
 }
 
 /* ====================== [ End Responsive ] ====================== */

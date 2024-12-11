@@ -10,7 +10,13 @@ import AboutSection from "../components/AboutSection"
 // import "/assets/css/style.css"
 import ProgressScrollButton from "../components/ProgressScrollButton";
 import MarqueeSection from "../components/Marquee"
-import PortfolioTab from "../components/PortfolioTab"
+import PortfolioTabGraphics from "../components/PortfolioTabGraphics"
+import ImageScale from "../components/ImageScale"
+import AboutSectionFooter from "../components/Team"
+import Footer from "../components/Footer"
+import PortfolioTabWeb from "../components/PortfolioTabWeb"
+import PortfolioTabVideo from "../components/PortfolioTabVideo"
+import Testimonials from "../components/Testimonial"
 
 const Home = () => {
   return (
@@ -50,10 +56,27 @@ const Home = () => {
               {/* Marquee */}
               <MarqueeSection />
 
-              {/* Portfolio */}
-              <PortfolioTab />
+              {/* Graphics */}
+              <PortfolioTabGraphics />
+
+              {/* Web Solutions */}
+              <PortfolioTabWeb />
+
+              {/* Video Production */}
+              <PortfolioTabVideo />
+              {/* image scale */}
+              <ImageScale />
+
+              {/* about footer section */}
+              <AboutSectionFooter />
+
+              {/* Testimonials */}
+
+              <Testimonials />
             </main>
 
+          {/* footer */}
+          <Footer />
         </div>
       </div>
     </div>
