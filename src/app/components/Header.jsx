@@ -82,7 +82,7 @@ const Header = () => {
                 </div>
                 <div className="item">
                   <h4 className="d-flex align-items-center">
-                    <span>Cananda</span>
+                    <span>Canada</span>
                     {/* <span className="fz-50 ml-50 stroke icon">*</span> */}
                   </h4>
                 </div>
