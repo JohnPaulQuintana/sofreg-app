@@ -76,7 +76,7 @@ const Services = () => {
     <section className="services-crev section-padding" data-scroll-index="1">
       <div className="container wide:px-40">
         <div className="sec-head mb-80">
-          <h6 className="sub-title main-color mb-25 font-bold">Our Specialize</h6>
+          <h6 className="sub-title main-color mb-25 font-bold text-xl">Our Specialize</h6>
           <div className="bord pt-25 bord-thin-top d-flex align-items-center">
             <h2 className="fw-600 text-u ls1 font-bold text-5xl">
               What We <span className="fw-200"> Offer</span>
@@ -96,7 +96,7 @@ const Services = () => {
                     <span className="text-2xl font-bold text-gray-600 w-fit absolute right-10">{service.number}</span>
                 <div className="flex flex-col">
                   <div className=''>
-                    <div className="icon">
+                    <div className="icon mb-4">
                       {/* If service.icon contains inline SVG code */}
                       <div dangerouslySetInnerHTML={{ __html: service.icon }} />
                     </div>

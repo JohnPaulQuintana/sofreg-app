@@ -1,4 +1,5 @@
 import React from "react"
+import { useLocation } from "react-router-dom";
 import Loader from "../components/Loader"
 import Navbar from "../components/Navbar"
 import Sidebar from "../components/Sidebar"
@@ -17,6 +18,8 @@ import Footer from "../components/Footer"
 import PortfolioTabWeb from "../components/PortfolioTabWeb"
 import PortfolioTabVideo from "../components/PortfolioTabVideo"
 import Testimonials from "../components/Testimonial"
+import Faqs from "../components/Faqs"
+import ContactSection from "../components/ContactSection"
 
 const Home = () => {
   return (
@@ -71,8 +74,13 @@ const Home = () => {
               <AboutSectionFooter />
 
               {/* Testimonials */}
-
               <Testimonials />
+
+              {/* Frequently ask */}
+              <Faqs />
+
+              {/* Contact Section */}
+              <ContactSection />
             </main>
 
           {/* footer */}

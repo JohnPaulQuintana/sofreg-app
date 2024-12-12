@@ -1,74 +1,68 @@
 import React from "react";
-// import Logo from "../../assets/imgs/logo-light.png"
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
-    const menuItems = [
-        "Home",
-        "Services",
-        "About",
-        "Portfolio",
-        "Team",
-        "Contact",
-    ];
+  const menuItems = [
+    { name: "Home", link: "/" },
+    { name: "Services", link: "/services" },
+    { name: "About", link: "/about" },
+    // { name: "Portfolio", link: "#portfolio" },
+    { name: "Pricing", link: "/pricing" },
+    { name: "Contact", link: "/contact" },
+    { name: "Career", link: "/career" },
+  ];
 
-    return (
-        < nav className="desktop:px-80 navbar navbar-expand-lg nav-crev" 
-            // style={{
-            //     width: "100% !important",
-            //     left: '0px !important',
-            //     top: '0px !important',
-            //     paddingLeft: "20px"
-            // }}
-            >
-            <div className="container">
-                {/* Logo */}
-                <a className="logo w-[150px] desktop:w-[150px]" href="#">
-                    <img src="/assets/imgs/logo-light.png" alt="logo" />
-                </a>
+  return (
+    <nav className="desktop:px-80 navbar navbar-expand-lg nav-crev">
+      <div className="container">
+        {/* Logo */}
+        <Link className="logo w-[150px] desktop:w-[150px]" to="/">
+          <img src="/assets/imgs/logo-light.png" alt="logo" />
+        </Link>
 
-                {/* Toggler Button */}
-                <button
-                    className="navbar-toggler"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
+        {/* Toggler Button */}
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="icon-bar">
+            <i className="fas fa-bars"></i>
+          </span>
+        </button>
+
+        {/* Navbar Links */}
+        <div
+          className="hidden laptop:block justify-content-center"
+          id="navbarSupportedContent"
+        >
+          <ul className="navbar-nav">
+            {menuItems.map((item, index) => (
+              <li className="nav-item" key={index}>
+                <Link
+                  className="nav-link"
+                  to={item.link}
+                  data-scroll-nav={index}
                 >
-                    <span className="icon-bar">
-                        <i className="fas fa-bars"></i>
-                    </span>
-                </button>
+                  <span className="rolling-text">{item.name}</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
 
-                {/* Navbar Links */}
-                <div
-                    className="hidden laptop:block justify-content-center"
-                    id="navbarSupportedContent"
-                >
-                    <ul className="navbar-nav">
-                        {menuItems.map((item, index) => (
-                            <li className="nav-item" key={index}>
-                                <a
-                                    className="nav-link"
-                                    href={`#${index}`}
-                                    data-scroll-nav={index}
-                                >
-                                    <span className="rolling-text">{item}</span>
-                                    {/* <span className="rolling-text">dwadwad</span> */}
-                                </a>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-
-                {/* Sidebar Toggle */}
-                <div className="topnav">
-                    <div className="menu-icon cursor-pointer">
-                        <span className="icon ti-align-right"></span>
-                    </div>
-                </div>
-            </div>
-        </nav >
+        {/* Sidebar Toggle */}
+        <div className="topnav">
+          <div className="menu-icon cursor-pointer">
+            <span className="icon ti-align-right"></span>
+          </div>
+        </div>
+      </div>
+    </nav>
   );
 };
 

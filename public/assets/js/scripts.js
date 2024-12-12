@@ -774,6 +774,8 @@ $(document).ready(function(){
     body.addClass('loaded');
     setTimeout(function () {
         body.removeClass('loaded');
+        console.log('removed!')
+        // window.location.reload(true)
     }, 1500);
 
 

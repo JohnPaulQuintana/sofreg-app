@@ -49,18 +49,19 @@ const Testimonials = () => {
                             ></path>
                           </svg>
                           <p className="fz-30">
-                            I have been hiring people in this space for a number of years and I have never seen this level of professionalism. It really feels like you are working with a team that can get the job done.
+                          Sofreg Solution’s design team created visuals that are both eye-catching and impactful.
+                          We couldn’t have asked for better.
                           </p>
                         </div>
                         <div className="info d-flex align-items-center pt-40 mt-40 bord-thin-top">
                           <div>
                             <div className="fit-img circle">
-                              <img src="assets/imgs/testim/t1.jpg" alt="" />
+                              <img src="assets/imgs/testims/t1.jpg" alt="" />
                             </div>
                           </div>
                           <div className="ml-20">
                             <h5>Adam Beckley</h5>
-                            <span className="sub-title main-color">Founder & CEO</span>
+                            <span className="sub-title main-color">Product Manager</span>
                           </div>
                         </div>
                       </div>
@@ -89,18 +90,19 @@ const Testimonials = () => {
                             ></path>
                           </svg>
                           <p className="fz-30">
-                            I have been hiring people in this space for a number of years and I have never seen this level of professionalism. It really feels like you are working with a team that can get the job done.
+                          Our website redesign by Sofreg Solution was seamless. The team’s attention to detail and
+                          technical expertise is outstanding.
                           </p>
                         </div>
                         <div className="info d-flex align-items-center pt-40 mt-40 bord-thin-top">
                           <div>
                             <div className="fit-img circle">
-                              <img src="assets/imgs/testim/t2.jpg" alt="" />
+                              <img src="assets/imgs/testims/t2.jpg" alt="" />
                             </div>
                           </div>
                           <div className="ml-20">
                             <h5>Adam Beckley</h5>
-                            <span className="sub-title main-color">Founder & CEO</span>
+                            <span className="sub-title main-color">Operations Manager</span>
                           </div>
                         </div>
                       </div>

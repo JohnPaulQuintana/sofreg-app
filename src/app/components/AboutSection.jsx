@@ -7,7 +7,7 @@ const AboutSection = () => {
         <div className="row md-marg">
           <div className="col-lg-6">
             <div className="cont md-mb50">
-              <h6 className="sub-title main-color mb-15">Who We Are</h6>
+              <h6 className="sub-title main-color mb-15 font-bold text-xl">Who We Are</h6>
               <h3 className="text-4xl font-bold">
               Empowering Innovation and Success with Sofreg Solution
               </h3>

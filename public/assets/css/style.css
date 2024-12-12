@@ -5282,10 +5282,14 @@ body.loaded {
 }
 
 .img-scale .vid-circle {
-  width: 200px;
-  height: 200px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 50%;
+  /* width: 200px; */
+  /* height: 200px; */
+  /* border: 1px solid rgba(255, 255, 255, 0.5); */
+  /* border-radius: 50%; */
+  background: rgba(0, 0, 0, 0.1);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(15px);
+
   position: absolute;
   top: 50%;
   left: 50%;
@@ -5344,7 +5348,7 @@ body.loaded {
 .contact .form2 textarea {
   padding: 15px 30px;
   border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 30px;
+  border-radius: 10px;
 }
 
 .contact-modern .social-box {
@@ -8502,7 +8506,7 @@ footer.clean-footer.crev:before {
 -----------------------------------------------------------------*/
 .team .item {
   position: relative;
-  padding-right: 60px;
+  padding-right: 10px;
 }
 
 .team .item:hover .img .info {
@@ -8547,8 +8551,8 @@ footer.clean-footer.crev:before {
   left: 50px;
   right: 60px;
   bottom: 40px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background: #202020;
+  /* border: 1px solid rgba(255, 255, 255, 0.1); */
+  /* background: #202020; */
   border-radius: 10px;
   -webkit-transition: all .4s;
   -o-transition: all .4s;

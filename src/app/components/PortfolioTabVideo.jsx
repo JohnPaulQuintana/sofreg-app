@@ -82,7 +82,7 @@ const PortfolioTabVideo = () => {
     <section className="portfolio-tab crev section-padding" data-scroll-index="3">
       <div className="container">
         <div className="sec-head mb-80">
-          <h6 className="sub-title main-color mb-25">Our Services</h6>
+          <h6 className="sub-title main-color mb-25 font-bold text-xl">Our Services</h6>
           <div className="bord pt-25 bord-thin-top d-flex align-items-center">
             <h2 className="fw-600 text-u ls1 text-4xl">
               03 <span className="fw-200 text-4xl">Video Production</span>
@@ -114,7 +114,7 @@ const PortfolioTabVideo = () => {
 
           {/* Tab content */}
           <motion.div
-            initial={{ height: "500px" }}
+            initial={{ height: projects.length >=5 ? "500px" : '' }}
             animate={{
               height: showAll ? "" : "500px",
             }}
