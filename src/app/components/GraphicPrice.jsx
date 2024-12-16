@@ -358,7 +358,7 @@ const GraphicPrice = () => {
                     </div>
 
                     <div className="">
-                        <h1 className="text-4xl mb-6">Project-Based Plans</h1>
+                        <h1 className="text-4xl mb-12">Project-Based Plans</h1>
                         <div className="services">
                             <div className="grid grid-cols-1 laptop:grid-cols-2 desktop:grid-cols-3 gap-4">
 
