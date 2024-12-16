@@ -8,6 +8,7 @@ import Contact from './app/pages/Contact';
 import Career from './app/pages/Career';
 import Loader from "./app/components/Loader";
 import {BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import NotFound from "./app/pages/NotFound";
 function App() {
   // const location = useLocation();
   // useEffect(() => {
@@ -29,7 +30,7 @@ function App() {
           <Route path='/about' element={<About />} />
           <Route path='/pricing' element={<Pricing />} />
           <Route path='/contact' element={<Contact />} />
-          <Route path='/career' element={<Career />} />
+          <Route path='/career' element={<NotFound />} />
       </Routes>
       
     </BrowserRouter>

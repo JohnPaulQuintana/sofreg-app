@@ -1,17 +1,45 @@
 import React from "react";
 import Loader from "../components/Loader";
 import Navbar from "../components/Navbar";
+import ProgressScrollButton from "../components/ProgressScrollButton";
+import AboutHeader from "../components/AboutHeader";
+import PageIntro from "../components/PageIntro";
+import PageIntroModern from "../components/PageIntroModern";
+import Footer from "../components/Footer";
 
 const About = () => {
     return (
-        <div className="startup-one">
+        <div className="">
             {/* Loader */}
             <Loader />
 
             {/* Cursor */}
             <div className="cursor"></div>
 
+            {/* Navbar */}
             <Navbar />
+
+            {/* progess scroll */}
+            <ProgressScrollButton />
+
+            <div id="smooth-wrapper">
+                <div id="smooth-content">
+                    <main className="main-bg">
+                        {/* header */}
+                        <AboutHeader />
+
+                        {/* page intro */}
+                        <PageIntro />
+
+                        {/* Page Intro Modern */}
+                        <PageIntroModern />
+
+
+                    </main>
+
+                    <Footer />
+                </div>
+            </div>
         </div>
     )
 }
