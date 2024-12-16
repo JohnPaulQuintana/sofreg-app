@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import ProgressScrollButton from "../components/ProgressScrollButton";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
+import Sidebar from "../components/Sidebar";
 const NotFound = () => {
     return (
         <div className="">
@@ -22,6 +23,7 @@ const NotFound = () => {
                  {/* Navbar */}
                 <Navbar />
 
+                <Sidebar />
                 <div id="smooth-content">
                     <header className="page-header-error section-padding valign">
                     <div className="container">

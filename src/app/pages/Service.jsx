@@ -9,6 +9,7 @@ import ImageScale from "../components/ImageScale";
 import Testimonials from "../components/Testimonial";
 import Faqs from "../components/Faqs";
 import ContactSection from "../components/ContactSection";
+import Sidebar from "../components/Sidebar";
 
 const Services = () => {
     return (
@@ -24,6 +25,8 @@ const Services = () => {
             {/* Navbar */}
             <Navbar />
 
+            {/* sidebar */}
+            <Sidebar />
             <div id="smooth-content">
 
                 <main className="main-bg">

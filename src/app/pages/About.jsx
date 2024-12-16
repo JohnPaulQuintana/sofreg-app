@@ -6,7 +6,7 @@ import AboutHeader from "../components/AboutHeader";
 import PageIntro from "../components/PageIntro";
 import PageIntroModern from "../components/PageIntroModern";
 import Footer from "../components/Footer";
-
+import Sidebar from "../components/Sidebar";
 const About = () => {
     return (
         <div className="">
@@ -19,6 +19,8 @@ const About = () => {
             {/* Navbar */}
             <Navbar />
 
+            {/* Sidebar */}
+            <Sidebar />
             {/* progess scroll */}
             <ProgressScrollButton />
 
@@ -26,7 +28,7 @@ const About = () => {
                 <div id="smooth-content">
                     <main className="main-bg">
                         {/* header */}
-                        <AboutHeader />
+                        
 
                         {/* page intro */}
                         <PageIntro />
