@@ -303,7 +303,7 @@ const GraphicPrice = () => {
 
                                 {graphicPlans[0].map((plan, index) => (
                                     <div key={index} className="mb-2 d-flex">
-                                        <div className="border border-gray-700 p-10 rounded-md relative show-element">
+                                        <div className={`border border-gray-700 p-10 rounded-md relative show-element ${plan.name === "Premium Creative Plan" ? "bg-blue-700" : ''}`}>
                                             {/* Plan Header */}
                                             <div className="border-b-2 border-gray-800 pb-6">
                                                 <span className="text-4xl text-white font-bold">{plan.name}</span>
@@ -311,9 +311,9 @@ const GraphicPrice = () => {
 
                                             {/* Pricing */}
                                             <div className="flex gap-1 mt-12">
-                                                <span className="text-4xl font-bold text-blue-700">$</span>
+                                                <span className={`text-4xl font-bold ${plan.name === "Premium Creative Plan" ? 'text-white' : 'text-blue-700'}`}>$</span>
                                                 <span className="text-7xl font-bold text-white">{plan.price}</span>
-                                                <span className="mt-8 text-blue-700 text-xl">/month</span>
+                                                <span className={`mt-8 ${plan.name === "Premium Creative Plan" ? 'text-white font-bold' : 'text-blue-700'} text-xl`}>/month</span>
                                             </div>
 
                                             {/* Features */}
@@ -322,7 +322,7 @@ const GraphicPrice = () => {
                                                     <div key={idx} className="flex gap-4 items-center mb-6">
                                                         <svg
                                                             aria-hidden="true"
-                                                            className="w-6 h-6 text-blue-700 flex-shrink-0"
+                                                            className={`w-6 h-6 ${plan.name === "Premium Creative Plan" ? 'text-white' : 'text-blue-700'} flex-shrink-0`}
                                                             fill="currentColor"
                                                             viewBox="0 0 512 512"
                                                             xmlns="http://www.w3.org/2000/svg"
@@ -342,7 +342,7 @@ const GraphicPrice = () => {
                                             <div className="mt-10 absolute bottom-0 left-5 right-0 p-5">
                                                 <a
                                                     type="button"
-                                                    className="flex gap-2 items-center justify-center avail-btn border p-3"
+                                                    className={`flex gap-2 items-center justify-center avail-btn border hover:text-blue-800 p-3 ${plan.name === "Premium Creative Plan" ? 'bg-white text-blue-700' : ''}`}
                                                 >
                                                     <span className="text-md font-bold">Avail Now </span>
                                                     <i class="fa-solid fa-arrow-up-right"></i>
@@ -364,7 +364,7 @@ const GraphicPrice = () => {
 
                                 {graphicPlans[1].map((plan, index) => (
                                     <div key={index} className="mb-2 d-flex">
-                                        <div className="border border-gray-700 p-10 rounded-md relative show-element">
+                                        <div className={`border border-gray-700 p-10 rounded-md relative show-element ${plan.name === "Advanced Creative Plan" ? 'bg-blue-700' : ''}`}>
                                             {/* Plan Header */}
                                             <div className="border-b-2 border-gray-800 pb-6">
                                                 <span className="text-4xl text-white font-bold">{plan.name}</span>
@@ -372,9 +372,9 @@ const GraphicPrice = () => {
 
                                             {/* Pricing */}
                                             <div className="flex gap-1 mt-12">
-                                                <span className="text-4xl font-bold text-blue-700">$</span>
+                                                <span className={`text-4xl font-bold ${plan.name === "Advanced Creative Plan" ? 'text-white' : 'text-blue-700'}`}>$</span>
                                                 <span className="text-7xl font-bold text-white">{plan.price}</span>
-                                                <span className="mt-8 text-blue-700 text-xl">/month</span>
+                                                <span className={`mt-8 ${plan.name === "Advanced Creative Plan" ? 'text-white' : 'text-blue-700'} text-xl`}>/month</span>
                                             </div>
 
                                             {/* Features */}
@@ -383,7 +383,7 @@ const GraphicPrice = () => {
                                                     <div key={idx} className="flex gap-4 items-center mb-6">
                                                         <svg
                                                             aria-hidden="true"
-                                                            className="w-6 h-6 text-blue-700 flex-shrink-0"
+                                                            className={`w-6 h-6 ${plan.name === "Advanced Creative Plan" ? 'text-white' : 'text-blue-700'} flex-shrink-0`}
                                                             fill="currentColor"
                                                             viewBox="0 0 512 512"
                                                             xmlns="http://www.w3.org/2000/svg"
@@ -403,7 +403,7 @@ const GraphicPrice = () => {
                                             <div className="mt-10 absolute bottom-0 left-5 right-0 p-5">
                                                 <a
                                                     type="button"
-                                                    className="flex gap-2 items-center justify-center avail-btn border p-3"
+                                                    className={`flex gap-2 items-center justify-center avail-btn border hover:text-blue-800 p-3 ${plan.name === "Advanced Creative Plan" ? 'bg-white text-blue-700' : ''}`}
                                                 >
                                                     <span className="text-md font-bold">Avail Now </span>
                                                     <i class="fa-solid fa-arrow-up-right"></i>
@@ -443,7 +443,7 @@ const GraphicPrice = () => {
 
                                 {webPlans[0].map((plan, index) => (
                                     <div key={index} className="mb-2 d-flex">
-                                        <div className="border border-gray-700 p-10 rounded-md relative show-element">
+                                        <div className={`border border-gray-700 p-10 rounded-md relative show-element ${plan.name === "Advanced Website Plan" ? 'bg-blue-700' : ''}`}>
                                             {/* Plan Header */}
                                             <div className="border-b-2 border-gray-800 pb-6">
                                                 <span className="text-4xl text-white font-bold">{plan.name}</span>
@@ -451,9 +451,9 @@ const GraphicPrice = () => {
 
                                             {/* Pricing */}
                                             <div className="flex gap-1 mt-12">
-                                                <span className="text-4xl font-bold text-blue-700">$</span>
+                                                <span className={`text-4xl font-bold ${plan.name === "Advanced Website Plan" ? 'text-white' : 'text-blue-700'}`}>$</span>
                                                 <span className="text-7xl font-bold text-white">{plan.price}</span>
-                                                <span className="mt-8 text-blue-700 text-xl">/month</span>
+                                                <span className={`mt-8 ${plan.name === "Advanced Website Plan" ? 'text-white' : 'text-blue-700'} text-xl`}>/month</span>
                                             </div>
 
                                             {/* Features */}
@@ -462,7 +462,7 @@ const GraphicPrice = () => {
                                                     <div key={idx} className="flex gap-4 items-center mb-6">
                                                         <svg
                                                             aria-hidden="true"
-                                                            className="w-6 h-6 text-blue-700 flex-shrink-0"
+                                                            className={`w-6 h-6 ${plan.name === "Advanced Website Plan" ? 'text-white' : 'text-blue-700'} flex-shrink-0`}
                                                             fill="currentColor"
                                                             viewBox="0 0 512 512"
                                                             xmlns="http://www.w3.org/2000/svg"
@@ -482,7 +482,7 @@ const GraphicPrice = () => {
                                             <div className="mt-10 absolute bottom-0 left-5 right-0 p-5">
                                                 <a
                                                     type="button"
-                                                    className="flex gap-2 items-center justify-center avail-btn border p-3"
+                                                    className={`flex gap-2 items-center justify-center avail-btn border hover:text-blue-700 p-3 ${plan.name === "Advanced Website Plan" ? 'bg-white text-blue-700' : ''}`}
                                                 >
                                                     <span className="text-md font-bold">Avail Now </span>
                                                     <i class="fa-solid fa-arrow-up-right"></i>
@@ -523,7 +523,7 @@ const GraphicPrice = () => {
 
                                 {allPlans[0].map((plan, index) => (
                                     <div key={index} className="mb-2 d-flex">
-                                        <div className="border border-gray-700 p-10 rounded-md relative show-element">
+                                        <div className={`border border-gray-700 p-10 rounded-md relative show-element ${plan.name === "Advance All Services Plan" ? 'bg-blue-700' : ''}`}>
                                             {/* Plan Header */}
                                             <div className="border-b-2 border-gray-800 pb-6">
                                                 <span className="text-4xl text-white font-bold">{plan.name}</span>
@@ -531,9 +531,9 @@ const GraphicPrice = () => {
 
                                             {/* Pricing */}
                                             <div className="flex gap-1 mt-12">
-                                                <span className="text-4xl font-bold text-blue-700">$</span>
+                                                <span className={`text-4xl font-bold ${plan.name === "Advance All Services Plan" ? 'text-white' : 'text-blue-700'}`}>$</span>
                                                 <span className="text-7xl font-bold text-white">{plan.price}</span>
-                                                <span className="mt-8 text-blue-700 text-xl">/month</span>
+                                                <span className={`mt-8 text-xl ${plan.name === "Advance All Services Plan" ? 'text-white' : 'text-blue-700'}`}>/month</span>
                                             </div>
 
                                             {/* Features */}
@@ -542,7 +542,7 @@ const GraphicPrice = () => {
                                                     <div key={idx} className="flex gap-4 items-center mb-6">
                                                         <svg
                                                             aria-hidden="true"
-                                                            className="w-6 h-6 text-blue-700 flex-shrink-0"
+                                                            className={`w-6 h-6 ${plan.name === "Advance All Services Plan" ? 'text-white' : 'text-blue-700'} flex-shrink-0`}
                                                             fill="currentColor"
                                                             viewBox="0 0 512 512"
                                                             xmlns="http://www.w3.org/2000/svg"
@@ -562,7 +562,7 @@ const GraphicPrice = () => {
                                             <div className="mt-10 absolute bottom-0 left-5 right-0 p-5">
                                                 <a
                                                     type="button"
-                                                    className="flex gap-2 items-center justify-center avail-btn border p-3"
+                                                    className={`flex gap-2 items-center justify-center avail-btn border hover:text-blue-700 p-3 ${plan.name === "Advance All Services Plan" ? 'bg-white text-blue-700' : ''}`}
                                                 >
                                                     <span className="text-md font-bold">Avail Now </span>
                                                     <i class="fa-solid fa-arrow-up-right"></i>
@@ -584,7 +584,7 @@ const GraphicPrice = () => {
 
                                 {allPlans[0].map((plan, index) => (
                                     <div key={index} className="mb-2 d-flex">
-                                        <div className="border border-gray-700 p-10 rounded-md relative show-element">
+                                        <div className={`border border-gray-700 p-10 rounded-md relative show-element ${plan.name === "Advance All Services Plan" ? 'bg-blue-700' : ''}`}>
                                             {/* Plan Header */}
                                             <div className="border-b-2 border-gray-800 pb-6">
                                                 <span className="text-4xl text-white font-bold">{plan.name}</span>
@@ -592,9 +592,9 @@ const GraphicPrice = () => {
 
                                             {/* Pricing */}
                                             <div className="flex gap-1 mt-12">
-                                                <span className="text-4xl font-bold text-blue-700">$</span>
+                                                <span className={`text-4xl font-bold ${plan.name === "Advance All Services Plan" ? 'text-white' : 'text-blue-700'}`}>$</span>
                                                 <span className="text-7xl font-bold text-white">{plan.price}</span>
-                                                <span className="mt-8 text-blue-700 text-xl">/month</span>
+                                                <span className={`mt-8 ${plan.name === "Advance All Services Plan" ? 'text-white' : 'text-blue-700'} text-xl`}>/month</span>
                                             </div>
 
                                             {/* Features */}
@@ -603,7 +603,7 @@ const GraphicPrice = () => {
                                                     <div key={idx} className="flex gap-4 items-center mb-6">
                                                         <svg
                                                             aria-hidden="true"
-                                                            className="w-6 h-6 text-blue-700 flex-shrink-0"
+                                                            className={`w-6 h-6 ${plan.name === "Advance All Services Plan" ? 'text-white' : 'text-blue-700'} flex-shrink-0`}
                                                             fill="currentColor"
                                                             viewBox="0 0 512 512"
                                                             xmlns="http://www.w3.org/2000/svg"
@@ -623,7 +623,7 @@ const GraphicPrice = () => {
                                             <div className="mt-10 absolute bottom-0 left-5 right-0 p-5">
                                                 <a
                                                     type="button"
-                                                    className="flex gap-2 items-center justify-center avail-btn border p-3"
+                                                    className={`flex gap-2 items-center justify-center avail-btn border hover:text-blue-700 p-3 ${plan.name === "Advance All Services Plan" ? 'bg-white text-blue-700' : ''}`}
                                                 >
                                                     <span className="text-md font-bold">Avail Now </span>
                                                     <i class="fa-solid fa-arrow-up-right"></i>
