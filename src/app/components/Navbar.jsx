@@ -13,7 +13,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="desktop:px-80 navbar navbar-expand-lg nav-crev">
+    <nav className="navbar navbar-expand-lg nav-crev">
       <div className="container">
         {/* Logo */}
         <Link className="logo w-[150px] desktop:w-[150px]" to="/">

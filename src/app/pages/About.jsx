@@ -28,7 +28,7 @@ const About = () => {
                 <div id="smooth-content">
                     <main className="main-bg">
                         {/* header */}
-                        
+                        <AboutHeader />
 
                         {/* page intro */}
                         <PageIntro />
