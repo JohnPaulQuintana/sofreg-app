@@ -9,7 +9,7 @@ const Header = () => {
       <div
         className="valign bg-img relative"
       >
-        <div className="animation-wrapper absolute right-[10%]">
+        <div className="animation-wrapper absolute right-[10%] laptop:top-[2%]">
           <div className="sphere-animation">
             <svg className="sphere" viewBox="0 0 440 440" stroke="rgba(80,80,80,.35)">
               <defs>
@@ -45,18 +45,18 @@ const Header = () => {
         </div>
         <div
           id="hero"
-          className="container pt-40 wide:px-40"
+          className="container laptop:px-32 wide:px-40"
         // style={{ paddingTop: "40px", paddingRight: "40px" }}
         >
           <div className="caption" style={{ textAlign: "center", color: "white" }}>
             <div className="lg-text fw-600" style={{ fontWeight: 600, fontSize: "2.5rem" }}>
               <div className="text d-flex align-items-center">
-                <span className="text-[0.8em] laptop:text-[1.5em] desktop:text-[2.5em] pe-2">Discover, </span>
+                <span className="text-[0.8em] laptop:text-[1.5em] desktop:text-[1.8em] wide:text-[2.5em] pe-2">Discover, </span>
               </div>
-              <div className="text text-[0.8em] laptop:text-[2.5em] desktop:text-[3.5em] text-color-primary-blue pe-2">Elevate</div>
-              <div className="text text-[0.8em] laptop:text-[1.7em] desktop:text-[2.5em]">Revolutionize</div>
+              <div className="text text-[0.8em] laptop:text-[2.5em] desktop:text-[2.6em] wide:text-[3.5em] text-color-primary-blue pe-2">Elevate</div>
+              <div className="text text-[0.8em] laptop:text-[1.7em] desktop:text-[1.8em] wide:text-[2.5em]">Revolutionize</div>
             </div>
-            <p className="text-[1em] desktop:text-2xl text-slate-100">
+            <p className="text-[1em] wide:text-2xl text-slate-100">
               Unlock your brand’s potential with innovative solutions that elevate your visuals and
               online presence. Stand out today!
             </p>
@@ -64,7 +64,7 @@ const Header = () => {
 
         </div>
       </div>
-      <div className="main-marq lrg o-hidden">
+      <div className="main-marq lrg o-hidden mt-24 laptop:mt-18 wide:mt-12">
             <h1 className="text-center text-xl tablet:text-2xl mb-4"><span className="text-color-primary-blue">150+</span> Projects Successfully Delivered With Many More on the Horizon!</h1>
             <div className="slide-har st1">
               <div className="box">

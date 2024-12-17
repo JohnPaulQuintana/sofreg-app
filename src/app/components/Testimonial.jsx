@@ -4,13 +4,13 @@ import React from 'react';
 
 const Testimonials = () => {
   return (
-    <section className="testimonials section-padding">
+    <section className="testimonials section-padding desktop:px-40">
       <div className="container">
         <div className="row">
           <div className="col-lg-4">
             <div className="sec-head">
               <h6 className="sub-title main-color mb-15">Testimonials</h6>
-              <h3 className="fw-600 text-4xl">What People <span className="fw-200">Say?</span></h3>
+              <h3 className="fw-600 text-3xl wide:text-4xl">What People <span className="fw-200">Say?</span></h3>
             </div>
           </div>
           <div className="col-lg-8 position-re">

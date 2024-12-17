@@ -62,7 +62,7 @@ const AboutSectionFooter = () => {
 
   return (
     <section
-      className="about-crev section-padding sub-bg position-re ontop"
+      className="about-crev section-padding sub-bg position-re ontop desktop:px-40"
       data-scroll-index="4"
     >
       <div className="container">
@@ -104,9 +104,9 @@ const AboutSectionFooter = () => {
           {/* Right Block */}
           <div className="col-lg-6 valign">
             <div className="content full-width">
-              <div className="sec-head mb-30">
-                <h6 className="sub-title mb-15 main-color font-bold text-xl">Our Skills</h6>
-                <h2 className="text-5xl font-bold">The ultimate guide to marketing success.</h2>
+              <div className="sec-head mb-3">
+                <h6 className="sub-title mb-2 main-color font-bold wide:text-xl">Our Skills</h6>
+                <h2 className="text-3xl wide:text-5xl font-bold">The ultimate guide to marketing success.</h2>
               </div>
               <div className="row justify-content-end">
                 <div className="col-lg-11">
@@ -115,22 +115,22 @@ const AboutSectionFooter = () => {
                       We shifted our talents to frontier science because we wanted our work to have tangible, human-positive impact. Also, we get front row seats to the future.
                     </p>
                   </div>
-                  <div className="mt-50">
+                  <div className="mt-4">
                     <div className="skills-box">
-                      <div className="skill-item mb-40">
-                        <h5 className="sub-title mb-15">Graphics Design</h5>
+                      <div className="skill-item mb-3">
+                        <h5 className="sub-title mb-2">Graphics Design</h5>
                         <div className="skill-progress">
                           <div className="progres" data-value="90%"></div>
                         </div>
                       </div>
-                      <div className="skill-item mb-40">
-                        <h5 className="sub-title mb-15">Web Development</h5>
+                      <div className="skill-item mb-3">
+                        <h5 className="sub-title mb-2">Web Development</h5>
                         <div className="skill-progress">
                           <div className="progres" data-value="80%"></div>
                         </div>
                       </div>
                       <div className="skill-item">
-                        <h5 className="sub-title mb-15">Video Production</h5>
+                        <h5 className="sub-title mb-3">Video Production</h5>
                         <div className="skill-progress">
                           <div className="progres" data-value="100%"></div>
                         </div>
@@ -146,7 +146,7 @@ const AboutSectionFooter = () => {
         {/* Team Section */}
         <div className="team section-padding pb-0">
           <div className="row">
-            <h2 className="text-5xl font-thin mb-24">Behind the <span className="font-bold">Sofreg Solutions</span></h2>
+            <h2 className="text-3xl wide:text-5xl font-thin mb-4 mt-4">Behind the <span className="font-bold">Sofreg Solutions</span></h2>
             {teamMembers.map((member, index) => (
               <div className="col-lg-4 laptop:mb-12" key={index}>
                 <div className="item md-mb50">

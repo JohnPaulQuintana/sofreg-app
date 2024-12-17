@@ -2,7 +2,7 @@ import React from 'react';
 
 const AboutSection = () => {
   return (
-    <section className="about wide:px-80" data-scroll-index="2">
+    <section className="about desktop:px-40" data-scroll-index="2">
       <div className="container section-padding bord-thin-top">
         <div className="row md-marg">
           <div className="col-lg-6">

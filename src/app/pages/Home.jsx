@@ -13,7 +13,7 @@ import ProgressScrollButton from "../components/ProgressScrollButton";
 import MarqueeSection from "../components/Marquee"
 import PortfolioTabGraphics from "../components/PortfolioTabGraphics"
 import ImageScale from "../components/ImageScale"
-import AboutSectionFooter from "../components/Team"
+import Team from "../components/Team"
 import Footer from "../components/Footer"
 import PortfolioTabWeb from "../components/PortfolioTabWeb"
 import PortfolioTabVideo from "../components/PortfolioTabVideo"
@@ -73,7 +73,7 @@ const Home = () => {
               <ImageScale />
 
               {/* about footer section */}
-              <AboutSectionFooter />
+              <Team />
 
               {/* Testimonials */}
               <Testimonials />

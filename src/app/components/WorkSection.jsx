@@ -32,7 +32,7 @@ const WorkSection = () => {
   ]
 
   return (
-    <section className="work-stand section-padding sub-bg">
+    <section className="work-stand section-padding sub-bg desktop:px-40">
       <div className="container-xxl">
         <div className="row">
           {/* filter links */}

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const FooterDetailed = () => {
   return (
-    <footer className="modern-footer pt-80">
+    <footer className="modern-footer pt-80 desktop:px-40">
       <div className="footer-container">
         <div className="container ontop">
           <div className="row pb-30 bord-thin-bottom">
@@ -102,7 +102,7 @@ const FooterDetailed = () => {
           </div>
           <div className="text-center pt-30 pb-30 sub-bg mt-80">
             <p className="fz-14">
-              © {new Date().getFullYear()} Sofreg Solutions {" "}
+              {/* © {new Date().getFullYear()} Sofreg Solutions {" "} */}
               
             </p>
           </div>

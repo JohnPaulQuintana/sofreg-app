@@ -53,6 +53,7 @@ const Services = () => {
                 </main>
 
             <FooterDetailed />
+            <Footer />
             </div>
 
 

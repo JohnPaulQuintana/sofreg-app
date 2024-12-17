@@ -74,7 +74,7 @@ const servicesData = [
 const Services = () => {
   return (
     <section className="services-crev section-padding" data-scroll-index="1">
-      <div className="container wide:px-40">
+      <div className="container desktop:px-40">
         <div className="sec-head mb-80">
           <h6 className="sub-title main-color mb-25 font-bold text-xl">Our Specialize</h6>
           <div className="bord pt-25 bord-thin-top d-flex align-items-center">

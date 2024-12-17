@@ -85,7 +85,7 @@ const PortfolioTabGraphics = () => {
   };
 
   return (
-    <section className="portfolio-tab crev section-padding" data-scroll-index="3">
+    <section className="portfolio-tab crev section-padding desktop:px-40" data-scroll-index="3">
       <div className="container">
         <div className="sec-head mb-80">
           <h6 className="sub-title main-color mb-25 font-bold text-xl">Our Services</h6>
