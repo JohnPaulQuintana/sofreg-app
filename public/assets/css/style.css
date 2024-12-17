@@ -570,7 +570,7 @@ figure {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: #14cf93;
+  background: #0d6efd;
   -webkit-transform: scale(0);
   -ms-transform: scale(0);
   transform: scale(0);
@@ -580,7 +580,7 @@ figure {
 }
 
 .btn-circle:hover {
-  border-color: #14cf93;
+  border-color: #0d6efd;
 }
 
 .btn-circle:hover:after {
@@ -712,7 +712,7 @@ figure {
 /* Cursor
 -----------------------------------------------------------------*/
 .hover-this .hover-anim {
-  pointer-events: none;
+  /* pointer-events: none; */
   -webkit-transition: -webkit-transform 0.2s linear;
   transition: -webkit-transform 0.2s linear;
   -o-transition: transform 0.2s linear;
@@ -3153,7 +3153,7 @@ body.loaded {
 .navbar.nav-crev {
   width: calc(100% - 30px);
   left: 30px;
-  top: 30px;
+  top: 10px;
   /* background: rgba(255, 255, 255, 0.05); */
   /* border: 1px solid rgba(255, 255, 255, 0.1); */
   /* padding-left: 20px; */
@@ -4378,11 +4378,11 @@ body.loaded {
 }
 
 .blog-list-half .item .cont .tags a:hover {
-  background: #14cf93;
+  background: #0d6efd;
 }
 
 .blog-list-half .item .cont .tags.colorbg a:hover {
-  background: #14cf93;
+  background: #0d6efd;
   color: #1a1a1a;
 }
 
@@ -4636,7 +4636,7 @@ body.loaded {
 }
 
 .sidebar .widget.tags a:hover {
-  background: #14cf93;
+  background: #0d6efd;
 }
 
 .blog-main .item .content {
@@ -4758,7 +4758,7 @@ body.loaded {
 
 .main-post .info-area .tags a:hover,
 .main-post .info-area .share-icon a:hover {
-  background: #14cf93;
+  background: #0d6efd;
   color: #1d1d1d;
 }
 
@@ -5474,7 +5474,7 @@ body.loaded {
 }
 
 .social-icon-circle a:hover {
-  color: #14cf93;
+  color: #0d6efd;
 }
 
 .google-map {
@@ -7584,7 +7584,7 @@ footer.clean-footer.crev:before {
 }
 
 .services .item-box2 .rmore:hover .arrow {
-  background: #14cf93;
+  background: #0d6efd;
 }
 
 .services .item-box2 .rmore .arrow {
@@ -8583,7 +8583,7 @@ footer.clean-footer.crev:before {
 
 .team .item .social .links a:hover {
   background: #145fcf;
-  border-color: #14cf93;
+  border-color: #0d6efd;
   color: #111;
 }
 
