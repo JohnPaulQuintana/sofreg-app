@@ -12,7 +12,7 @@ const PageIntro = () => {
                 Our <span className="fw-300">Company</span> Objectives
               </h3>
               <p className="text-xl">
-              At Sofreg Solutions, our objective is to deliver innovative and high-quality creative services that empower businesses to communicate effectively and achieve their goals.
+                At Sofreg Solutions, our objective is to deliver innovative and high-quality creative services that empower businesses to communicate effectively and achieve their goals.
               </p>
               {/* <a href="page-contact.html" className="butn butn-md butn-bord radius-30 mt-40">
                 <span>Let's Contact</span>

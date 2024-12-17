@@ -281,14 +281,14 @@ const GraphicPrice = () => {
         <section className="page-intro section-padding">
             <div className="container">
                 {/* graphics */}
-                <div className="flex flex-col gap-12 mb-32">
+                <div className="flex flex-col gap-12 mb-24 wide:mb-32">
                     <div className="valign">
                         <div className="content md-mb50">
-                            <h6 className="sub-title main-color mb-15 text-xl font-bold">Choose You Plan</h6>
-                            <h3 className="fw-600 mb-30 text-6xl">
+                            <h6 className="sub-title main-color mb-15 text-md wide:text-xl font-bold">Choose You Plan</h6>
+                            <h3 className="fw-600 mb-2 wide:mb-30 text-4xl wide:text-6xl">
                                 Graphic <span className="fw-300">Design</span> + Video Editing
                             </h3>
-                            <p className="text-4xl">
+                            <p className="text-2xl wide:text-4xl">
                                 Monthly Retainer Plans
                             </p>
                             {/* <a href="page-contact.html" className="butn butn-md butn-bord radius-30 mt-40">
@@ -303,23 +303,23 @@ const GraphicPrice = () => {
 
                                 {graphicPlans[0].map((plan, index) => (
                                     <div key={index} className="mb-2 d-flex">
-                                        <div className={`border border-gray-700 p-10 rounded-md relative show-element ${plan.name === "Premium Creative Plan" ? "bg-blue-700" : ''}`}>
+                                        <div className={`border border-gray-700 p-5 wide:p-10 rounded-md relative show-element ${plan.name === "Premium Creative Plan" ? "bg-blue-700" : ''}`}>
                                             {/* Plan Header */}
-                                            <div className="border-b-2 border-gray-800 pb-6">
-                                                <span className="text-4xl text-white font-bold">{plan.name}</span>
+                                            <div className="border-b-2 border-gray-800 pb-2 wide:pb-6">
+                                                <span className="text-2xl wide:text-4xl text-white font-bold">{plan.name}</span>
                                             </div>
 
                                             {/* Pricing */}
-                                            <div className="flex gap-1 mt-12">
-                                                <span className={`text-4xl font-bold ${plan.name === "Premium Creative Plan" ? 'text-white' : 'text-blue-700'}`}>$</span>
-                                                <span className="text-7xl font-bold text-white">{plan.price}</span>
-                                                <span className={`mt-8 ${plan.name === "Premium Creative Plan" ? 'text-white font-bold' : 'text-blue-700'} text-xl`}>/month</span>
+                                            <div className="flex gap-1 mt-6 wide:mt-12">
+                                                <span className={`text-2xl wide:text-4xl font-bold ${plan.name === "Premium Creative Plan" ? 'text-white' : 'text-blue-700'}`}>$</span>
+                                                <span className="text-4xl wide:text-7xl font-bold text-white">{plan.price}</span>
+                                                <span className={`mt-2 wide:mt-8 ${plan.name === "Premium Creative Plan" ? 'text-white font-bold' : 'text-blue-700'} wide:text-xl`}>/month</span>
                                             </div>
 
                                             {/* Features */}
-                                            <div className="mt-12">
+                                            <div className="mt-2 wide:mt-12">
                                                 {plan.features.map((feature, idx) => (
-                                                    <div key={idx} className="flex gap-4 items-center mb-6">
+                                                    <div key={idx} className="flex gap-4 items-center mb-3 wide:mb-6">
                                                         <svg
                                                             aria-hidden="true"
                                                             className={`w-6 h-6 ${plan.name === "Premium Creative Plan" ? 'text-white' : 'text-blue-700'} flex-shrink-0`}
@@ -335,14 +335,14 @@ const GraphicPrice = () => {
                                                     </div>
                                                 ))}
                                             </div>
-                                            <div className="p-10">
+                                            <div className="p-4 wide:p-10">
 
                                             </div>
                                             {/* Button */}
-                                            <div className="mt-10 absolute bottom-0 left-5 right-0 p-5">
+                                            <div className="mt-6 wide:mt-10 absolute bottom-0 left-5 right-0 p-5">
                                                 <a
                                                     type="button"
-                                                    className={`flex gap-2 items-center justify-center avail-btn border hover:text-blue-800 p-3 ${plan.name === "Premium Creative Plan" ? 'bg-white text-blue-700' : ''}`}
+                                                    className={`flex gap-2 items-center justify-center avail-btn border hover:text-blue-800 p-2 wide:p-3 ${plan.name === "Premium Creative Plan" ? 'bg-white text-blue-700' : ''}`}
                                                 >
                                                     <span className="text-md font-bold">Avail Now </span>
                                                     <i class="fa-solid fa-arrow-up-right"></i>
@@ -358,29 +358,29 @@ const GraphicPrice = () => {
                     </div>
 
                     <div className="">
-                        <h1 className="text-4xl mb-12">Project-Based Plans</h1>
+                        <h1 className="text-2xl wide:text-4xl mb-6 wide:mb-12">Project-Based Plans</h1>
                         <div className="services">
                             <div className="grid grid-cols-1 laptop:grid-cols-2 desktop:grid-cols-3 gap-4">
 
                                 {graphicPlans[1].map((plan, index) => (
                                     <div key={index} className="mb-2 d-flex">
-                                        <div className={`border border-gray-700 p-10 rounded-md relative show-element ${plan.name === "Advanced Creative Plan" ? 'bg-blue-700' : ''}`}>
+                                        <div className={`border border-gray-700 p-5 wide:p-10 rounded-md relative show-element ${plan.name === "Advanced Creative Plan" ? 'bg-blue-700' : ''}`}>
                                             {/* Plan Header */}
-                                            <div className="border-b-2 border-gray-800 pb-6">
-                                                <span className="text-4xl text-white font-bold">{plan.name}</span>
+                                            <div className="border-b-2 border-gray-800 pb-3 wide:pb-6">
+                                                <span className="text-2xl wide:text-4xl text-white font-bold">{plan.name}</span>
                                             </div>
 
                                             {/* Pricing */}
-                                            <div className="flex gap-1 mt-12">
-                                                <span className={`text-4xl font-bold ${plan.name === "Advanced Creative Plan" ? 'text-white' : 'text-blue-700'}`}>$</span>
-                                                <span className="text-7xl font-bold text-white">{plan.price}</span>
-                                                <span className={`mt-8 ${plan.name === "Advanced Creative Plan" ? 'text-white' : 'text-blue-700'} text-xl`}>/month</span>
+                                            <div className="flex gap-1 mt-6 wide:mt-12">
+                                                <span className={`text-2xl wide:text-4xl font-bold ${plan.name === "Advanced Creative Plan" ? 'text-white' : 'text-blue-700'}`}>$</span>
+                                                <span className="text-4xl wide:text-7xl font-bold text-white">{plan.price}</span>
+                                                <span className={`mt-2 wide:mt-8 ${plan.name === "Advanced Creative Plan" ? 'text-white' : 'text-blue-700'} text-xl`}>/month</span>
                                             </div>
 
                                             {/* Features */}
-                                            <div className="mt-12">
+                                            <div className="mt-2 wide:mt-12">
                                                 {plan.features.map((feature, idx) => (
-                                                    <div key={idx} className="flex gap-4 items-center mb-6">
+                                                    <div key={idx} className="flex gap-4 items-center mb-3 wide:mb-6">
                                                         <svg
                                                             aria-hidden="true"
                                                             className={`w-6 h-6 ${plan.name === "Advanced Creative Plan" ? 'text-white' : 'text-blue-700'} flex-shrink-0`}
@@ -391,19 +391,19 @@ const GraphicPrice = () => {
                                                             <path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path>
                                                         </svg>
                                                         <p className="text-slate-100">
-                                                            {feature.title}: <span>{feature.description}</span>
+                                                            {feature.title}: <span className="text-sm text-gray-400">{feature.description}</span>
                                                         </p>
                                                     </div>
                                                 ))}
                                             </div>
-                                            <div className="p-10">
+                                            <div className="p-4 wide:p-10">
 
                                             </div>
                                             {/* Button */}
-                                            <div className="mt-10 absolute bottom-0 left-5 right-0 p-5">
+                                            <div className="mt-5 wide:mt-10 absolute bottom-0 left-5 right-0 p-5">
                                                 <a
                                                     type="button"
-                                                    className={`flex gap-2 items-center justify-center avail-btn border hover:text-blue-800 p-3 ${plan.name === "Advanced Creative Plan" ? 'bg-white text-blue-700' : ''}`}
+                                                    className={`flex gap-2 items-center justify-center avail-btn border hover:text-blue-800 p-2 wide:p-3 ${plan.name === "Advanced Creative Plan" ? 'bg-white text-blue-700' : ''}`}
                                                 >
                                                     <span className="text-md font-bold">Avail Now </span>
                                                     <i class="fa-solid fa-arrow-up-right"></i>
@@ -421,14 +421,14 @@ const GraphicPrice = () => {
                 </div>
 
                 {/* Web */}
-                <div className="flex flex-col gap-12 mb-32">
+                <div className="flex flex-col gap-12 mb-24 wide:mb-32">
                     <div className="valign">
                         <div className="content md-mb50">
-                            <h6 className="sub-title main-color mb-15 text-xl font-bold">Choose You Plan</h6>
-                            <h3 className="fw-600 mb-30 text-6xl">
-                                Web <span className="fw-300">Solutions</span>
+                            <h6 className="sub-title main-color mb-15 text-md wide:text-xl font-bold">Choose You Plan</h6>
+                            <h3 className="fw-600 mb-2 wide:mb-30 text-4xl wide:text-6xl">
+                                Web Solutions<span className="fw-300"></span>
                             </h3>
-                            <p className="text-4xl">
+                            <p className="text-xl wide:text-4xl">
                                 Project-Based Plans
                             </p>
                             {/* <a href="page-contact.html" className="butn butn-md butn-bord radius-30 mt-40">
@@ -443,23 +443,23 @@ const GraphicPrice = () => {
 
                                 {webPlans[0].map((plan, index) => (
                                     <div key={index} className="mb-2 d-flex">
-                                        <div className={`border border-gray-700 p-10 rounded-md relative show-element ${plan.name === "Advanced Website Plan" ? 'bg-blue-700' : ''}`}>
+                                        <div className={`border border-gray-700 p-5 wide:p-10 rounded-md relative show-element ${plan.name === "Advanced Website Plan" ? 'bg-blue-700' : ''}`}>
                                             {/* Plan Header */}
-                                            <div className="border-b-2 border-gray-800 pb-6">
-                                                <span className="text-4xl text-white font-bold">{plan.name}</span>
+                                            <div className="border-b-2 border-gray-800 pb-3 wide:pb-6">
+                                                <span className="text-2xl wide:text-4xl text-white font-bold">{plan.name}</span>
                                             </div>
 
                                             {/* Pricing */}
-                                            <div className="flex gap-1 mt-12">
-                                                <span className={`text-4xl font-bold ${plan.name === "Advanced Website Plan" ? 'text-white' : 'text-blue-700'}`}>$</span>
-                                                <span className="text-7xl font-bold text-white">{plan.price}</span>
-                                                <span className={`mt-8 ${plan.name === "Advanced Website Plan" ? 'text-white' : 'text-blue-700'} text-xl`}>/month</span>
+                                            <div className="flex gap-1 mt-3 wide:mt-12">
+                                                <span className={`text-2xl wide:text-4xl font-bold ${plan.name === "Advanced Website Plan" ? 'text-white' : 'text-blue-700'}`}>$</span>
+                                                <span className="text-4xl wide:text-7xl font-bold text-white">{plan.price}</span>
+                                                <span className={`mt-2 wide:mt-8 ${plan.name === "Advanced Website Plan" ? 'text-white' : 'text-blue-700'} text-md wide:text-xl`}>/month</span>
                                             </div>
 
                                             {/* Features */}
-                                            <div className="mt-12">
+                                            <div className="mt-2 wide:mt-12">
                                                 {plan.features.map((feature, idx) => (
-                                                    <div key={idx} className="flex gap-4 items-center mb-6">
+                                                    <div key={idx} className="flex gap-4 items-center mb-2 wide:mb-6">
                                                         <svg
                                                             aria-hidden="true"
                                                             className={`w-6 h-6 ${plan.name === "Advanced Website Plan" ? 'text-white' : 'text-blue-700'} flex-shrink-0`}
@@ -470,19 +470,19 @@ const GraphicPrice = () => {
                                                             <path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path>
                                                         </svg>
                                                         <p className="text-slate-100">
-                                                            {feature.title}: <span>{feature.description}</span>
+                                                            {feature.title}: <span className="text-sm text-gray-400">{feature.description}</span>
                                                         </p>
                                                     </div>
                                                 ))}
                                             </div>
-                                            <div className="p-10">
+                                            <div className="p-4 wide:p-10">
 
                                             </div>
                                             {/* Button */}
-                                            <div className="mt-10 absolute bottom-0 left-5 right-0 p-5">
+                                            <div className="mt-5 wide:mt-10 absolute bottom-0 left-5 right-0 p-5">
                                                 <a
                                                     type="button"
-                                                    className={`flex gap-2 items-center justify-center avail-btn border hover:text-blue-700 p-3 ${plan.name === "Advanced Website Plan" ? 'bg-white text-blue-700' : ''}`}
+                                                    className={`flex gap-2 items-center justify-center avail-btn border hover:text-blue-700 p-2 wide:p-3 ${plan.name === "Advanced Website Plan" ? 'bg-white text-blue-700' : ''}`}
                                                 >
                                                     <span className="text-md font-bold">Avail Now </span>
                                                     <i class="fa-solid fa-arrow-up-right"></i>
@@ -500,15 +500,15 @@ const GraphicPrice = () => {
                 </div>
 
                 {/* All */}
-                <div className="flex flex-col gap-12 mb-32">
+                <div className="flex flex-col gap-12 mb-24 wide:mb-32">
                     <div className="valign">
                         <div className="content md-mb50">
-                            <h6 className="sub-title main-color mb-15 text-xl font-bold">Choose You Plan</h6>
-                            <h3 className="fw-600 mb-30 text-6xl">
+                            <h6 className="sub-title main-color mb-15 text-md wide:text-xl font-bold">Choose You Plan</h6>
+                            <h3 className="fw-600 mb-2 wide:mb-30 text-4xl wide:text-6xl">
                             Graphic Design <span className="fw-300">+</span> Video Editing <span className="fw-300">+</span>
                             Web Solutions (All Services)
                             </h3>
-                            <p className="text-4xl">
+                            <p className="text-2xl wide:text-4xl">
                                 Monthly Retainer Plans <span className="text-color-primary-blue">20% OFF</span>
                             </p>
                             {/* <a href="page-contact.html" className="butn butn-md butn-bord radius-30 mt-40">
@@ -523,23 +523,23 @@ const GraphicPrice = () => {
 
                                 {allPlans[0].map((plan, index) => (
                                     <div key={index} className="mb-2 d-flex">
-                                        <div className={`border border-gray-700 p-10 rounded-md relative show-element ${plan.name === "Advance All Services Plan" ? 'bg-blue-700' : ''}`}>
+                                        <div className={`border border-gray-700 p-5 wide:p-10 rounded-md relative show-element ${plan.name === "Advance All Services Plan" ? 'bg-blue-700' : ''}`}>
                                             {/* Plan Header */}
-                                            <div className="border-b-2 border-gray-800 pb-6">
-                                                <span className="text-4xl text-white font-bold">{plan.name}</span>
+                                            <div className="border-b-2 border-gray-800 pb-2 wide:pb-6">
+                                                <span className="text-2xl wide:text-4xl text-white font-bold">{plan.name}</span>
                                             </div>
 
                                             {/* Pricing */}
-                                            <div className="flex gap-1 mt-12">
-                                                <span className={`text-4xl font-bold ${plan.name === "Advance All Services Plan" ? 'text-white' : 'text-blue-700'}`}>$</span>
-                                                <span className="text-7xl font-bold text-white">{plan.price}</span>
-                                                <span className={`mt-8 text-xl ${plan.name === "Advance All Services Plan" ? 'text-white' : 'text-blue-700'}`}>/month</span>
+                                            <div className="flex gap-1 mt-2 wide:mt-12">
+                                                <span className={`text-2xl wide:text-4xl font-bold ${plan.name === "Advance All Services Plan" ? 'text-white' : 'text-blue-700'}`}>$</span>
+                                                <span className="text-4xl wide:text-7xl font-bold text-white">{plan.price}</span>
+                                                <span className={`mt-2 wide:mt-8 text-md wide:text-xl ${plan.name === "Advance All Services Plan" ? 'text-white' : 'text-blue-700'}`}>/month</span>
                                             </div>
 
                                             {/* Features */}
-                                            <div className="mt-12">
+                                            <div className="mt-2 wide:mt-12">
                                                 {plan.features.map((feature, idx) => (
-                                                    <div key={idx} className="flex gap-4 items-center mb-6">
+                                                    <div key={idx} className="flex gap-4 items-center mb-2 wide:mb-6">
                                                         <svg
                                                             aria-hidden="true"
                                                             className={`w-6 h-6 ${plan.name === "Advance All Services Plan" ? 'text-white' : 'text-blue-700'} flex-shrink-0`}
@@ -550,19 +550,19 @@ const GraphicPrice = () => {
                                                             <path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path>
                                                         </svg>
                                                         <p className="text-slate-100">
-                                                            {feature.title}: <span>{feature.description}</span>
+                                                            {feature.title}: <span className="text-sm text-gray-400">{feature.description}</span>
                                                         </p>
                                                     </div>
                                                 ))}
                                             </div>
-                                            <div className="p-10">
+                                            <div className="p-4 wide:p-10">
 
                                             </div>
                                             {/* Button */}
-                                            <div className="mt-10 absolute bottom-0 left-5 right-0 p-5">
+                                            <div className="mt-5 wide:mt-10 absolute bottom-0 left-5 right-0 p-5">
                                                 <a
                                                     type="button"
-                                                    className={`flex gap-2 items-center justify-center avail-btn border hover:text-blue-700 p-3 ${plan.name === "Advance All Services Plan" ? 'bg-white text-blue-700' : ''}`}
+                                                    className={`flex gap-2 items-center justify-center avail-btn border hover:text-blue-700 p-2 wide:p-3 ${plan.name === "Advance All Services Plan" ? 'bg-white text-blue-700' : ''}`}
                                                 >
                                                     <span className="text-md font-bold">Avail Now </span>
                                                     <i class="fa-solid fa-arrow-up-right"></i>
@@ -578,7 +578,7 @@ const GraphicPrice = () => {
                     </div>
 
                     <div className="">
-                        <h1 className="text-4xl mb-12">Project-Based Plan <span className="text-color-primary-blue">20% OFF</span></h1>
+                        <h1 className="text-2xl wide:text-4xl mb-6 wide:mb-12">Project-Based Plan <span className="text-color-primary-blue">20% OFF</span></h1>
                         <div className="services">
                             <div className="grid grid-cols-1 laptop:grid-cols-2 desktop:grid-cols-3 gap-4">
 
@@ -586,21 +586,21 @@ const GraphicPrice = () => {
                                     <div key={index} className="mb-2 d-flex">
                                         <div className={`border border-gray-700 p-10 rounded-md relative show-element ${plan.name === "Advance All Services Plan" ? 'bg-blue-700' : ''}`}>
                                             {/* Plan Header */}
-                                            <div className="border-b-2 border-gray-800 pb-6">
-                                                <span className="text-4xl text-white font-bold">{plan.name}</span>
+                                            <div className="border-b-2 border-gray-800 pb-2 wide:pb-6">
+                                                <span className="text-2xl wide:text-4xl text-white font-bold">{plan.name}</span>
                                             </div>
 
                                             {/* Pricing */}
-                                            <div className="flex gap-1 mt-12">
-                                                <span className={`text-4xl font-bold ${plan.name === "Advance All Services Plan" ? 'text-white' : 'text-blue-700'}`}>$</span>
-                                                <span className="text-7xl font-bold text-white">{plan.price}</span>
-                                                <span className={`mt-8 ${plan.name === "Advance All Services Plan" ? 'text-white' : 'text-blue-700'} text-xl`}>/month</span>
+                                            <div className="flex gap-1 mt-2 wide:mt-12">
+                                                <span className={`tetx-2xl wide:text-4xl font-bold ${plan.name === "Advance All Services Plan" ? 'text-white' : 'text-blue-700'}`}>$</span>
+                                                <span className="text-4xl wide:text-7xl font-bold text-white">{plan.price}</span>
+                                                <span className={`mt-2 wide:mt-8 ${plan.name === "Advance All Services Plan" ? 'text-white' : 'text-blue-700'} text-xl`}>/month</span>
                                             </div>
 
                                             {/* Features */}
-                                            <div className="mt-12">
+                                            <div className="mt-2 wide:mt-12">
                                                 {plan.features.map((feature, idx) => (
-                                                    <div key={idx} className="flex gap-4 items-center mb-6">
+                                                    <div key={idx} className="flex gap-4 items-center mb-2 wide:mb-6">
                                                         <svg
                                                             aria-hidden="true"
                                                             className={`w-6 h-6 ${plan.name === "Advance All Services Plan" ? 'text-white' : 'text-blue-700'} flex-shrink-0`}
@@ -611,19 +611,19 @@ const GraphicPrice = () => {
                                                             <path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path>
                                                         </svg>
                                                         <p className="text-slate-100">
-                                                            {feature.title}: <span>{feature.description}</span>
+                                                            {feature.title}: <span className="text-sm text-gray-400">{feature.description}</span>
                                                         </p>
                                                     </div>
                                                 ))}
                                             </div>
-                                            <div className="p-10">
+                                            <div className="p-4 wide:p-10">
 
                                             </div>
                                             {/* Button */}
-                                            <div className="mt-10 absolute bottom-0 left-5 right-0 p-5">
+                                            <div className="mt-5 wide:mt-10 absolute bottom-0 left-5 right-0 p-5">
                                                 <a
                                                     type="button"
-                                                    className={`flex gap-2 items-center justify-center avail-btn border hover:text-blue-700 p-3 ${plan.name === "Advance All Services Plan" ? 'bg-white text-blue-700' : ''}`}
+                                                    className={`flex gap-2 items-center justify-center avail-btn border hover:text-blue-700 p-2 wide:p-3 ${plan.name === "Advance All Services Plan" ? 'bg-white text-blue-700' : ''}`}
                                                 >
                                                     <span className="text-md font-bold">Avail Now </span>
                                                     <i class="fa-solid fa-arrow-up-right"></i>
