@@ -10,6 +10,8 @@ import Testimonials from "../components/Testimonial";
 import Faqs from "../components/Faqs";
 import ContactSection from "../components/ContactSection";
 import Sidebar from "../components/Sidebar";
+import ContactForm from "../components/ContactForm";
+import FooterDetailed from "../components/FooterDetailed";
 
 const Services = () => {
     return (
@@ -46,10 +48,11 @@ const Services = () => {
                     <Faqs />
 
                     {/* COntact */}
-                    <ContactSection />
+                    {/* <ContactSection /> */}
+                    <ContactForm />
                 </main>
 
-            <Footer />
+            <FooterDetailed />
             </div>
 
 

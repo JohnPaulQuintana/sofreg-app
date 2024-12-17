@@ -7,6 +7,7 @@ import PageIntro from "../components/PageIntro";
 import PageIntroModern from "../components/PageIntroModern";
 import Footer from "../components/Footer";
 import Sidebar from "../components/Sidebar";
+import FooterDetailed from "../components/FooterDetailed";
 const About = () => {
     return (
         <div className="">
@@ -39,7 +40,7 @@ const About = () => {
 
                     </main>
 
-                    <Footer />
+                    <FooterDetailed />
                 </div>
             </div>
         </div>

@@ -20,6 +20,8 @@ import PortfolioTabVideo from "../components/PortfolioTabVideo"
 import Testimonials from "../components/Testimonial"
 import Faqs from "../components/Faqs"
 import ContactSection from "../components/ContactSection"
+import ContactForm from "../components/ContactForm";
+import FooterDetailed from "../components/FooterDetailed";
 
 const Home = () => {
   return (
@@ -80,11 +82,12 @@ const Home = () => {
               <Faqs />
 
               {/* Contact Section */}
-              <ContactSection />
+              {/* <ContactSection /> */}
+              <ContactForm />
             </main>
 
           {/* footer */}
-          <Footer />
+          <FooterDetailed />
         </div>
       </div>
     </div>

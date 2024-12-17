@@ -5,6 +5,8 @@ import Sidebar from "../components/Sidebar";
 import PriceHeader from "../components/PriceHeader";
 import GraphicPrice from "../components/GraphicPrice";
 import Footer from "../components/Footer";
+import FooterDetailed from "../components/FooterDetailed";
+import ContactForm from "../components/ContactForm";
 const Pricing = () => {
     return (
         <div className="startup-one">
@@ -25,10 +27,12 @@ const Pricing = () => {
 
                         {/* graphic */}
                         <GraphicPrice />
+
+                        <ContactForm />
                     </main>
 
                     {/* footer */}
-                    <Footer />
+                    <FooterDetailed />
                 </div>
             </div>
         </div>
