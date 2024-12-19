@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 const servicesData = [
   {
     id: 1,
@@ -21,7 +21,7 @@ const servicesData = [
                     <rect x="625.4" y="789.5" width="34.3" height="34.3"></rect>
                   </g>
                 </svg>`,
-    link: "page-services-details.html"
+    link: "/services?filter=graphic"
   },
   {
     id: 2,
@@ -56,7 +56,7 @@ const servicesData = [
                     </g>
                   </g>
                 </svg>`,
-    link: "page-services-details.html"
+    link: "/services?filter=web"
   },
   {
     id: 3,
@@ -67,7 +67,7 @@ const servicesData = [
                   <!-- Generator: Adobe Illustrator 29.1.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 142)  -->
                   <path d="M1005.3,1010.1H97.8c-24.1,0-43.6-19.6-43.6-43.6V313.5c0-10.2,8.3-18.4,18.4-18.4h957.9c10.2,0,18.4,8.3,18.4,18.4v653c0,24.1-19.6,43.6-43.6,43.6ZM91.1,332v634.5c0,3.7,3.1,6.8,6.8,6.8h907.4c3.7,0,6.8-3.1,6.8-6.8V332H91.1ZM425.5,800.7c-3.1,0-6.3-.8-9.1-2.4-5.8-3.3-9.4-9.4-9.4-16v-302.5c0-6.6,3.6-12.8,9.4-16,5.8-3.3,12.9-3.2,18.6.2l252.1,151.2c5.6,3.3,8.9,9.3,8.9,15.8s-3.4,12.5-8.9,15.8l-252.1,151.2c-2.9,1.8-6.2,2.6-9.5,2.6ZM444,512.4v237.3l197.8-118.7-197.8-118.7ZM1030.5,246.2h-187.5c-8.2,0-15.4-5.4-17.7-13.2l-44.7-151.2c-1.6-5.6-.6-11.6,2.9-16.3,3.5-4.7,9-7.4,14.8-7.4h207c24.1,0,43.6,19.6,43.6,43.6v126c0,10.2-8.3,18.4-18.4,18.4ZM856.8,209.3h155.3v-107.6c0-3.7-3.1-6.8-6.8-6.8h-182.3l33.8,114.4ZM790.6,246.2h-190.4c-8.2,0-15.4-5.4-17.7-13.2l-44.7-151.2c-1.6-5.6-.6-11.6,2.9-16.3,3.5-4.7,9-7.4,14.8-7.4h190.4c8.2,0,15.4,5.4,17.7,13.2l44.7,151.2c1.6,5.6.6,11.6-2.9,16.3-3.5,4.7-9,7.4-14.8,7.4ZM613.9,209.3h152l-33.8-114.4h-152l33.8,114.4ZM547.7,246.2h-190.4c-8.2,0-15.4-5.4-17.7-13.2l-44.7-151.2c-1.6-5.6-.6-11.6,2.9-16.3,3.5-4.7,9-7.4,14.8-7.4h190.4c8.2,0,15.4,5.4,17.7,13.2l44.7,151.2c1.6,5.6.6,11.6-2.9,16.3-3.5,4.7-9,7.4-14.8,7.4ZM371,209.3h152l-33.8-114.4h-152l33.8,114.4ZM304.8,246.2H72.6c-10.2,0-18.4-8.3-18.4-18.4v-126c0-24.1,19.6-43.6,43.6-43.6h162.3c8.2,0,15.4,5.4,17.7,13.2l44.7,151.2c1.6,5.6.6,11.6-2.9,16.3-3.5,4.7-9,7.4-14.8,7.4ZM91.1,209.3h189.1l-33.8-114.4H97.8c-3.7,0-6.8,3.1-6.8,6.8v107.6Z"></path>
                 </svg>`,
-    link: "page-services-details.html"
+    link: "/services?filter=video"
   }
 ];
 
@@ -82,10 +82,10 @@ const Services = () => {
               What We <span className="fw-200"> Offer</span>
             </h2>
             <div className="ml-auto">
-              <a href="page-services.html" className="go-more">
+              <Link to="/services" className="go-more">
                 <span className="text">View all Services</span>
                 <span className="icon ti-arrow-top-right"></span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -109,13 +109,13 @@ const Services = () => {
                   <p className="text-slate-400">{service.description}</p>
                 </div>
                 <div className="mt-4">
-                  <a
-                    href={service.link}
+                  <Link
+                    to={service.link}
                     className="text-color-primary-blue font-medium flex items-center hover:underline"
                   >
                     <span>View More</span>
                     <span className="icon ml-2 ti-arrow-top-right"></span>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

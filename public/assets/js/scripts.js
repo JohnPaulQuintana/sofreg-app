@@ -815,16 +815,16 @@ $(document).ready(function(){
         }
     });
 
-    var $gallery = $('.gallery , .gallery2').isotope();
+    // var $gallery = $('.gallery , .gallery2').isotope();
 
-    $('.filtering').on('click', 'span', function () {
-        var filterValue = $(this).attr('data-filter');
-        $gallery.isotope({ filter: filterValue });
-    });
+    // $('.filtering').on('click', 'span', function () {
+    //     var filterValue = $(this).attr('data-filter');
+    //     $gallery.isotope({ filter: filterValue });
+    // });
 
-    $('.filtering').on('click', 'span', function () {
-        $(this).addClass('active').siblings().removeClass('active');
-    });
+    // $('.filtering').on('click', 'span', function () {
+    //     $(this).addClass('active').siblings().removeClass('active');
+    // });
 
 
     /* =============================================================================

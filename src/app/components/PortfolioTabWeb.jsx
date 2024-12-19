@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-
+import { Link } from "react-router-dom";
 const projects = [
   {
     id: "tab-100",
@@ -46,10 +46,10 @@ const PortfolioTabWeb = () => {
               02 <span className="fw-200 text-4xl">Web Solutions</span>
             </h2>
             <div className="ml-auto">
-              <a href="portfolio-outline.html" className="go-more">
+              <Link to="/services?filter=web" className="go-more">
                 <span className="text">View all Services</span>
                 <span className="icon ti-arrow-top-right"></span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -72,12 +72,12 @@ const PortfolioTabWeb = () => {
 
           {/* Tab content */}
           <motion.div
-            initial={{ height: projects.length >=5 ? "500px" : '' }}
+            initial={{ height: projects.length >=5 ? "450px" : '' }}
             animate={{
-              height: showAll ? "" : "500px",
+              height: showAll ? "" : "",
             }}
             transition={{ duration: 0.5 }}
-            className="col-lg-6 offset-lg-1 content overflow-y-hidden py-2">
+            className="col-lg-6 offset-lg-1 content overflow-y-hidden py-2 flex flex-col justify-center">
             {projects.map((project) => (
               <div
                 key={project.id}
@@ -86,7 +86,7 @@ const PortfolioTabWeb = () => {
               >
                 <div className="info">
                   <h6 className="sub-title opacity-7">{project.category}</h6>
-                  <h4 className="text-4xl">{project.title}</h4>
+                  <h4 className="text-2xl">{project.title}</h4>
                 </div>
                 <div className="img">
                   <img src={project.image} alt={project.title} />
@@ -99,7 +99,7 @@ const PortfolioTabWeb = () => {
               </div>
             ))}
           </motion.div>
-          <div className="more-btn more text-u ls1 flex justify-center laptop:justify-end text-xl mt-6">
+          {/* <div className="more-btn more text-u ls1 flex justify-center laptop:justify-end text-xl mt-6">
             {showAll ? (
               <a onClick={handleShowLess} className="text-color-primary-blue cursor-pointer">
                 Show Less <i className="ml-15 fa-light fa-arrow-up-long"></i>
@@ -109,7 +109,7 @@ const PortfolioTabWeb = () => {
                 Show More <i className="ml-15 fa-light fa-arrow-down-long"></i>
               </a>
             )}
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

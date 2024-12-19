@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-
+import { Link } from "react-router-dom";
 const projects = [
   {
     id: "tab-200",
@@ -88,10 +88,10 @@ const PortfolioTabVideo = () => {
               03 <span className="fw-200 text-4xl">Video Production</span>
             </h2>
             <div className="ml-auto">
-              <a href="portfolio-outline.html" className="go-more">
+              <Link to="/services?filter=video" className="go-more">
                 <span className="text">View all Services</span>
                 <span className="icon ti-arrow-top-right"></span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -114,9 +114,9 @@ const PortfolioTabVideo = () => {
 
           {/* Tab content */}
           <motion.div
-            initial={{ height: projects.length >=5 ? "500px" : '' }}
+            initial={{ height: projects.length >=5 ? "450px" : '' }}
             animate={{
-              height: showAll ? "" : "500px",
+              height: showAll ? "" : "450px",
             }}
             transition={{ duration: 0.5 }}
             className="col-lg-6 offset-lg-1 content overflow-y-hidden py-2">
@@ -128,7 +128,7 @@ const PortfolioTabVideo = () => {
               >
                 <div className="info">
                   <h6 className="sub-title opacity-7">{project.category}</h6>
-                  <h4 className="text-4xl">{project.title}</h4>
+                  <h4 className="text-2xl">{project.title}</h4>
                 </div>
                 <div className="img">
                   <img src={project.image} alt={project.title} />

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 const AboutSection = () => {
   return (
     <section className="about desktop:px-40" data-scroll-index="2">
@@ -13,10 +13,10 @@ const AboutSection = () => {
               </h3>
               <div className="d-flex align-items-end mt-100">
                 <div>
-                  <a href="page-about3.html" className="d-flex align-items-end">
+                  <Link to="/about" className="d-flex align-items-end">
                     <span className="sub-title nowrap">About Us</span>
                     <span className="fz-70 line-height-45 ti-arrow-top-right"></span>
-                  </a>
+                  </Link>
                 </div>
                 <div className="ml-80">
                   <p>
@@ -30,11 +30,11 @@ const AboutSection = () => {
             <div className="img-vid">
               <img src="assets/imgs/GDHEADER.jpg" alt="" />
               <div className="curv-butn main-bg">
-                <a href="#" className="vid">
+                <Link to="/services?filter=graphic" className="vid">
                   <div className="icon">
                     <i className="fas fa-play"></i>
                   </div>
-                </a>
+                </Link>
                 <div className="shap-left-top">
                   <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-11 h-11">
                     <path

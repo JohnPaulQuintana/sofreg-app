@@ -45,7 +45,7 @@ const Loader = () => {
           </span>
         </div>
         <div className="flex-col tablet:flex-row">
-          <div className="load-text text-xl">
+          {/* <div className="load-text text-xl">
             <span>L</span>
             <span>O</span>
             <span>A</span>
@@ -53,7 +53,7 @@ const Loader = () => {
             <span>I</span>
             <span>N</span>
             <span>G</span>
-          </div>
+          </div> */}
           {/* <div className="load-text">
             <span>S</span>
             <span>O</span>

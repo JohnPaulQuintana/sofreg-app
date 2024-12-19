@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Loader from "../components/Loader";
 import Navbar from "../components/Navbar";
 import WorkHeader from "../components/WorkHeader";
@@ -12,8 +12,30 @@ import ContactSection from "../components/ContactSection";
 import Sidebar from "../components/Sidebar";
 import ContactForm from "../components/ContactForm";
 import FooterDetailed from "../components/FooterDetailed";
+import Modal from "../components/ImageViewer"
+import { useLocation } from "react-router-dom";
 
 const Services = () => {
+
+    const location = useLocation();
+    const { state } = location.state || {}; // Access the prop
+    // console.log(state)
+
+    const [isModalVisible, setIsModalVisible] = useState(false);
+    const [selectedImage, setSelectedImage] = useState(null);
+
+    // Function to open the modal with the selected image
+    const openModal = (image) => {
+        setSelectedImage(image);
+        setIsModalVisible(true);
+    };
+
+    // Function to close the modal
+    const closeModal = () => {
+        setIsModalVisible(false);
+        setSelectedImage(null);
+    };
+
     return (
         <div className="smooth-wrapper">
 
@@ -36,7 +58,7 @@ const Services = () => {
                     <WorkHeader />
 
                     {/* Portfolio */}
-                    <WorkSection />
+                    <WorkSection openModal={openModal}/>
 
                     {/* Image Scale */}
                     <ImageScale />
@@ -52,10 +74,14 @@ const Services = () => {
                     <ContactForm />
                 </main>
 
+            
+
+
             <FooterDetailed />
             <Footer />
             </div>
-
+            {/* Modal Component */}
+            <Modal isVisible={isModalVisible} imageSrc={selectedImage} onClose={closeModal} />
 
         </div>
     )

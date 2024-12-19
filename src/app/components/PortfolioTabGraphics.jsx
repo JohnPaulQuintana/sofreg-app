@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-
+import { Link } from "react-router-dom";
 const projects = [
   {
     id: "tab-1",
@@ -90,14 +90,14 @@ const PortfolioTabGraphics = () => {
         <div className="sec-head mb-80">
           <h6 className="sub-title main-color mb-25 font-bold text-xl">Our Services</h6>
           <div className="bord pt-25 bord-thin-top d-flex align-items-center">
-            <h2 className="fw-600 text-u ls1 text-5xl">
+            <h2 className="fw-600 text-u ls1 text-4xl">
               01 <span className="fw-200 text-4xl">Graphic Design</span>
             </h2>
             <div className="ml-auto">
-              <a href="portfolio-outline.html" className="go-more">
+              <Link to="/services?filter=graphic" className="go-more">
                 <span className="text">View all Services</span>
                 <span className="icon ti-arrow-top-right"></span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -120,9 +120,9 @@ const PortfolioTabGraphics = () => {
 
           {/* Tab content */}
           <motion.div
-            initial={{ height: "500px" }}
+            initial={{ height: "450px" }}
             animate={{
-              height: showAll ? "" : "500px",
+              height: showAll ? "" : "450px",
             }}
             transition={{ duration: 0.5 }}
             className="col-lg-6 offset-lg-1 content overflow-y-hidden py-2">
@@ -134,7 +134,7 @@ const PortfolioTabGraphics = () => {
               >
                 <div className="info">
                   <h6 className="sub-title opacity-7">{project.category}</h6>
-                  <h4 className="text-4xl">{project.title}</h4>
+                  <h4 className="text-2xl">{project.title}</h4>
                 </div>
                 <div className="img">
                   <img src={project.image} alt={project.title} />
