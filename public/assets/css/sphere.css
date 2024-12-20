@@ -17,17 +17,18 @@
   } */
 
   .animation-wrapper {
-    width: 50%;
+    width: 100%;
     padding-bottom: 50%;
   }
 
   .sphere-animation {
-    position: absolute;
-    top: 65%;
-    left: 40%;
-    width: 580px;
-    /* height: 50vh; */
-    margin: -290px 0 0 -290px;
+    /* position: absolute; */
+    /* top: 65%; */
+    /* left: 35%; */
+    /* width: 10%; */
+    /* border: 1px solid red; */
+    /* transform: translate(-50%, -50%); */
+    /* margin: -290px 0 0 -290px; */
   }
 
   .sphere path {

@@ -75,10 +75,10 @@ const Services = () => {
   return (
     <section className="services-crev section-padding" data-scroll-index="1">
       <div className="container desktop:px-40">
-        <div className="sec-head mb-80">
+        <div className="sec-head mb-4">
           <h6 className="sub-title main-color mb-25 font-bold text-xl">Our Specialize</h6>
           <div className="bord pt-25 bord-thin-top d-flex align-items-center">
-            <h2 className="fw-600 text-u ls1 font-bold text-5xl">
+            <h2 className="fw-600 text-u ls1 font-bold text-3xl wide:text-5xl">
               What We <span className="fw-200"> Offer</span>
             </h2>
             <div className="ml-auto">
@@ -102,7 +102,7 @@ const Services = () => {
                     </div>
                   </div>
                   <div>
-                    <h5 className="text-4xl font-bold mb-4">{service.title}</h5>
+                    <h5 className="text-2xl wide:text-4xl font-bold">{service.title}</h5>
                   </div>
                 </div>
                 <div className="mt-4 flex-grow">

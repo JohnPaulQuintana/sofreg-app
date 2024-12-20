@@ -2,16 +2,16 @@ import React from "react";
 
 const PageIntroModern = () => {
   return (
-    <section className="page-intro-modern section-padding pt-0">
+    <section className="page-intro-modern section-padding desktop:px-40 pt-0 bg-inherit">
       <div className="container">
         <div className="flex p-0">
           <div className="">
             <div className="flex flex-col gap-4 desktop:flex-row">
               <div className="valign w-full desktop:w-[35%]">
-                <div className="mb-12">
+                <div className="mb-2 wide:mb-12">
                   {/* <img src="assets/imgs/intro/01.jpg" alt="" /> */}
-                  <h1 className="text-4xl font-bold mb-2 text-color-primary-blue">Our Mission</h1>
-                  <p className="text-xl">Our mission is to design and deliver innovative, eco-friendly products that not only meet the evolving needs of our customers but also promote a healthier planet. We are dedicated to fostering a culture of continuous improvement, where creativity and collaboration drive our success. We prioritize ethical practices and social responsibility, ensuring that every product we create supports our commitment to sustainability and community well-being. Through partnerships and engagement, we strive to make a positive impact. Your success is our MISSION</p>
+                  <h1 className="text-2xl wide:text-4xl font-bold mb-2 text-color-primary-blue">Our Mission</h1>
+                  <p className="wide:text-xl">Our mission is to design and deliver innovative, eco-friendly products that not only meet the evolving needs of our customers but also promote a healthier planet. We are dedicated to fostering a culture of continuous improvement, where creativity and collaboration drive our success. We prioritize ethical practices and social responsibility, ensuring that every product we create supports our commitment to sustainability and community well-being. Through partnerships and engagement, we strive to make a positive impact. Your success is our MISSION</p>
                 </div>
               </div>
               <div className="w-full desktop:w-[30%]">
@@ -27,7 +27,7 @@ const PageIntroModern = () => {
                     data-lag="0">
 
                     <button type="button" className="">
-                        <a className="border p-2 text-4xl">Design a Quote <i class="fa-solid fa-arrow-up-right"></i></a>
+                        <a className="border p-2 text-xl wide:text-4xl">Design a Quote <i class="fa-solid fa-arrow-up-right"></i></a>
                         
                     </button>
                   </div>
@@ -35,10 +35,10 @@ const PageIntroModern = () => {
               </div>
               <div className="flex w-full desktop:w-[35%]">
                 <div className="w-full">
-                    <div className="mb-12">
+                    <div className="mb-2 wide:mb-12">
                     {/* <img src="assets/imgs/intro/01.jpg" alt="" /> */}
-                    <h1 className="text-4xl font-bold mb-2 text-color-primary-blue">Our Vision</h1>
-                    <p className="text-xl">
+                    <h1 className="text-2xl wide:text-4xl font-bold mb-2 text-color-primary-blue">Our Vision</h1>
+                    <p className="wide:text-xl">
                         To be a global leader in sustainable innovation, transforming the way communities interact with technology. We envision a future where our cutting-edge solutions empower individuals and organizations to enhance their quality of life while actively contributing to the preservation of our planet. By pioneering advancements that prioritize environmental stewardship, we aim to inspire a movement towards a more sustainable and equitable world for generations to come
                     </p>
                     </div>
@@ -51,11 +51,14 @@ const PageIntroModern = () => {
           </div>
         </div>
       </div>
-      <div className="container mt-100">
-        <div className="row justify-content-around">
+      {/* <div>
+        dwadwa
+      </div> */}
+      <div className="container">
+        <div className="row justify-content-between mt-2">
           <div className="col-lg-5">
             <div className="cont">
-              <h4 className="text-4xl font-bold">
+              <h4 className="text-2xl wide:text-4xl font-bold">
                 If you’re looking for a specialist to build a meaningful digital project you can
                 easily reach us by clicking{" "}
                 <span className="underline">

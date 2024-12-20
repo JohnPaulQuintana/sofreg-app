@@ -3,7 +3,7 @@ import React from "react";
 const MarqueeSection = () => {
     return (
         <section>
-          <div className="main-marq lrg o-hidden">
+          <div className="main-marq lrg o-hidden mt-4 mb-4">
             <div className="slide-har st1">
               <div className="box">
                 <div className="item">

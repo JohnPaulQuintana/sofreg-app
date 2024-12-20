@@ -7,11 +7,11 @@ const Header = () => {
     <header className="startup-header overflow-hidden" data-scroll-index="0">
       {/* bg-gradient-to-tl from-[#1c1c1c] via-[#1c1c1c] to-[#243447] */}
       <div
-        className="valign bg-img relative"
+        className="valign bg-img relative tablet:pt-[100px] bg-[#1E1D1D]"
       >
-        <div className="animation-wrapper absolute right-[10%] laptop:top-[2%]">
-          <div className="sphere-animation">
-            <svg className="sphere" viewBox="0 0 440 440" stroke="rgba(80,80,80,.35)">
+        <div className="animation-wrapper absolute flex items-center justify-center top-[80px]">
+          <div className="sphere-animation flex justify-center items-center w-[20%] phone:w-[10%] h-[100vh]">
+            <svg className="sphere w-[100%] tablet:w-[50%]" viewBox="0 0 440 440" stroke="rgba(80,80,80,.35)">
               <defs>
                 <linearGradient id="sphereGradient" x1="5%" x2="5%" y1="0%" y2="15%">
                   <stop stopColor="#373734" offset="0%" />
@@ -45,94 +45,114 @@ const Header = () => {
         </div>
         <div
           id="hero"
-          className="container laptop:px-32 wide:px-40"
+          className="container flex justify-center items-center mt-24 laptop:px-32 wide:px-40"
         // style={{ paddingTop: "40px", paddingRight: "40px" }}
         >
           <div className="caption" style={{ textAlign: "center", color: "white" }}>
             <div className="lg-text fw-600" style={{ fontWeight: 600, fontSize: "2.5rem" }}>
-              <div className="text d-flex align-items-center">
-                <span className="text-[0.8em] laptop:text-[1.5em] desktop:text-[1.8em] wide:text-[2.5em] pe-2">Discover, </span>
-              </div>
-              <div className="text text-[0.8em] laptop:text-[2.5em] desktop:text-[2.6em] wide:text-[3.5em] text-color-primary-blue pe-2">Elevate</div>
-              <div className="text text-[0.8em] laptop:text-[1.7em] desktop:text-[1.8em] wide:text-[2.5em]">Revolutionize</div>
+              {/* <div className="text d-flex align-items-center">
+                <span className="text-[1.2em] laptop:text-[1.5em] desktop:text-[1.8em] wide:text-[2.5em] pe-2">Discover, </span>
+              </div> */}
+              <div className="text text-[1em] laptop:text-[2.5em] desktop:text-[2.6em] wide:text-[3.5em]">Discover, Elevate</div>
+              <div className="text text-[0.9em] laptop:text-[1.7em] desktop:text-[1.8em] wide:text-[2.5em]  text-color-primary-blue">Revolutionize</div>
             </div>
-            <p className="text-[1em] wide:text-2xl text-slate-100">
-              Unlock your brand’s potential with innovative solutions that elevate your visuals and
-              online presence. Stand out today!
-            </p>
+            <div className="w-full flex justify-center">
+                <ul className="grid grid-cols-2 tablet:grid-cols-4 gap-4 justify-center fz-14 w-[50%]">
+                  <li className="hover-this cursor-pointer">
+                    <a href="https://www.facebook.com/people/Sofreg-Solutions/61567081641563/" className="hover-anim flex items-center justify-center gap-2">
+                      <i className="fab fa-facebook-f  text-color-primary-blue"></i> Facebook
+                    </a>
+                  </li>
+                  <li className="hover-this cursor-pointer">
+                    <a href="tel:+639177070531" className="hover-anim flex items-center justify-center gap-2">
+                      <i className="fa-brands fa-whatsapp text-md  text-color-primary-blue"></i> Whatsapp
+                    </a>
+                  </li>
+                  <li className="hover-this cursor-pointer">
+                    <a href="https://www.linkedin.com/company/sofreg-solutions/" className="hover-anim flex items-center justify-center gap-2">
+                      <i className="fab fa-linkedin-in  text-color-primary-blue"></i> LinkedIn
+                    </a>
+                  </li>
+                  <li className="hover-this cursor-pointer">
+                    <a href="mailto:sofreginfo@gmail.com" className="hover-anim flex items-center justify-center gap-2">
+                      <i className="fa-regular fa-envelope  text-color-primary-blue"></i> Email
+                    </a>
+                  </li>
+                </ul>
+              </div>
           </div>
 
         </div>
       </div>
-      <div className="main-marq lrg o-hidden mt-24 laptop:mt-18 wide:mt-12">
-            <h1 className="text-center text-xl tablet:text-2xl mb-4"><span className="text-color-primary-blue">150+</span> Projects Successfully Delivered With Many More on the Horizon!</h1>
-            <div className="slide-har st1">
-              <div className="box">
-                <div className="item">
-                  <h4 className="d-flex align-items-center">
-                    <span>Phillippines</span>
-                    {/* <span className="fz-50 ml-50 stroke icon">*</span> */}
-                  </h4>
-                </div>
-                <div className="item">
-                  <h4 className="d-flex align-items-center">
-                    <span>United State</span>
-                    {/* <span className="fz-50 ml-50 stroke icon">*</span> */}
-                  </h4>
-                </div>
-                <div className="item">
-                  <h4 className="d-flex align-items-center">
-                    <span>Canada</span>
-                    {/* <span className="fz-50 ml-50 stroke icon">*</span> */}
-                  </h4>
-                </div>
-                <div className="item">
-                  <h4 className="d-flex align-items-center">
-                    <span>United Kingdom</span>
-                    {/* <span className="fz-50 ml-50 stroke icon">*</span> */}
-                  </h4>
-                </div>
-                <div className="item">
-                  <h4 className="d-flex align-items-center">
-                    <span>Australia</span>
-                    {/* <span className="fz-50 ml-50 stroke icon">*</span> */}
-                  </h4>
-                </div>
-              </div>
-              <div className="box">
-                <div className="item">
-                  <h4 className="d-flex align-items-center">
-                    <span>Germany</span>
-                    {/* <span className="fz-50 ml-50 stroke icon">*</span> */}
-                  </h4>
-                </div>
-                <div className="item">
-                  <h4 className="d-flex align-items-center">
-                    <span>Philippines</span>
-                    {/* <span className="fz-50 ml-50 stroke icon">*</span> */}
-                  </h4>
-                </div>
-                <div className="item">
-                  <h4 className="d-flex align-items-center">
-                    <span>Canada</span>
-                    {/* <span className="fz-50 ml-50 stroke icon">*</span> */}
-                  </h4>
-                </div>
-                <div className="item">
-                  <h4 className="d-flex align-items-center">
-                    <span>United Kingdom</span>
-                    {/* <span className="fz-50 ml-50 stroke icon">*</span> */}
-                  </h4>
-                </div>
-                <div className="item">
-                  <h4 className="d-flex align-items-center">
-                    <span>United State</span>
-                    {/* <span className="fz-50 ml-50 stroke icon">*</span> */}
-                  </h4>
-                </div>
-              </div>
+      <div className="main-marq lrg o-hidden mb-12 mt-24 laptop:mt-36 wide:mt-24">
+        <h1 className="text-center text-xl tablet:text-2xl mb-4"><span className="text-color-primary-blue">150+</span> Projects Successfully Delivered With Many More on the Horizon!</h1>
+        <div className="slide-har st1">
+          <div className="box">
+            <div className="item">
+              <h4 className="d-flex align-items-center">
+                <span>Phillippines</span>
+                {/* <span className="fz-50 ml-50 stroke icon">*</span> */}
+              </h4>
+            </div>
+            <div className="item">
+              <h4 className="d-flex align-items-center">
+                <span>United State</span>
+                {/* <span className="fz-50 ml-50 stroke icon">*</span> */}
+              </h4>
+            </div>
+            <div className="item">
+              <h4 className="d-flex align-items-center">
+                <span>Canada</span>
+                {/* <span className="fz-50 ml-50 stroke icon">*</span> */}
+              </h4>
+            </div>
+            <div className="item">
+              <h4 className="d-flex align-items-center">
+                <span>United Kingdom</span>
+                {/* <span className="fz-50 ml-50 stroke icon">*</span> */}
+              </h4>
+            </div>
+            <div className="item">
+              <h4 className="d-flex align-items-center">
+                <span>Australia</span>
+                {/* <span className="fz-50 ml-50 stroke icon">*</span> */}
+              </h4>
             </div>
           </div>
+          <div className="box">
+            <div className="item">
+              <h4 className="d-flex align-items-center">
+                <span>Germany</span>
+                {/* <span className="fz-50 ml-50 stroke icon">*</span> */}
+              </h4>
+            </div>
+            <div className="item">
+              <h4 className="d-flex align-items-center">
+                <span>Philippines</span>
+                {/* <span className="fz-50 ml-50 stroke icon">*</span> */}
+              </h4>
+            </div>
+            <div className="item">
+              <h4 className="d-flex align-items-center">
+                <span>Canada</span>
+                {/* <span className="fz-50 ml-50 stroke icon">*</span> */}
+              </h4>
+            </div>
+            <div className="item">
+              <h4 className="d-flex align-items-center">
+                <span>United Kingdom</span>
+                {/* <span className="fz-50 ml-50 stroke icon">*</span> */}
+              </h4>
+            </div>
+            <div className="item">
+              <h4 className="d-flex align-items-center">
+                <span>United State</span>
+                {/* <span className="fz-50 ml-50 stroke icon">*</span> */}
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
   );
 };

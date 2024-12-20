@@ -25,8 +25,8 @@ const Services = () => {
     const [selectedImage, setSelectedImage] = useState(null);
 
     // Function to open the modal with the selected image
-    const openModal = (image) => {
-        setSelectedImage(image);
+    const openModal = (image, type) => {
+        setSelectedImage({src:image, type});
         setIsModalVisible(true);
     };
 
@@ -81,7 +81,7 @@ const Services = () => {
             <Footer />
             </div>
             {/* Modal Component */}
-            <Modal isVisible={isModalVisible} imageSrc={selectedImage} onClose={closeModal} />
+            <Modal isVisible={isModalVisible} imageSrc={selectedImage?.src} type={selectedImage?.type} onClose={closeModal} />
 
         </div>
     )

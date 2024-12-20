@@ -1,7 +1,7 @@
 $(document).ready(function(){
   function fitElementToParent(el, padding) {
     let timeout = null;
-    const minScale = 1; // Set a minimum scale to prevent the element from being too small
+    const minScale = 0.8; // Set a minimum scale to prevent the element from being too small
     
     function resize() {
       if (timeout) clearTimeout(timeout);
