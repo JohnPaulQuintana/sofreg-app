@@ -90,23 +90,29 @@ const WorkSection = ({openModal}) => {
     { id: 43, category: 'graphic', imgSrc: ['assets/imgs/sticker/TRAILER_1.jpg','assets/imgs/sticker/TRAILER_2.jpg'], title: 'Sticker Wrap', categoryLabel: 'Graphic Design', type: 'image' },
     { id: 44, category: 'graphic', imgSrc: ['assets/imgs/sticker/VAN_1.jpg','assets/imgs/sticker/VAN_2.jpg'], title: 'Sticker Wrap', categoryLabel: 'Graphic Design', type: 'image' },
     { id: 45, category: 'graphic', imgSrc: ['assets/imgs/sticker/WRAP_A1.jpg','assets/imgs/sticker/WRAP_A2.jpg'], title: 'Sticker Wrap', categoryLabel: 'Graphic Design', type: 'image' },
-    { id: 46, category: 'web', imgSrc: ['assets/imgs/web/web_961motorsport.jpg', ''], title: 'Web Development', categoryLabel: 'Website Development', type: 'web' },
-    { id: 47, category: 'web', imgSrc: ['assets/imgs/web/web_motors.jpg', 'https://961motorsport.com/'], title: 'Web Development', categoryLabel: 'Website Development', type: 'web' },
-    { id: 48, category: 'web', imgSrc: ['assets/imgs/web/web_S4T.jpg', 'https://stage4tuning.com/'], title: 'Web Development', categoryLabel: 'Website Development', type: 'web' },
-    { id: 49, category: 'web', imgSrc: ['assets/imgs/web/web_AMATARA.jpg', 'https://amatara.com/welleisure/'], title: 'Web Development', categoryLabel: 'Website Development', type: 'web' },
-    { id: 50, category: 'web', imgSrc: ['assets/imgs/web/web_hotelskophiph.jpg', 'https://tapear-resort.hotelskophiphi.com/en/'], title: 'Web Development', categoryLabel: 'Website Development', type: 'web' },
-    { id: 51, category: 'web', imgSrc: ['assets/imgs/web/web_PARADOX.jpg', 'https://www.paradoxhotels.com/phuket'], title: 'Web Development', categoryLabel: 'Website Development', type: 'web' },
-    { id: 52, category: 'web', imgSrc: ['assets/imgs/web/web_SUNSET_BEACH.jpg', 'https://sunsetbeach.vn/'], title: 'Web Development', categoryLabel: 'Website Development', type: 'web' },
-    { id: 53, category: 'web', imgSrc: ['assets/imgs/web/web_EASTWOODS.jpg','https://gradebook.epcst.edu.ph/login'], title: 'System Development', categoryLabel: 'System Development', type: 'web' },
-    { id: 54, category: 'web', imgSrc: ['assets/imgs/web/web_BATAAN_DTS.jpg','https://procurement.bataan.gov.ph/auth'], title: 'System Development', categoryLabel: 'System Development', type: 'web' },
-    { id: 55, category: 'video', imgSrc: ['assets/imgs/video/thumbnail/SocialMediaVideoEditing_1.jpg', ''], title: 'Social Media Video Editing', categoryLabel: 'Video Production', type: 'video' },
-    { id: 56, category: 'video', imgSrc: ['assets/imgs/video/thumbnail/YouTubeVideoEditing_1.jpg',''], title: 'YouTube Video Editing', categoryLabel: 'Video Production', type: 'video' },
-    { id: 57, category: 'video', imgSrc: ['assets/imgs/video/thumbnail/CorporateVideoEditing_1.jpg',''], title: 'Corporate Video Editing', categoryLabel: 'Video Production', type: 'video' },
-    { id: 58, category: 'video', imgSrc: ['assets/imgs/video/thumbnail/EventVideoEditing_1.jpg',''], title: 'Event Video Editing', categoryLabel: 'Video Production', type: 'video' },
-    { id: 59, category: 'video', imgSrc: ['assets/imgs/video/thumbnail/FilmDocumentaryEditing_1.jpg',''], title: 'Film/Documentary Editing', categoryLabel: 'Video Production', type: 'video' },
-    { id: 60, category: 'video', imgSrc: ['assets/imgs/video/thumbnail/ProductDemo&TutorialVideos_1.jpg',''], title: 'Product Demo & Tutorial Videos', categoryLabel: 'Video Production', type: 'video' },
-    { id: 61, category: 'video', imgSrc: ['assets/imgs/video/thumbnail/AI-PoweredVideoEditing_1.jpg',''], title: 'AI-Powered Video Editing', categoryLabel: 'Video Production', type: 'video' },
-    { id: 62, category: 'video', imgSrc: ['assets/imgs/video/thumbnail/CINEMATICVIDEOS_1.jpg',''], title: 'Cinematic Videos', categoryLabel: 'Video Production', type: 'video' },
+    { id: 46, category: 'web', imgSrc: ['assets/imgs/web/web_961motorsport.jpg', 'https://961motorsport.com/'], title: '961 Motor Sport', categoryLabel: 'Website Development', type: 'web' },
+    { id: 47, category: 'web', imgSrc: ['assets/imgs/web/web_motors.jpg', 'https://motorsportgrowth.com/'], title: 'Motor Sport Growth', categoryLabel: 'Website Development', type: 'web' },
+    { id: 48, category: 'web', imgSrc: ['assets/imgs/web/web_S4T.jpg', 'https://stage4tuning.com/'], title: 'Stage4tuning', categoryLabel: 'Website Development', type: 'web' },
+    { id: 49, category: 'web', imgSrc: ['assets/imgs/web/web_AMATARA.jpg', 'https://amatara.com/welleisure/'], title: 'Amatara', categoryLabel: 'Website Development', type: 'web' },
+    { id: 50, category: 'web', imgSrc: ['assets/imgs/web/web_hotelskophiph.jpg', 'https://tapear-resort.hotelskophiphi.com/en/'], title: 'Tapear Resort', categoryLabel: 'Website Development', type: 'web' },
+    { id: 51, category: 'web', imgSrc: ['assets/imgs/web/web_PARADOX.jpg', 'https://www.paradoxhotels.com/phuket'], title: 'Paradox Hotels', categoryLabel: 'Website Development', type: 'web' },
+    { id: 52, category: 'web', imgSrc: ['assets/imgs/web/web_SUNSET_BEACH.jpg', 'https://sunsetbeach.vn/'], title: 'Sunset Beach', categoryLabel: 'Website Development', type: 'web' },
+    { id: 53, category: 'web', imgSrc: ['assets/imgs/web/web_EASTWOODS.jpg','https://gradebook.epcst.edu.ph/login'], title: 'Gradebook', categoryLabel: 'System Development', type: 'web' },
+    { id: 54, category: 'web', imgSrc: ['assets/imgs/web/web_BATAAN_DTS.jpg','https://procurement.bataan.gov.ph/auth'], title: 'Procurement', categoryLabel: 'System Development', type: 'web' },
+    { id: 55, category: 'video', imgSrc: ['assets/imgs/video/BMW.jpg', 'https://www.youtube.com/embed/S_t-EnEK_PM'], title: 'Social Media', categoryLabel: 'Video Production', type: 'video' },
+    { id: 56, category: 'video', imgSrc: ['assets/imgs/video/Brasil.jpg', 'https://www.youtube.com/embed/4-BAXCaRVIY'], title: 'Social Media', categoryLabel: 'Video Production', type: 'video' },
+    { id: 57, category: 'video', imgSrc: ['assets/imgs/video/Client_1.jpg', 'https://www.youtube.com/embed/bUJOjdUK_9g'], title: 'Social Media', categoryLabel: 'Video Production', type: 'video' },
+    { id: 58, category: 'video', imgSrc: ['assets/imgs/video/S4T.jpg', ''], title: 'Social Media', categoryLabel: 'Video Production', type: 'video' },
+    { id: 59, category: 'video', imgSrc: ['assets/imgs/video/Laptop_advertisement.jpg',''], title: 'YouTube', categoryLabel: 'Video Production', type: 'video' },
+    { id: 60, category: 'video', imgSrc: ['assets/imgs/video/thumbnail/CorporateVideoEditing_1.jpg',''], title: 'Corporate Video', categoryLabel: 'Video Production', type: 'video' },
+    { id: 61, category: 'video', imgSrc: ['assets/imgs/video/thumbnail/EventVideoEditing_1.jpg',''], title: 'Event Video', categoryLabel: 'Video Production', type: 'video' },
+    { id: 62, category: 'video', imgSrc: ['assets/imgs/video/Exige.jpg','https://youtube.com/embed/WgOLf8zl1Kw'], title: 'Film/Documentary', categoryLabel: 'Video Production', type: 'video' },
+    { id: 63, category: 'video', imgSrc: ['assets/imgs/video/Cosmetics.jpg','https://youtube.com/embed/-CBQXzdPlAU'], title: 'Product & Tutorial', categoryLabel: 'Video Production', type: 'video' },
+    { id: 64, category: 'video', imgSrc: ['assets/imgs/video/Clothing.jpg',''], title: 'Product & Tutorial', categoryLabel: 'Video Production', type: 'video' },
+    { id: 65, category: 'video', imgSrc: ['assets/imgs/video/Vitamins.jpg',''], title: 'Product & Tutorial', categoryLabel: 'Video Production', type: 'video' },
+    { id: 66, category: 'video', imgSrc: ['assets/imgs/video/Coastline.jpg',''], title: 'AI-Powered', categoryLabel: 'Video Production', type: 'video' },
+    { id: 67, category: 'video', imgSrc: ['assets/imgs/video/Scoot.jpg',''], title: 'AI-Powered', categoryLabel: 'Video Production', type: 'video' },
+    { id: 68, category: 'video', imgSrc: ['assets/imgs/video/cinematic_alarm.jpg','https://youtube.com/embed/fICLPQJhHO0'], title: 'Cinematic', categoryLabel: 'Video Production', type: 'video' },
     
   ]
 
@@ -190,18 +196,18 @@ const WorkSection = ({openModal}) => {
 
         <div className="gallery row stand-marg" ref={galleryRef}>
           {categories.map((item) => (
-            <div key={item.id} className={`col-lg-4 col-md-6 items ${item.category}`}>
+            <div key={item.id} className={`col-lg-4 col-md-6 transition-transform transform scale-100 hover:scale-110 duration-300 items ${item.category}`}>
               <div className="item mb-40">
                 <a onClick={() => openModal(item.imgSrc[1], item.type)} className="img">
                   <img src={`${item.imgSrc[0]}`} alt={item.title} />
                 </a>
-                <div className="cont mt-20">
-                  <h5 className="fz-22">
-                    <a href="#">{item.title}</a>
+                <div className="cont mt-2">
+                  <h5 className="fz-12 text-center">
+                    Tags: <span className="text-xs">{item.title} | {item.categoryLabel} </span>
                   </h5>
-                  <p>
+                  {/* <p>
                     <a onClick={() => openModal(item.imgSrc[1], item.type)}>{item.categoryLabel} <span className="icon ti-arrow-top-right text-xl tablet:text-xl"></span></a>
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>
