@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 const WorkHeader = () => {
   return (
     <header
@@ -11,7 +11,7 @@ const WorkHeader = () => {
         <div className="text-center">
           <h1 className='text-7xl font-bold'>Service Portfolio</h1>
           <div className="mt-15">
-            <a href="#" className='text-2xl'>Home</a>
+            <Link to="/" className='text-2xl'>Home</Link>
             <span className="padding-rl-20 text-2xl">|</span>
             <span className="main-color text-2xl">Portfolio</span>
           </div>
