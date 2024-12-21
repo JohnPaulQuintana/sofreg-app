@@ -55,7 +55,7 @@ const Header = () => {
         
         <div
           id="hero"
-          className="container flex justify-center items-center laptop:px-32 wide:px-40"
+          className="container mt-32 tablet:mt-0 flex justify-center items-center laptop:px-32 wide:px-40"
         // style={{ paddingTop: "40px", paddingRight: "40px" }}
         >
           <div className="caption" style={{ textAlign: "center", color: "white" }}>
