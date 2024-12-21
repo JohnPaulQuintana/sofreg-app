@@ -2,7 +2,7 @@ import React from "react";
 
 const HeaderMarqueeSection = () => {
   return (
-    <section className="h-[35vh] border tablet:h-[80vh] overflow-hidden">
+    <section className="h-[80vh] overflow-hidden">
       <div className="main-marq lrg o-hidden">
         
         <div className="slide-har st1">
