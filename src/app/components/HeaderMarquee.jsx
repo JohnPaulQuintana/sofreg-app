@@ -2,11 +2,11 @@ import React from "react";
 
 const HeaderMarqueeSection = () => {
   return (
-    <section className="h-[80vh]">
+    <section className="h-[35vh] border tablet:h-[80vh] overflow-hidden">
       <div className="main-marq lrg o-hidden">
         
         <div className="slide-har st1">
-          <div className="box h-[80vh]">
+          <div className="box tablet:h-[80vh]">
             <div className="item flex justify-center flex-col gap-2">
               <h4 className="d-flex align-items-center">
                 <img
