@@ -62,7 +62,7 @@ const FooterDetailed = () => {
                       <span className="text">info@sofregsolutions.com</span>
                     </a>
                   
-                    <a href="tel:+639177070531" className="butn butn-md butn-bord-thin">
+                    <a href="tel:+639177070531" className="butn butn-md butn-bord-thin w-full">
                       <span className="text">+63 917 7070 531</span>
                     </a>
 

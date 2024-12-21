@@ -4,8 +4,8 @@ const HeaderMarqueeSection2 = () => {
   return (
     <section>
       <div className="main-marq lrg o-hidden">
-        <div className="slide-har st2">
-          <div className="box">
+        <div className="slide-har st1">
+          <div className="box text-4xl laptop:text-7xl">
             <div className="item">
               <h4 className="d-flex align-items-center">
                 <span>Philippines</span>

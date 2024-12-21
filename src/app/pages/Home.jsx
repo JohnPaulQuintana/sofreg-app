@@ -52,8 +52,8 @@ const Home = () => {
 
               {/* Header */}
               <Header />
-              <div className="text-center py-6">
-                  <h1 className="text-2xl"><span className="font-bold text-color-primary-blue">150+</span> Projects Successfully Delivered With Many More on the Horizon!</h1>
+              <div className="text-center py-10">
+                  <h1 className="text-2xl mb-2"><span className="font-bold text-color-primary-blue">150+</span> Projects Successfully Delivered With Many More on the Horizon!</h1>
                 <MarqueeSection2 />
               </div>
               {/* Marquee */}

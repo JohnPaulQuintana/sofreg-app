@@ -5,7 +5,7 @@ const MarqueeSection = () => {
         <section>
           <div className="main-marq lrg o-hidden mt-4 mb-4">
             <div className="slide-har st1">
-              <div className="box">
+              <div className="box text-4xl laptop:text-7xl">
                 <div className="item">
                   <h4 className="d-flex align-items-center">
                     <span>Graphic Design</span>
@@ -24,20 +24,7 @@ const MarqueeSection = () => {
                     <span className="fz-50 ml-50 stroke icon">*</span>
                   </h4>
                 </div>
-                <div className="item">
-                  <h4 className="d-flex align-items-center">
-                    <span>Amazing Design</span>
-                    <span className="fz-50 ml-50 stroke icon">*</span>
-                  </h4>
-                </div>
-                <div className="item">
-                  <h4 className="d-flex align-items-center">
-                    <span>Amazing Design</span>
-                    <span className="fz-50 ml-50 stroke icon">*</span>
-                  </h4>
-                </div>
-              </div>
-              <div className="box">
+                
                 <div className="item">
                   <h4 className="d-flex align-items-center">
                     <span>Graphic Design</span>
@@ -56,19 +43,28 @@ const MarqueeSection = () => {
                     <span className="fz-50 ml-50 stroke icon">*</span>
                   </h4>
                 </div>
+                
                 <div className="item">
                   <h4 className="d-flex align-items-center">
-                    <span>Amazing Design</span>
+                    <span>Graphic Design</span>
                     <span className="fz-50 ml-50 stroke icon">*</span>
                   </h4>
                 </div>
                 <div className="item">
                   <h4 className="d-flex align-items-center">
-                    <span>Amazing Design</span>
+                    <span>Web Solutions</span>
                     <span className="fz-50 ml-50 stroke icon">*</span>
                   </h4>
                 </div>
+                <div className="item">
+                  <h4 className="d-flex align-items-center">
+                    <span>Video Production</span>
+                    <span className="fz-50 ml-50 stroke icon">*</span>
+                  </h4>
+                </div>
+                
               </div>
+              
             </div>
           </div>
         </section>

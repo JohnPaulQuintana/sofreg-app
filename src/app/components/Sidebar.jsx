@@ -1,14 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 // import Logo from "../../assets/imgs/logo-light.png"
 const Sidebar = () => {
     const menuItems = [
-        "Home",
-        "Services",
-        "About",
-        "Portfolio",
-        // "Team",
-        // "Blog",
-        "Contact",
+        ["Home", "/"],
+        ["Services", "/services"],
+        ["About", "/about"],
+        ["Pricing", "/pricing"],
+        ["Contact","/contact"],
+        ["Career","/career"],
     ];
 
     return (
@@ -33,11 +33,11 @@ const Sidebar = () => {
                                 {menuItems.map((item, index) => (
                                     <li key={index} data-scroll-nav={index}>
                                         <div className="o-hidden">
-                                            <div className="link cursor-pointer dmenu">
+                                            <Link to={item[1]} className="link cursor-pointer dmenu">
                                                 <span className="fill-text" data-text={item}>
-                                                    {item}
+                                                    {item[0]}
                                                 </span>
-                                            </div>
+                                            </Link>
                                         </div>
                                     </li>
                                 ))}
@@ -58,11 +58,11 @@ const Sidebar = () => {
                             <div className="item mb-50">
                                 <h6 className="sub-title mb-15 opacity-7">Social Media</h6>
                                 <ul className="rest social-text">
-                                    {["Facebook", "WhatsApp", "LinkedIn", "Email"].map(
+                                    {[["Facebook","https://www.facebook.com/people/Sofreg-Solutions/61567081641563/"], ["WhatsApp","tel:+639177070531"], ["LinkedIn","https://www.linkedin.com/company/sofreg-solutions/"], ["Email", "mailto:info@sofregsolutions.com"]].map(
                                         (social, index) => (
                                             <li className="mb-10" key={index}>
-                                                <a href="#0" className="hover-this">
-                                                    <span className="hover-anim">{social}</span>
+                                                <a href={social[1]} className="hover-this">
+                                                    <span className="hover-anim">{social[0]}</span>
                                                 </a>
                                             </li>
                                         )
