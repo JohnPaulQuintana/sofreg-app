@@ -1107,7 +1107,7 @@ figure {
 .main-marq .box {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  /* display: flex; */
 }
 
 .main-marq .box .item {

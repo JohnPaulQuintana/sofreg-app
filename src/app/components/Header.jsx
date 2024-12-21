@@ -1,13 +1,22 @@
 import React from "react";
 import { motion } from "framer-motion";
+import HeaderMarqueeSection from "./HeaderMarquee";
+import HeaderMarqueeSection2 from "./HeaderMarquee2";
+import HeaderMarqueeSection3 from "./HeaderMarquee3";
+
 // import '/assets/css/sphere.css'
 const Header = () => {
 
   return (
-    <header className="startup-header overflow-hidden" data-scroll-index="0">
+    <header className="startup-header overflow-hidden relative" data-scroll-index="0">
       {/* bg-gradient-to-tl from-[#1c1c1c] via-[#1c1c1c] to-[#243447] */}
+      <div className="absolute mt-4 top-14 opacity-25 w-full flex flex-col gap-16">
+        <HeaderMarqueeSection />
+        <HeaderMarqueeSection2 />
+        <HeaderMarqueeSection3 />
+      </div>
       <div
-        className="valign bg-img relative tablet:pt-[100px] bg-[#1E1D1D]"
+        className="valign bg-img relative tablet:pt-[100px]"
       >
         <div className="animation-wrapper absolute flex items-center justify-center top-[80px]">
           <div className="sphere-animation flex justify-center items-center w-[20%] phone:w-[10%] h-[100vh]">
@@ -85,7 +94,7 @@ const Header = () => {
         </div>
       </div>
       <div className="main-marq lrg o-hidden mb-12 mt-24 laptop:mt-36 wide:mt-24">
-        <h1 className="text-center text-xl tablet:text-2xl mb-4"><span className="text-color-primary-blue">150+</span> Projects Successfully Delivered With Many More on the Horizon!</h1>
+        <h1 className="text-center text-xl tablet:text-2xl mb-4"><span className="text-color-primary-blue font-bold">150+</span> Projects Successfully Delivered With Many More on the Horizon!</h1>
         <div className="slide-har st1">
           <div className="box">
             <div className="item">
