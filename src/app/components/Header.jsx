@@ -20,7 +20,7 @@ const Header = () => {
       >
         <div className="animation-wrapper absolute flex items-center justify-center w-full h-full mt-32 tablet:mt-0">
           <div className="sphere-animation flex justify-center items-center">
-            <svg className="sphere w-[100%] tablet:w-[50%]" viewBox="0 0 440 440" stroke="rgba(80,80,80,.35)">
+            <svg className="sphere w-[80%] tablet:w-[50%]" viewBox="0 0 440 440" stroke="rgba(80,80,80,.35)">
               <defs>
                 <linearGradient id="sphereGradient" x1="5%" x2="5%" y1="0%" y2="15%">
                   <stop stopColor="#373734" offset="0%" />
