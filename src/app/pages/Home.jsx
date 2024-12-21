@@ -11,6 +11,7 @@ import AboutSection from "../components/AboutSection"
 // import "/assets/css/style.css"
 import ProgressScrollButton from "../components/ProgressScrollButton";
 import MarqueeSection from "../components/Marquee"
+import MarqueeSection2 from "../components/HeaderMarquee2"
 import PortfolioTabGraphics from "../components/PortfolioTabGraphics"
 import ImageScale from "../components/ImageScale"
 import Team from "../components/Team"
@@ -51,6 +52,11 @@ const Home = () => {
 
               {/* Header */}
               <Header />
+              <div className="text-center py-6">
+                  <h1 className="text-2xl"><span className="font-bold text-color-primary-blue">150+</span> Projects Successfully Delivered With Many More on the Horizon!</h1>
+                <MarqueeSection2 />
+              </div>
+              {/* Marquee */}
 
               {/* Services */}
               <Services />

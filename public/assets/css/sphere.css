@@ -1,35 +1,3 @@
-/* #objects {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-  }
-
-  #objects2 {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-  } */
-
-  .animation-wrapper {
-    width: 100%;
-    padding-bottom: 50%;
-  }
-
-  .sphere-animation {
-    /* position: absolute; */
-    /* top: 65%; */
-    /* left: 35%; */
-    /* width: 10%; */
-    /* border: 1px solid red; */
-    /* transform: translate(-50%, -50%); */
-    /* margin: -290px 0 0 -290px; */
-  }
 
   .sphere path {
     fill: url(#sphereGradient);

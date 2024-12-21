@@ -92,7 +92,7 @@ const Services = () => {
         <div className="grid grid-cols-1 laptop:grid-cols-2 gap-6">
           {servicesData.map((service) => (
             <div key={service.id} className="h-full flex">
-              <div className="relative item-box mb-6 shadow-md rounded-lg p-6 flex flex-col justify-between w-full">
+              <div className="relative item-box shadow-md rounded-lg p-6 flex flex-col justify-between w-full">
                     <span className="text-2xl font-bold text-gray-600 w-fit absolute right-10">{service.number}</span>
                 <div className="flex flex-col">
                   <div className=''>
