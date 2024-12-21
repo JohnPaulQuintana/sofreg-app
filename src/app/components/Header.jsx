@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <header className="startup-header relative h-[60vh] tablet:h-[100vh] flex justify-center items-center" data-scroll-index="0">
       {/* bg-gradient-to-tl from-[#1c1c1c] via-[#1c1c1c] to-[#243447] */}
-      <div className="absolute opacity-25 w-full flex justify-center mt-14 tablet:mt-0">
+      <div className="absolute opacity-25 w-full flex justify-center mt-32 tablet:mt-0">
         <HeaderMarqueeSection />
         {/* <HeaderMarqueeSection2 /> */}
         {/* <div className="p-12"></div> */}
@@ -18,7 +18,7 @@ const Header = () => {
       <div
         className="valign bg-img relative tablet:pt-[100px]"
       >
-        <div className="animation-wrapper absolute flex items-center justify-center w-full h-full mt-14 tablet:mt-0">
+        <div className="animation-wrapper absolute flex items-center justify-center w-full h-full mt-32 tablet:mt-0">
           <div className="sphere-animation flex justify-center items-center">
             <svg className="sphere w-[100%] tablet:w-[50%]" viewBox="0 0 440 440" stroke="rgba(80,80,80,.35)">
               <defs>
