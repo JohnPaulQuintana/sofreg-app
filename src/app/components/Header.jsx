@@ -63,8 +63,8 @@ const Header = () => {
               {/* <div className="text d-flex align-items-center">
                 <span className="text-[1.2em] laptop:text-[1.5em] desktop:text-[1.8em] wide:text-[2.5em] pe-2">Discover, </span>
               </div> */}
-              <div className="text text-[1.1em] laptop:text-[0.7em] ">Discover, Elevate</div>
-              <div className="text text-[1.1em] laptop:text-[0.7em] text-color-primary-blue">Revolutionize</div>
+              <div className="text text-[0.9em] laptop:text-[0.7em] ">Discover, Elevate</div>
+              <div className="text text-[0.9em] laptop:text-[0.7em] text-color-primary-blue">Revolutionize</div>
             </div>
             <div className="w-full flex justify-center">
                 <ul className="grid grid-cols-2 tablet:grid-cols-4 gap-4 justify-center fz-14 w-[60%]">

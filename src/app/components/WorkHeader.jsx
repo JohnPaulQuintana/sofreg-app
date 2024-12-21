@@ -9,7 +9,7 @@ const WorkHeader = () => {
     >
       <div className="container pt-100">
         <div className="text-center">
-          <h1 className='text-7xl font-bold'>Service Portfolio</h1>
+          <h1 className='fz-100'>Service Portfolio</h1>
           <div className="mt-15">
             <Link to="/" className='text-2xl'>Home</Link>
             <span className="padding-rl-20 text-2xl">|</span>
