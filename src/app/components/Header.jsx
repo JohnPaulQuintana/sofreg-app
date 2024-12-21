@@ -7,7 +7,7 @@ import HeaderMarqueeSection2 from "./HeaderMarquee2";
 const Header = () => {
 
   return (
-    <header className="startup-header relative h-[67vh] tablet:h-[100vh] flex justify-center items-center" data-scroll-index="0">
+    <header className="startup-header relative h-[60vh] mt-12 tablet:mt-0 tablet:h-[100vh] flex justify-center items-center" data-scroll-index="0">
       {/* bg-gradient-to-tl from-[#1c1c1c] via-[#1c1c1c] to-[#243447] */}
       <div className="absolute opacity-25 w-full flex justify-center">
         <HeaderMarqueeSection />
