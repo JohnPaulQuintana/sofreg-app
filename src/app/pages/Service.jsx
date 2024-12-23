@@ -8,14 +8,17 @@ import ProgressScrollButton from "../components/ProgressScrollButton";
 import ImageScale from "../components/ImageScale";
 import Testimonials from "../components/Testimonial";
 import Faqs from "../components/Faqs";
-import ContactSection from "../components/ContactSection";
+// import ContactSection from "../components/ContactSection";
 import Sidebar from "../components/Sidebar";
 import ContactForm from "../components/ContactForm";
 import FooterDetailed from "../components/FooterDetailed";
 import Modal from "../components/ImageViewer"
 import { useLocation } from "react-router-dom";
+import MultiStepForm from "../components/popup/MultiStepForm";
 
 const Services = () => {
+
+    const [isFormOpen, setIsFormOpen] = useState(false);
 
     const location = useLocation();
     const { state } = location.state || {}; // Access the prop
@@ -35,6 +38,9 @@ const Services = () => {
         setIsModalVisible(false);
         setSelectedImage(null);
     };
+
+    const handleFormOpen = () => setIsFormOpen(true);
+    const handleFormClose = () => setIsFormOpen(false);
 
     return (
         <div className="smooth-wrapper">
@@ -61,7 +67,7 @@ const Services = () => {
                     <WorkSection openModal={openModal}/>
 
                     {/* Image Scale */}
-                    <ImageScale />
+                    <ImageScale onOpenForm={handleFormOpen}/>
 
                     {/* Testimonials */}
                     <Testimonials />
@@ -82,7 +88,8 @@ const Services = () => {
             </div>
             {/* Modal Component */}
             <Modal isVisible={isModalVisible} imageSrc={selectedImage?.src} type={selectedImage?.type} onClose={closeModal} />
-
+            {/* Render MultiStepForm */}
+            <MultiStepForm isOpen={isFormOpen} onClose={handleFormClose} />
         </div>
     )
 }

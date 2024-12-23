@@ -1,6 +1,6 @@
 import React from "react";
 
-const PageIntroModern = () => {
+const PageIntroModern = ({onOpenForm}) => {
   return (
     <section className="page-intro-modern section-padding desktop:px-40 pt-0 bg-inherit">
       <div className="container">
@@ -26,7 +26,7 @@ const PageIntroModern = () => {
                   <div className="absolute inset-0 z-10 flex justify-center" data-speed="0.2"
                     data-lag="0">
 
-                    <button type="button" className="">
+                    <button type="button" className="" onClick={onOpenForm}>
                         <a className="border p-2 text-xl wide:text-4xl">Design a Quote <i class="fa-solid fa-arrow-up-right"></i></a>
                         
                     </button>

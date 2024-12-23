@@ -1,25 +1,115 @@
 import React, { useState } from 'react';
-
+import axios from 'axios';
+import Swal from 'sweetalert2';
 const ContactForm = () => {
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        subject: '',
-        message: ''
+    const [userInfo, setUserInfo] = useState({ name: '', email: '', subject: '',message:'' });
+    const [errors, setErrors] = useState({
+        name: "",
+        email: "",
+        subject: "",
+        message: ""
     });
 
-    const handleChange = (e) => {
+
+    const resetForm = () => {
+        setUserInfo({ name: '', email: '', subject: '', message: '' });
+    };
+
+
+    const handleInputChange = (e) => {
         const { name, value } = e.target;
-        setFormData((prevData) => ({
-            ...prevData,
-            [name]: value
+        setUserInfo((prevInfo) => ({
+            ...prevInfo,
+            [name]: value,
         }));
     };
 
-    const handleSubmit = (e) => {
+    // Validation function
+    const validateForm = () => {
+        const newErrors = {};
+        console.log(userInfo)
+        // Check if name, email, country, and mobile are filled
+        if (!userInfo.name.trim()) newErrors.name = "Name is required";
+        if (!userInfo.email.trim()) newErrors.email = "Email is required";
+        if (!userInfo.subject.trim()) newErrors.subject = "Subject is required";
+        if (!userInfo.message.trim()) newErrors.message = "Message is required";
+
+        setErrors(newErrors);
+
+        // If there are errors, return false to prevent form submission
+        return Object.keys(newErrors).length === 0;
+    };
+
+
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        // Handle form submission logic
-        console.log('Form Submitted', formData);
+        if (validateForm()) {
+
+            // Show SweetAlert loading message
+            Swal.fire({
+                title: 'Sending...',
+                text: 'Please wait while we process your request.',
+                icon: 'info',
+                showConfirmButton: false,
+                allowOutsideClick: false,
+                willOpen: () => {
+                Swal.showLoading();
+                },
+            });
+
+            const formData = {
+                service_id: 'service_bgys0a8',
+                template_id: 'template_21fyy28',
+                user_id: '2NyHEnshLP21eIwYA',
+                template_params: {
+                    from_name: userInfo.name,
+                    email_id: userInfo.email,
+                    message: userInfo.message || "No message provided.",
+                    'country': 'not available',
+                    'mobile_number': 'not available',
+                    'category': 'not available',
+                    'package': 'not available',
+                    'plan': 'not available',
+                    'price': 'not available'
+                }
+            };
+            console.log('Form Submitted:', formData);
+
+            try {
+                // Send email using Axios
+                const response = await axios.post('https://api.emailjs.com/api/v1.0/email/send', formData, {
+                  headers: {
+                    'Content-Type': 'application/json',
+                  },
+                });
+          
+                console.log('Email sent successfully!', response);
+          
+                // Reset form
+                setUserInfo({ name: '', email: '', country: '', mobile: '' });
+          
+                // Show SweetAlert success message
+                Swal.fire({
+                  title: 'Success!',
+                  text: 'Your quote has been sent successfully.',
+                  icon: 'success',
+                  confirmButtonText: 'OK',
+                });
+                resetForm(); // Reset the form after submission
+
+              } catch (err) {
+                console.log('Error sending email:', err);
+          
+                // Show SweetAlert error message
+                Swal.fire({
+                  title: 'Error!',
+                  text: 'There was an issue submitting the quote. Please try again.',
+                  icon: 'error',
+                  confirmButtonText: 'OK',
+                });
+              }
+            
+        }
     };
 
     return (
@@ -67,8 +157,6 @@ const ContactForm = () => {
                             <form
                                 id="contact-form"
                                 className="form2"
-                                method="post"
-                                action="contact.php"
                                 onSubmit={handleSubmit}
                             >
                                 <div className="messages"></div>
@@ -81,10 +169,11 @@ const ContactForm = () => {
                                                 type="text"
                                                 name="name"
                                                 placeholder="Name"
-                                                value={formData.name}
-                                                onChange={handleChange}
-                                                required
+                                                value={userInfo.name}
+                                                onChange={handleInputChange}
+                                                
                                             />
+                                            {errors.name && <span className="text-red-500">{errors.name}</span>}
                                         </div>
                                     </div>
 
@@ -95,10 +184,11 @@ const ContactForm = () => {
                                                 type="email"
                                                 name="email"
                                                 placeholder="Email"
-                                                value={formData.email}
-                                                onChange={handleChange}
-                                                required
+                                                value={userInfo.email}
+                                                onChange={handleInputChange}
+                                                
                                             />
+                                            {errors.email && <span className="text-red-500">{errors.email}</span>}
                                         </div>
                                     </div>
 
@@ -109,9 +199,10 @@ const ContactForm = () => {
                                                 type="text"
                                                 name="subject"
                                                 placeholder="Subject"
-                                                value={formData.subject}
-                                                onChange={handleChange}
+                                                value={userInfo.subject}
+                                                onChange={handleInputChange}
                                             />
+                                            {errors.subject && <span className="text-red-500">{errors.subject}</span>}
                                         </div>
                                     </div>
 
@@ -122,10 +213,10 @@ const ContactForm = () => {
                                                 name="message"
                                                 placeholder="Message"
                                                 rows="4"
-                                                value={formData.message}
-                                                onChange={handleChange}
-                                                required
+                                                value={userInfo.message}
+                                                onChange={handleInputChange}
                                             ></textarea>
+                                            {errors.message && <span className="text-red-500">{errors.message}</span>}
                                         </div>
                                         <div className="mt-2">
                                             <button type="submit" className="butn butn-full butn-bord radius-10">

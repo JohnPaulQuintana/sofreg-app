@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 const ContactHeader = () => {
   return (
     <header
@@ -11,7 +11,7 @@ const ContactHeader = () => {
         <div className="text-center">
           <h1 className="fz-100 font-semibold">Contact Us.</h1>
           <div className="mt-15">
-            <a href="home-main.html" className='text-xl'>Home</a>
+            <Link to="/" className='text-xl'>Home</Link>
             <span className="padding-rl-20 text-xl">|</span>
             <span className="main-color text-xl">Contact</span>
           </div>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Loader from "../components/Loader";
 import Navbar from "../components/Navbar";
 import ProgressScrollButton from "../components/ProgressScrollButton";
@@ -8,7 +8,16 @@ import PageIntroModern from "../components/PageIntroModern";
 import Footer from "../components/Footer";
 import Sidebar from "../components/Sidebar";
 import FooterDetailed from "../components/FooterDetailed";
+import MultiStepForm from "../components/popup/MultiStepForm";
 const About = () => {
+    const [isFormOpen, setIsFormOpen] = useState(false);
+
+    const [isModalVisible, setIsModalVisible] = useState(false);
+    const [selectedImage, setSelectedImage] = useState(null);
+
+    const handleFormOpen = () => setIsFormOpen(true);
+    const handleFormClose = () => setIsFormOpen(false);
+
     return (
         <div className="">
             {/* Loader */}
@@ -35,7 +44,7 @@ const About = () => {
                         <PageIntro />
 
                         {/* Page Intro Modern */}
-                        <PageIntroModern />
+                        <PageIntroModern onOpenForm={handleFormOpen}/>
 
 
                     </main>
@@ -43,6 +52,8 @@ const About = () => {
                     <FooterDetailed />
                 </div>
             </div>
+            {/* Render MultiStepForm */}
+            <MultiStepForm isOpen={isFormOpen} onClose={handleFormClose} />
         </div>
     )
 }

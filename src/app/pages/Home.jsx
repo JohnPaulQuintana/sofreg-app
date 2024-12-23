@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useState} from "react"
 import { useLocation } from "react-router-dom";
 import Loader from "../components/Loader"
 import Navbar from "../components/Navbar"
@@ -20,11 +20,17 @@ import PortfolioTabWeb from "../components/PortfolioTabWeb"
 import PortfolioTabVideo from "../components/PortfolioTabVideo"
 import Testimonials from "../components/Testimonial"
 import Faqs from "../components/Faqs"
-import ContactSection from "../components/ContactSection"
 import ContactForm from "../components/ContactForm";
 import FooterDetailed from "../components/FooterDetailed";
+import MultiStepForm from "../components/popup/MultiStepForm";
 
 const Home = () => {
+
+  const [isFormOpen, setIsFormOpen] = useState(false);
+
+  const handleFormOpen = () => setIsFormOpen(true);
+  const handleFormClose = () => setIsFormOpen(false);
+
   return (
     <div className="startup-one">
       {/* Loader */}
@@ -75,8 +81,8 @@ const Home = () => {
 
               {/* Video Production */}
               <PortfolioTabVideo />
-              {/* image scale */}
-              <ImageScale />
+              {/* Render ImageScale component and pass the handler */}
+              <ImageScale onOpenForm={handleFormOpen} />
 
               {/* about footer section */}
               <Team />
@@ -96,6 +102,8 @@ const Home = () => {
           <FooterDetailed />
         </div>
       </div>
+      {/* Render MultiStepForm */}
+      <MultiStepForm isOpen={isFormOpen} onClose={handleFormClose} />
     </div>
   );
 };

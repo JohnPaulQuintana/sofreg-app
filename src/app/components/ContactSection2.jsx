@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ContactSection = () => {
+const ContactSection2 = () => {
   return (
     <section className="contact section-padding" data-scroll-index="6">
       <div className="container">
@@ -101,4 +101,4 @@ const ContactSection = () => {
   );
 };
 
-export default ContactSection;
+export default ContactSection2;

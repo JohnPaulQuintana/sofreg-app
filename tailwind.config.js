@@ -24,7 +24,15 @@ export default {
         'color-magenta': '#f075f0',
         'color-yellow': '#f2f28f',
         'color-primary-blue': '#146BCF'
-      }
+      },
+      opacity: {
+        '10': '0.1',
+        '25': '0.25',
+        '50': '0.5',
+        '75': '0.75',
+        '80': '0.8',
+        '90': '0.9',
+      },
     },
   },
   plugins: [],

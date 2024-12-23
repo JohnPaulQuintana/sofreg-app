@@ -20,6 +20,11 @@
     }
 }
 
+/* Custom SweetAlert z-index */
+.swal2-container {
+  z-index: 9999999 !important; /* You can adjust this value as needed */
+}
+
 .zoomin {
     animation: zoomIn 0.3s ease-out forwards;
 }

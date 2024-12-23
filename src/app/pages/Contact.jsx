@@ -25,7 +25,7 @@ const Contact = () => {
             <Sidebar />
             <div id="smooth-content">
 
-                <main class="main-bg">
+                <main className="main-bg">
                     <ContactHeader />
 
                     <ContactForm />
