@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Loader from "../components/Loader";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
@@ -7,7 +7,21 @@ import GraphicPrice from "../components/GraphicPrice";
 import Footer from "../components/Footer";
 import FooterDetailed from "../components/FooterDetailed";
 import ContactForm from "../components/ContactForm";
+import AvailOverlay from "../components/popup/AvailOverlay";
 const Pricing = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [modalData, setModalData] = useState({});
+
+    // handle plans
+    const handlePlanClick = (obj) => {
+        console.log(obj)
+        setModalData(obj);
+        setIsModalOpen(true);
+    }
+    const handlePlanClose = () => {
+        setIsModalOpen(false);
+      };
+
     return (
         <div className="startup-one">
             {/* Loader */}
@@ -26,7 +40,7 @@ const Pricing = () => {
                         <PriceHeader />
 
                         {/* graphic */}
-                        <GraphicPrice />
+                        <GraphicPrice handlePlanClick={handlePlanClick}/>
 
                         <ContactForm />
                     </main>
@@ -35,6 +49,8 @@ const Pricing = () => {
                     <FooterDetailed />
                 </div>
             </div>
+
+            <AvailOverlay isOpen={isModalOpen} onClose={handlePlanClose} data={modalData}/>
         </div>
     )
 }

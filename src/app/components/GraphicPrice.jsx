@@ -1,7 +1,12 @@
-import { div } from "framer-motion/client";
-import React from "react";
 
-const GraphicPrice = () => {
+import React, {useState} from "react";
+// import AvailOverlay from "./popup/AvailOverlay";
+
+const GraphicPrice = ({handlePlanClick}) => {
+    const [plan, setPlan] = useState({})
+    // const [isModalOpen, setIsModalOpen] = useState(false);
+    // const [modalData, setModalData] = useState({});
+
     const graphicPlans = [
         // Monthly Plans
         [
@@ -277,8 +282,17 @@ const GraphicPrice = () => {
         ]
     ];
 
+    // // handle plans
+    // const handlePlanClick = (obj) => {
+    //     console.log(obj)
+    //     setModalData(obj);
+    //     setIsModalOpen(true);
+    // }
+    // const handleClose = () => {
+    //     setIsModalOpen(false);
+    //   };
     return (
-        <section className="page-intro section-padding">
+        <section className="page-intro section-padding desktop:px-40">
             <div className="container">
                 {/* graphics */}
                 <div className="flex flex-col gap-12 mb-24 wide:mb-32">
@@ -303,7 +317,7 @@ const GraphicPrice = () => {
 
                                 {graphicPlans[0].map((plan, index) => (
                                     <div key={index} className="mb-2 d-flex">
-                                        <div className={`border border-gray-700 p-5 wide:p-10 rounded-md relative show-element ${plan.name === "Premium Creative Plan" ? "bg-blue-700" : ''}`}>
+                                        <div className={`border border-gray-700 p-4 wide:p-10 rounded-md relative show-element ${plan.name === "Premium Creative Plan" ? "bg-blue-700" : ''}`}>
                                             {/* Plan Header */}
                                             <div className="border-b-2 border-gray-800 pb-2 wide:pb-6">
                                                 <span className="text-2xl wide:text-4xl text-white font-bold">{plan.name}</span>
@@ -335,17 +349,20 @@ const GraphicPrice = () => {
                                                     </div>
                                                 ))}
                                             </div>
-                                            <div className="p-4 wide:p-10">
+                                            <div className="pt-14 wide:pt-16">
 
                                             </div>
                                             {/* Button */}
                                             <div className="mt-6 wide:mt-10 absolute bottom-0 left-5 right-0 p-5">
                                                 <a
+                                                    onClick={() => handlePlanClick(
+                                                        {category: "Graphic Design + Video Editing", package:"Monthly Retainer Plan", plan: plan.name, price:plan.price}
+                                                    )}
                                                     type="button"
                                                     className={`flex gap-2 items-center justify-center avail-btn border hover:text-blue-800 p-2 wide:p-3 ${plan.name === "Premium Creative Plan" ? 'bg-white text-blue-700' : ''}`}
                                                 >
                                                     <span className="text-md font-bold">Avail Now </span>
-                                                    <i class="fa-solid fa-arrow-up-right"></i>
+                                                    <i className="fa-solid fa-arrow-up-right"></i>
                                                     
                                                 </a>
                                             </div>
@@ -364,7 +381,7 @@ const GraphicPrice = () => {
 
                                 {graphicPlans[1].map((plan, index) => (
                                     <div key={index} className="mb-2 d-flex">
-                                        <div className={`border border-gray-700 p-5 wide:p-10 rounded-md relative show-element ${plan.name === "Advanced Creative Plan" ? 'bg-blue-700' : ''}`}>
+                                        <div className={`border border-gray-700 p-4 wide:p-10 rounded-md relative show-element ${plan.name === "Advanced Creative Plan" ? 'bg-blue-700' : ''}`}>
                                             {/* Plan Header */}
                                             <div className="border-b-2 border-gray-800 pb-3 wide:pb-6">
                                                 <span className="text-2xl wide:text-4xl text-white font-bold">{plan.name}</span>
@@ -396,17 +413,20 @@ const GraphicPrice = () => {
                                                     </div>
                                                 ))}
                                             </div>
-                                            <div className="p-4 wide:p-10">
+                                            <div className="pt-14 wide:pt-16">
 
                                             </div>
                                             {/* Button */}
                                             <div className="mt-5 wide:mt-10 absolute bottom-0 left-5 right-0 p-5">
                                                 <a
+                                                    onClick={() => handlePlanClick(
+                                                        {category: "Graphic Design + Video Editing", package:"Project-Based Plan", plan: plan.name, price:plan.price}
+                                                    )}
                                                     type="button"
                                                     className={`flex gap-2 items-center justify-center avail-btn border hover:text-blue-800 p-2 wide:p-3 ${plan.name === "Advanced Creative Plan" ? 'bg-white text-blue-700' : ''}`}
                                                 >
                                                     <span className="text-md font-bold">Avail Now </span>
-                                                    <i class="fa-solid fa-arrow-up-right"></i>
+                                                    <i className="fa-solid fa-arrow-up-right"></i>
                                                     
                                                 </a>
                                             </div>
@@ -443,7 +463,7 @@ const GraphicPrice = () => {
 
                                 {webPlans[0].map((plan, index) => (
                                     <div key={index} className="mb-2 d-flex">
-                                        <div className={`border border-gray-700 p-5 wide:p-10 rounded-md relative show-element ${plan.name === "Advanced Website Plan" ? 'bg-blue-700' : ''}`}>
+                                        <div className={`border border-gray-700 p-4 wide:p-10 rounded-md relative show-element ${plan.name === "Advanced Website Plan" ? 'bg-blue-700' : ''}`}>
                                             {/* Plan Header */}
                                             <div className="border-b-2 border-gray-800 pb-3 wide:pb-6">
                                                 <span className="text-2xl wide:text-4xl text-white font-bold">{plan.name}</span>
@@ -475,17 +495,20 @@ const GraphicPrice = () => {
                                                     </div>
                                                 ))}
                                             </div>
-                                            <div className="p-4 wide:p-10">
+                                            <div className="pt-14 wide:pt-16">
 
                                             </div>
                                             {/* Button */}
                                             <div className="mt-5 wide:mt-10 absolute bottom-0 left-5 right-0 p-5">
                                                 <a
+                                                    onClick={() => handlePlanClick(
+                                                        {category: "Web Solutions", package:"Project-Based Plan", plan: plan.name, price:plan.price}
+                                                    )}
                                                     type="button"
                                                     className={`flex gap-2 items-center justify-center avail-btn border hover:text-blue-700 p-2 wide:p-3 ${plan.name === "Advanced Website Plan" ? 'bg-white text-blue-700' : ''}`}
                                                 >
                                                     <span className="text-md font-bold">Avail Now </span>
-                                                    <i class="fa-solid fa-arrow-up-right"></i>
+                                                    <i className="fa-solid fa-arrow-up-right"></i>
                                                     
                                                 </a>
                                             </div>
@@ -523,7 +546,7 @@ const GraphicPrice = () => {
 
                                 {allPlans[0].map((plan, index) => (
                                     <div key={index} className="mb-2 d-flex">
-                                        <div className={`border border-gray-700 p-5 wide:p-10 rounded-md relative show-element ${plan.name === "Advance All Services Plan" ? 'bg-blue-700' : ''}`}>
+                                        <div className={`border border-gray-700 p-4 wide:p-10 rounded-md relative show-element ${plan.name === "Advance All Services Plan" ? 'bg-blue-700' : ''}`}>
                                             {/* Plan Header */}
                                             <div className="border-b-2 border-gray-800 pb-2 wide:pb-6">
                                                 <span className="text-2xl wide:text-4xl text-white font-bold">{plan.name}</span>
@@ -555,17 +578,20 @@ const GraphicPrice = () => {
                                                     </div>
                                                 ))}
                                             </div>
-                                            <div className="p-4 wide:p-10">
+                                            <div className="pt-14 wide:p-10">
 
                                             </div>
                                             {/* Button */}
                                             <div className="mt-5 wide:mt-10 absolute bottom-0 left-5 right-0 p-5">
                                                 <a
+                                                    onClick={() => handlePlanClick(
+                                                        {category: "Graphic Design + Video Editing +Web Solutions (All Services)", package:"Monthly Retainer Plans 20% OFF", plan: plan.name, price:plan.price}
+                                                    )}
                                                     type="button"
                                                     className={`flex gap-2 items-center justify-center avail-btn border hover:text-blue-700 p-2 wide:p-3 ${plan.name === "Advance All Services Plan" ? 'bg-white text-blue-700' : ''}`}
                                                 >
                                                     <span className="text-md font-bold">Avail Now </span>
-                                                    <i class="fa-solid fa-arrow-up-right"></i>
+                                                    <i className="fa-solid fa-arrow-up-right"></i>
                                                     
                                                 </a>
                                             </div>
@@ -584,7 +610,7 @@ const GraphicPrice = () => {
 
                                 {allPlans[0].map((plan, index) => (
                                     <div key={index} className="mb-2 d-flex">
-                                        <div className={`border border-gray-700 p-10 rounded-md relative show-element ${plan.name === "Advance All Services Plan" ? 'bg-blue-700' : ''}`}>
+                                        <div className={`border border-gray-700 p-4 wide:p-12 rounded-md relative show-element ${plan.name === "Advance All Services Plan" ? 'bg-blue-700' : ''}`}>
                                             {/* Plan Header */}
                                             <div className="border-b-2 border-gray-800 pb-2 wide:pb-6">
                                                 <span className="text-2xl wide:text-4xl text-white font-bold">{plan.name}</span>
@@ -616,17 +642,20 @@ const GraphicPrice = () => {
                                                     </div>
                                                 ))}
                                             </div>
-                                            <div className="p-4 wide:p-10">
+                                            <div className="pt-14 wide:p-10">
 
                                             </div>
                                             {/* Button */}
                                             <div className="mt-5 wide:mt-10 absolute bottom-0 left-5 right-0 p-5">
                                                 <a
+                                                    onClick={() => handlePlanClick(
+                                                        {category: "Graphic Design + Video Editing +Web Solutions (All Services)", package:"Project-Based Plan 20% OFF", plan: plan.name, price:plan.price}
+                                                    )}
                                                     type="button"
                                                     className={`flex gap-2 items-center justify-center avail-btn border hover:text-blue-700 p-2 wide:p-3 ${plan.name === "Advance All Services Plan" ? 'bg-white text-blue-700' : ''}`}
                                                 >
                                                     <span className="text-md font-bold">Avail Now </span>
-                                                    <i class="fa-solid fa-arrow-up-right"></i>
+                                                    <i className="fa-solid fa-arrow-up-right"></i>
                                                     
                                                 </a>
                                             </div>
@@ -640,8 +669,8 @@ const GraphicPrice = () => {
 
                 </div>
 
-                
             </div>
+                
         </section>
     )
 }
