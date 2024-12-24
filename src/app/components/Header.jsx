@@ -4,7 +4,7 @@ import HeaderMarqueeSection from "./HeaderMarquee";
 import HeaderMarqueeSection2 from "./HeaderMarquee2";
 
 // import '/assets/css/sphere.css'
-const Header = () => {
+const Header = ({onOpenForm}) => {
 
   return (
     <header className="startup-header laptop:h-[100vh] relative flex justify-center items-center" data-scroll-index="0">
@@ -91,7 +91,7 @@ const Header = () => {
                 </ul>
               </div>
 
-              <a type="button" className="border p-2 rounded-md text-xl wide:text-4xl font-bold mt-4">Design a Quote <span className="icon ti-arrow-top-right text-xl wide:text-3xl"></span></a>
+              <a onClick={onOpenForm} type="button" className="border p-2 rounded-md text-xl wide:text-4xl font-bold mt-4">Design a Quote <span className="icon ti-arrow-top-right text-xl wide:text-3xl"></span></a>
           </div>
 
         </div>
