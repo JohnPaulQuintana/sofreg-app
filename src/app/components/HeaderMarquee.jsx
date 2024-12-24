@@ -2,7 +2,7 @@ import React from "react";
 
 const HeaderMarqueeSection = () => {
   return (
-    <section className="h-[100vh] overflow-hidden relative">
+    <section className="h-[100vh] overflow-hidden relative border">
       <div
         style={{
           backgroundImage: "linear-gradient(180deg, transparent 20%, #1a1a1a  80%)",
