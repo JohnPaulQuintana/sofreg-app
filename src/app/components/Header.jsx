@@ -7,9 +7,9 @@ import HeaderMarqueeSection2 from "./HeaderMarquee2";
 const Header = () => {
 
   return (
-    <header className="startup-header relative h-[60vh] tablet:h-[100vh] flex justify-center items-center" data-scroll-index="0">
+    <header className="startup-header relative h-[100vh] flex justify-center items-center" data-scroll-index="0">
       {/* bg-gradient-to-tl from-[#1c1c1c] via-[#1c1c1c] to-[#243447] */}
-      <div className="absolute opacity-25 w-full flex justify-center mt-32 tablet:mt-0">
+      <div className="absolute opacity-25 w-full">
         <HeaderMarqueeSection />
         {/* <HeaderMarqueeSection2 /> */}
         {/* <div className="p-12"></div> */}
@@ -18,9 +18,9 @@ const Header = () => {
       <div
         className="valign bg-img relative tablet:pt-[100px]"
       >
-        <div className="animation-wrapper absolute flex items-center justify-center w-full h-full mt-32 tablet:mt-0">
+        <div className="animation-wrapper absolute flex items-center justify-center w-full h-full">
           <div className="sphere-animation flex justify-center items-center">
-            <svg className="sphere w-[80%] tablet:w-[50%]" viewBox="0 0 440 440" stroke="rgba(80,80,80,.35)">
+            <svg className="sphere w-[60vh] phone:w-[80%] tablet:w-[50%] opacity-85" viewBox="0 0 440 440" stroke="rgba(80,80,80,.35)" fill="currentColor">
               <defs>
                 <linearGradient id="sphereGradient" x1="5%" x2="5%" y1="0%" y2="15%">
                   <stop stopColor="#373734" offset="0%" />
@@ -55,7 +55,7 @@ const Header = () => {
         
         <div
           id="hero"
-          className="container mt-32 tablet:mt-0 flex justify-center items-center laptop:px-32 wide:px-40"
+          className="containertablet:mt-0 flex justify-center items-center laptop:px-32 wide:px-40"
         // style={{ paddingTop: "40px", paddingRight: "40px" }}
         >
           <div className="caption" style={{ textAlign: "center", color: "white" }}>
@@ -66,30 +66,32 @@ const Header = () => {
               <div className="text text-[0.9em] laptop:text-[0.7em] ">Discover, Elevate</div>
               <div className="text text-[0.9em] laptop:text-[0.7em] text-color-primary-blue">Revolutionize</div>
             </div>
-            <div className="w-full flex justify-center">
-                <ul className="grid grid-cols-2 tablet:grid-cols-4 gap-4 justify-center fz-14 w-[60%]">
+            <div className="w-full flex justify-center mt-2">
+                <ul className="grid grid-cols-4 gap-4 justify-center fz-14 w-[60%]">
                   <li className="hover-this cursor-pointer">
-                    <a href="https://www.facebook.com/people/Sofreg-Solutions/61567081641563/" className="hover-anim flex items-center justify-center gap-2  phone:text-xl">
-                      <i className="fab fa-facebook-f  text-color-primary-blue"></i> Facebook
+                    <a href="https://www.facebook.com/people/Sofreg-Solutions/61567081641563/" className="hover-anim flex items-center justify-center gap-2 text-2xl  tablet:text-xl">
+                      <i className="fab fa-facebook-f  text-color-primary-blue"></i> <span className="hidden tablet:block">Facebook</span>
                     </a>
                   </li>
                   <li className="hover-this cursor-pointer">
-                    <a href="tel:+639177070531" className="hover-anim flex items-center justify-center gap-2  phone:text-xl">
-                      <i className="fa-brands fa-whatsapp text-md  text-color-primary-blue"></i> Whatsapp
+                    <a href="tel:+639177070531" className="hover-anim flex items-center justify-center gap-2 text-2xl  tablet:text-xl">
+                      <i className="fa-brands fa-whatsapp text-md  text-color-primary-blue"></i> <span className="hidden tablet:block">Whatsapp</span>
                     </a>
                   </li>
                   <li className="hover-this cursor-pointer">
-                    <a href="https://www.linkedin.com/company/sofreg-solutions/" className="hover-anim flex items-center justify-center gap-2  phone:text-xl">
-                      <i className="fab fa-linkedin-in  text-color-primary-blue"></i> LinkedIn
+                    <a href="https://www.linkedin.com/company/sofreg-solutions/" className="hover-anim flex items-center justify-center gap-2 text-2xl  tablet:text-xl">
+                      <i className="fab fa-linkedin-in  text-color-primary-blue"></i> <span className="hidden tablet:block">LinkedIn</span>
                     </a>
                   </li>
                   <li className="hover-this cursor-pointer">
-                    <a href="mailto:sofreginfo@gmail.com" className="hover-anim flex items-center justify-center gap-2  phone:text-xl">
-                      <i className="fa-regular fa-envelope  text-color-primary-blue"></i> Email
+                    <a href="mailto:sofreginfo@gmail.com" className="hover-anim flex items-center justify-center gap-2 text-2xl  tablet:text-xl">
+                      <i className="fa-regular fa-envelope  text-color-primary-blue"></i> <span className="hidden tablet:block">Email</span>
                     </a>
                   </li>
                 </ul>
               </div>
+
+              <a type="button" className="border p-2 rounded-md text-xl wide:text-4xl font-bold mt-4">Design a Quote <span className="icon ti-arrow-top-right text-xl wide:text-3xl"></span></a>
           </div>
 
         </div>
