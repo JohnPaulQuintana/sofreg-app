@@ -505,7 +505,7 @@ const GraphicPrice = ({handlePlanClick}) => {
                                                         {category: "Web Solutions", package:"Project-Based Plan", plan: plan.name, price:plan.price}
                                                     )}
                                                     type="button"
-                                                    className={`flex gap-2 items-center justify-center avail-btn border hover:text-blue-700 p-2 wide:p-3 ${plan.name === "Advanced Website Plan" ? 'bg-white text-blue-700' : ''}`}
+                                                    className={`flex gap-2 items-center justify-center avail-btn border rounded-sm hover:text-blue-700 p-2 wide:p-3 ${plan.name === "Advanced Website Plan" ? 'bg-white text-blue-700' : ''}`}
                                                 >
                                                     <span className="text-md font-bold">Avail Now </span>
                                                     <i className="fa-solid fa-arrow-up-right"></i>
@@ -588,7 +588,7 @@ const GraphicPrice = ({handlePlanClick}) => {
                                                         {category: "Graphic Design + Video Editing +Web Solutions (All Services)", package:"Monthly Retainer Plans 20% OFF", plan: plan.name, price:plan.price}
                                                     )}
                                                     type="button"
-                                                    className={`flex gap-2 items-center justify-center avail-btn border hover:text-blue-700 p-2 wide:p-3 ${plan.name === "Advance All Services Plan" ? 'bg-white text-blue-700' : ''}`}
+                                                    className={`flex gap-2 items-center justify-center avail-btn border rounded-sm hover:text-blue-700 p-2 wide:p-3 ${plan.name === "Advance All Services Plan" ? 'bg-white text-blue-700' : ''}`}
                                                 >
                                                     <span className="text-md font-bold">Avail Now </span>
                                                     <i className="fa-solid fa-arrow-up-right"></i>
@@ -652,7 +652,7 @@ const GraphicPrice = ({handlePlanClick}) => {
                                                         {category: "Graphic Design + Video Editing +Web Solutions (All Services)", package:"Project-Based Plan 20% OFF", plan: plan.name, price:plan.price}
                                                     )}
                                                     type="button"
-                                                    className={`flex gap-2 items-center justify-center avail-btn border hover:text-blue-700 p-2 wide:p-3 ${plan.name === "Advance All Services Plan" ? 'bg-white text-blue-700' : ''}`}
+                                                    className={`flex gap-2 items-center justify-center avail-btn border rounded-sm hover:text-blue-700 p-2 wide:p-3 ${plan.name === "Advance All Services Plan" ? 'bg-white text-blue-700' : ''}`}
                                                 >
                                                     <span className="text-md font-bold">Avail Now </span>
                                                     <i className="fa-solid fa-arrow-up-right"></i>
