@@ -34,7 +34,7 @@ const Sidebar = () => {
                                     <li key={index} data-scroll-nav={index}>
                                         <div className="o-hidden">
                                             <Link to={item[1]} className="link cursor-pointer dmenu">
-                                                <span className="fill-text" data-text={item}>
+                                                <span className="fill-text" data-text={item[0]}>
                                                     {item[0]}
                                                 </span>
                                             </Link>

@@ -4,7 +4,7 @@ const ImageOverlay = ({ imageSrc, onClose }) => {
     return (
         <div
             id="image-viewer"
-            className="fixed inset-0 bg-black bg-opacity-50 z-[9999] flex justify-center items-center zoomout"
+            className="fixed overflow-x-hidden inset-0 bg-black bg-opacity-50 z-[9999] flex justify-center items-center zoomout"
         >
             <div className="relative p-4 rounded-lg">
                 <span

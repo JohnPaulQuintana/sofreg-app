@@ -151,7 +151,7 @@ const AvailOverlay = ({ isOpen, onClose, data }) => {
             </div>
             <div className="flex items-center justify-center gap-1">
               <span className="text-xl tablet:text-2xl font-bold text-blue-700">$</span>
-              <span className="text-4xl tablet:text-5xl font-bold text-white">{data.price}</span>
+              <span className="text-4xl tablet:text-5xl font-bold text-white">{data.subprice}</span>
               <span className="mt-2 tablet:mt-5 text-blue-700">/month</span>
             </div>
             <div className="flex flex-col gap-2 items-center justify-center mt-4">

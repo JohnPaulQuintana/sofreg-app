@@ -13,6 +13,7 @@ const GraphicPrice = ({handlePlanClick}) => {
             {
                 name: "Starter Creative Plan",
                 price: 1700,
+                subprice: "1,700",
                 features: [
                     {
                         title: "Eye-Catching Graphics",
@@ -27,6 +28,7 @@ const GraphicPrice = ({handlePlanClick}) => {
             {
                 name: "Growth Creative Plan",
                 price: 2500,
+                subprice: "2,500",
                 features: [
                     {
                         title: "Custom Visuals",
@@ -41,6 +43,7 @@ const GraphicPrice = ({handlePlanClick}) => {
             {
                 name: "Premium Creative Plan",
                 price: 4000,
+                subprice: "4,000",
                 features: [
                     {
                         title: "Unlimited Design Requests",
@@ -55,51 +58,54 @@ const GraphicPrice = ({handlePlanClick}) => {
         ],
     
         // Project-Based Plans
-        [
-            {
-                name: "Basic Creative Plan",
-                price: 1700,
-                features: [
-                    {
-                        title: "Eye-Catching Graphics",
-                        description: "Up to 25 designs/month (ads, social media, or branding)"
-                    },
-                    {
-                        title: "Engaging Videos",
-                        description: "Up to 5 professional edits/month tailored to captivate."
-                    }
-                ]
-            },
-            {
-                name: "Standard Creative Plan",
-                price: 3000,
-                features: [
-                    {
-                        title: "Custom Visuals",
-                        description: "Up to 50 stunning designs/month"
-                    },
-                    {
-                        title: "High-Impact Videos",
-                        description: "Up to 10 expertly crafted edits/month from adds to explainer."
-                    }
-                ]
-            },
-            {
-                name: "Advanced Creative Plan",
-                price: 6000,
-                features: [
-                    {
-                        title: "Unlimited Design Requests",
-                        description: "Rapid delivery for all your visual needs"
-                    },
-                    {
-                        title: "High-Volume Video Edits",
-                        description: "Up to 10 edits/month, from promos to motion graphics."
-                    }
-                ]
-            },
-            // You can add more project-based plans here if needed
-        ]
+        // [
+        //     {
+        //         name: "Basic Creative Plan",
+        //         price: 1700,
+        //         subprice: "1,700",
+        //         features: [
+        //             {
+        //                 title: "Eye-Catching Graphics",
+        //                 description: "Up to 25 designs/month (ads, social media, or branding)"
+        //             },
+        //             {
+        //                 title: "Engaging Videos",
+        //                 description: "Up to 5 professional edits/month tailored to captivate."
+        //             }
+        //         ]
+        //     },
+        //     {
+        //         name: "Standard Creative Plan",
+        //         price: 2500,
+        //         subprice: "2,500",
+        //         features: [
+        //             {
+        //                 title: "Custom Visuals",
+        //                 description: "Up to 50 stunning designs/month"
+        //             },
+        //             {
+        //                 title: "High-Impact Videos",
+        //                 description: "Up to 10 expertly crafted edits/month from adds to explainer."
+        //             }
+        //         ]
+        //     },
+        //     {
+        //         name: "Advanced Creative Plan",
+        //         price: 4000,
+        //         subprice: "4,000",
+        //         features: [
+        //             {
+        //                 title: "Unlimited Design Requests",
+        //                 description: "Rapid delivery for all your visual needs"
+        //             },
+        //             {
+        //                 title: "High-Volume Video Edits",
+        //                 description: "Up to 10 edits/month, from promos to motion graphics."
+        //             }
+        //         ]
+        //     },
+        //     // You can add more project-based plans here if needed
+        // ]
     ];
     
     const webPlans = [
@@ -108,6 +114,7 @@ const GraphicPrice = ({handlePlanClick}) => {
             {
                 name: "Basic Website Plan",
                 price: 4500,
+                subprice: "4,500",
                 features: [
                     {
                         title: "Clean, Modern Design",
@@ -126,6 +133,7 @@ const GraphicPrice = ({handlePlanClick}) => {
             {
                 name: "Standard Website Plan",
                 price: 6500,
+                subprice: "6,500",
                 features: [
                     {
                         title: "Custom Pages",
@@ -145,6 +153,7 @@ const GraphicPrice = ({handlePlanClick}) => {
             {
                 name: "Advanced Website Plan",
                 price: 10000,
+                subprice: "10,000",
                 features: [
                     {
                         title: "E-commerce or Enterprise Website",
@@ -169,7 +178,8 @@ const GraphicPrice = ({handlePlanClick}) => {
         [
             {
                 name: "Starter All Services Plan",
-                price: 2720,
+                price: 4960,
+                subprice: "4,960",
                 features: [
                     {
                         title: "Eye-Catching Graphics",
@@ -187,7 +197,8 @@ const GraphicPrice = ({handlePlanClick}) => {
             },
             {
                 name: "Growth All Services Plan",
-                price: 4000,
+                price: 7200,
+                subprice: "7,200",
                 features: [
                     {
                         title: "Weekly Maintenance",
@@ -206,7 +217,8 @@ const GraphicPrice = ({handlePlanClick}) => {
             },
             {
                 name: "Advance All Services Plan",
-                price: 6400,
+                price: 11200,
+                subprice: "11,200",
                 features: [
                     {
                         title: "Unlimited Design Requests",
@@ -225,61 +237,64 @@ const GraphicPrice = ({handlePlanClick}) => {
             // You can add more project-based plans here if needed
         ],
         // Project-based Plans
-        [
-            {
-                name: "Basic All Services Plan",
-                price: 3760,
-                features: [
-                    {
-                        title: "Eye-Catching Graphics",
-                        description: "Up to 10 designs/month (ads, social media, or branding)"
-                    },
-                    {
-                        title: "SEO Foundation",
-                        description: "Optimized to help you rank from day one."
-                    },
-                    {
-                        title: "Dynamic Updates",
-                        description: "5 updates/month to keep your site fresh and engaging."
-                    }
-                ]
-            },
-            {
-                name: "Standard All Services Plan",
-                price: 6800,
-                features: [
-                    {
-                        title: "Weekly Maintenance",
-                        description: "Up to 25 stunning designs/month."
-                    },
-                    {
-                        title: "High-Impact Videos",
-                        description: "6 expertly crafted edits/month from adds to explainer."
-                    },
+        // [
+        //     {
+        //         name: "Basic All Services Plan",
+        //         price: 4960,
+        //         subprice: "4,960",
+        //         features: [
+        //             {
+        //                 title: "Eye-Catching Graphics",
+        //                 description: "Up to 10 designs/month (ads, social media, or branding)"
+        //             },
+        //             {
+        //                 title: "SEO Foundation",
+        //                 description: "Optimized to help you rank from day one."
+        //             },
+        //             {
+        //                 title: "Dynamic Updates",
+        //                 description: "5 updates/month to keep your site fresh and engaging."
+        //             }
+        //         ]
+        //     },
+        //     {
+        //         name: "Standard All Services Plan",
+        //         price: 7200,
+        //         subprice: "7,200",
+        //         features: [
+        //             {
+        //                 title: "Weekly Maintenance",
+        //                 description: "Up to 25 stunning designs/month."
+        //             },
+        //             {
+        //                 title: "High-Impact Videos",
+        //                 description: "6 expertly crafted edits/month from adds to explainer."
+        //             },
                     
 
-                ]
-            },
-            {
-                name: "Advance All Services Plan",
-                price: 11600,
-                features: [
-                    {
-                        title: "Unlimited Design Requests",
-                        description: "Rapid delivery for all your visual needs."
-                    },
-                    {
-                        title: "High-Volume Video Edits",
-                        description: "Up to 15 edits/month, from promos to motion graphics."
-                    },
-                    {
-                        title: "Unlimited Updates",
-                        description: "No limits to how much we support your site's growth."
-                    },
-                ]
-            },
-            // You can add more project-based plans here if needed
-        ]
+        //         ]
+        //     },
+        //     {
+        //         name: "Advance All Services Plan",
+        //         price: 11200,
+        //         subprice: "11,200",
+        //         features: [
+        //             {
+        //                 title: "Unlimited Design Requests",
+        //                 description: "Rapid delivery for all your visual needs."
+        //             },
+        //             {
+        //                 title: "High-Volume Video Edits",
+        //                 description: "Up to 15 edits/month, from promos to motion graphics."
+        //             },
+        //             {
+        //                 title: "Unlimited Updates",
+        //                 description: "No limits to how much we support your site's growth."
+        //             },
+        //         ]
+        //     },
+        //     // You can add more project-based plans here if needed
+        // ]
     ];
 
     // // handle plans
@@ -300,10 +315,10 @@ const GraphicPrice = ({handlePlanClick}) => {
                         <div className="content md-mb50">
                             <h6 className="sub-title main-color mb-15 text-md wide:text-xl font-bold">Choose You Plan</h6>
                             <h3 className="fw-600 mb-2 wide:mb-30 text-4xl wide:text-6xl">
-                                Graphic <span className="fw-300">Design</span> + Video Editing
+                                Graphic Design + Video Editing
                             </h3>
                             <p className="text-2xl wide:text-4xl">
-                                Monthly Retainer Plans
+                                Monthly and Project-Based Retainer Plans
                             </p>
                             {/* <a href="page-contact.html" className="butn butn-md butn-bord radius-30 mt-40">
                         <span>Let's Contact</span>
@@ -326,7 +341,7 @@ const GraphicPrice = ({handlePlanClick}) => {
                                             {/* Pricing */}
                                             <div className="flex gap-1 mt-6 wide:mt-12">
                                                 <span className={`text-2xl wide:text-4xl font-bold ${plan.name === "Premium Creative Plan" ? 'text-white' : 'text-blue-700'}`}>$</span>
-                                                <span className="text-4xl wide:text-7xl font-bold text-white">{plan.price}</span>
+                                                <span className="text-4xl wide:text-7xl font-bold text-white">{plan.subprice}</span>
                                                 <span className={`mt-2 wide:mt-8 ${plan.name === "Premium Creative Plan" ? 'text-white font-bold' : 'text-blue-700'} wide:text-xl`}>/month</span>
                                             </div>
 
@@ -356,7 +371,7 @@ const GraphicPrice = ({handlePlanClick}) => {
                                             <div className="mt-6 wide:mt-10 absolute bottom-0 left-5 right-0 p-5">
                                                 <a
                                                     onClick={() => handlePlanClick(
-                                                        {category: "Graphic Design + Video Editing", package:"Monthly Retainer Plan", plan: plan.name, price:plan.price}
+                                                        {category: "Graphic Design + Video Editing", package:"Monthly Retainer Plan", plan: plan.name, price:plan.price, subprice:plan.subprice}
                                                     )}
                                                     type="button"
                                                     className={`flex gap-2 items-center justify-center avail-btn border hover:text-blue-800 p-2 wide:p-3 ${plan.name === "Premium Creative Plan" ? 'bg-white text-blue-700' : ''}`}
@@ -374,7 +389,7 @@ const GraphicPrice = ({handlePlanClick}) => {
                         </div>
                     </div>
 
-                    <div className="">
+                    {/* <div className="">
                         <h1 className="text-2xl wide:text-4xl mb-6 wide:mb-12">Project-Based Plans</h1>
                         <div className="services">
                             <div className="grid grid-cols-1 laptop:grid-cols-2 desktop:grid-cols-3 gap-4">
@@ -382,19 +397,19 @@ const GraphicPrice = ({handlePlanClick}) => {
                                 {graphicPlans[1].map((plan, index) => (
                                     <div key={index} className="mb-2 d-flex">
                                         <div className={`border border-gray-700 p-4 wide:p-10 rounded-md relative show-element ${plan.name === "Advanced Creative Plan" ? 'bg-blue-700' : ''}`}>
-                                            {/* Plan Header */}
+                                            
                                             <div className="border-b-2 border-gray-800 pb-3 wide:pb-6">
                                                 <span className="text-2xl wide:text-4xl text-white font-bold">{plan.name}</span>
                                             </div>
 
-                                            {/* Pricing */}
+                                            
                                             <div className="flex gap-1 mt-6 wide:mt-12">
                                                 <span className={`text-2xl wide:text-4xl font-bold ${plan.name === "Advanced Creative Plan" ? 'text-white' : 'text-blue-700'}`}>$</span>
-                                                <span className="text-4xl wide:text-7xl font-bold text-white">{plan.price}</span>
+                                                <span className="text-4xl wide:text-7xl font-bold text-white">{plan.subprice}</span>
                                                 <span className={`mt-2 wide:mt-8 ${plan.name === "Advanced Creative Plan" ? 'text-white' : 'text-blue-700'} text-xl`}>/month</span>
                                             </div>
 
-                                            {/* Features */}
+                                            
                                             <div className="mt-2 wide:mt-12">
                                                 {plan.features.map((feature, idx) => (
                                                     <div key={idx} className="flex gap-4 items-center mb-3 wide:mb-6">
@@ -416,7 +431,7 @@ const GraphicPrice = ({handlePlanClick}) => {
                                             <div className="pt-14 wide:pt-16">
 
                                             </div>
-                                            {/* Button */}
+                                            
                                             <div className="mt-5 wide:mt-10 absolute bottom-0 left-5 right-0 p-5">
                                                 <a
                                                     onClick={() => handlePlanClick(
@@ -436,7 +451,7 @@ const GraphicPrice = ({handlePlanClick}) => {
 
                             </div>
                         </div>
-                    </div>
+                    </div> */}
 
                 </div>
 
@@ -472,7 +487,7 @@ const GraphicPrice = ({handlePlanClick}) => {
                                             {/* Pricing */}
                                             <div className="flex gap-1 mt-3 wide:mt-12">
                                                 <span className={`text-2xl wide:text-4xl font-bold ${plan.name === "Advanced Website Plan" ? 'text-white' : 'text-blue-700'}`}>$</span>
-                                                <span className="text-4xl wide:text-7xl font-bold text-white">{plan.price}</span>
+                                                <span className="text-4xl wide:text-7xl font-bold text-white">{plan.subprice}</span>
                                                 <span className={`mt-2 wide:mt-8 ${plan.name === "Advanced Website Plan" ? 'text-white' : 'text-blue-700'} text-md wide:text-xl`}>/month</span>
                                             </div>
 
@@ -502,7 +517,7 @@ const GraphicPrice = ({handlePlanClick}) => {
                                             <div className="mt-5 wide:mt-10 absolute bottom-0 left-5 right-0 p-5">
                                                 <a
                                                     onClick={() => handlePlanClick(
-                                                        {category: "Web Solutions", package:"Project-Based Plan", plan: plan.name, price:plan.price}
+                                                        {category: "Web Solutions", package:"Project-Based Plan", plan: plan.name, price:plan.price, subprice:plan.subprice}
                                                     )}
                                                     type="button"
                                                     className={`flex gap-2 items-center justify-center avail-btn border rounded-sm hover:text-blue-700 p-2 wide:p-3 ${plan.name === "Advanced Website Plan" ? 'bg-white text-blue-700' : ''}`}
@@ -555,7 +570,7 @@ const GraphicPrice = ({handlePlanClick}) => {
                                             {/* Pricing */}
                                             <div className="flex gap-1 mt-2 wide:mt-12">
                                                 <span className={`text-2xl wide:text-4xl font-bold ${plan.name === "Advance All Services Plan" ? 'text-white' : 'text-blue-700'}`}>$</span>
-                                                <span className="text-4xl wide:text-7xl font-bold text-white">{plan.price}</span>
+                                                <span className="text-4xl wide:text-7xl font-bold text-white">{plan.subprice}</span>
                                                 <span className={`mt-2 wide:mt-8 text-md wide:text-xl ${plan.name === "Advance All Services Plan" ? 'text-white' : 'text-blue-700'}`}>/month</span>
                                             </div>
 
@@ -585,7 +600,7 @@ const GraphicPrice = ({handlePlanClick}) => {
                                             <div className="mt-5 wide:mt-10 absolute bottom-0 left-5 right-0 p-5">
                                                 <a
                                                     onClick={() => handlePlanClick(
-                                                        {category: "Graphic Design + Video Editing +Web Solutions (All Services)", package:"Monthly Retainer Plans 20% OFF", plan: plan.name, price:plan.price}
+                                                        {category: "Graphic Design + Video Editing +Web Solutions (All Services)", package:"Monthly Retainer Plans 20% OFF", plan: plan.name, price:plan.price, subprice:plan.subprice}
                                                     )}
                                                     type="button"
                                                     className={`flex gap-2 items-center justify-center avail-btn border rounded-sm hover:text-blue-700 p-2 wide:p-3 ${plan.name === "Advance All Services Plan" ? 'bg-white text-blue-700' : ''}`}
@@ -603,7 +618,7 @@ const GraphicPrice = ({handlePlanClick}) => {
                         </div>
                     </div>
 
-                    <div className="">
+                    {/* <div className="">
                         <h1 className="text-2xl wide:text-4xl mb-6 wide:mb-12">Project-Based Plan <span className="text-color-primary-blue">20% OFF</span></h1>
                         <div className="services">
                             <div className="grid grid-cols-1 laptop:grid-cols-2 desktop:grid-cols-3 gap-4">
@@ -611,19 +626,19 @@ const GraphicPrice = ({handlePlanClick}) => {
                                 {allPlans[0].map((plan, index) => (
                                     <div key={index} className="mb-2 d-flex">
                                         <div className={`border border-gray-700 p-4 wide:p-12 rounded-md relative show-element ${plan.name === "Advance All Services Plan" ? 'bg-blue-700' : ''}`}>
-                                            {/* Plan Header */}
+                                            
                                             <div className="border-b-2 border-gray-800 pb-2 wide:pb-6">
                                                 <span className="text-2xl wide:text-4xl text-white font-bold">{plan.name}</span>
                                             </div>
 
-                                            {/* Pricing */}
+                                            
                                             <div className="flex gap-1 mt-2 wide:mt-12">
                                                 <span className={`tetx-2xl wide:text-4xl font-bold ${plan.name === "Advance All Services Plan" ? 'text-white' : 'text-blue-700'}`}>$</span>
-                                                <span className="text-4xl wide:text-7xl font-bold text-white">{plan.price}</span>
+                                                <span className="text-4xl wide:text-7xl font-bold text-white">{plan.subprice}</span>
                                                 <span className={`mt-2 wide:mt-8 ${plan.name === "Advance All Services Plan" ? 'text-white' : 'text-blue-700'} text-xl`}>/month</span>
                                             </div>
 
-                                            {/* Features */}
+                                            
                                             <div className="mt-2 wide:mt-12">
                                                 {plan.features.map((feature, idx) => (
                                                     <div key={idx} className="flex gap-4 items-center mb-2 wide:mb-6">
@@ -645,7 +660,7 @@ const GraphicPrice = ({handlePlanClick}) => {
                                             <div className="pt-14 wide:p-10">
 
                                             </div>
-                                            {/* Button */}
+                                            
                                             <div className="mt-5 wide:mt-10 absolute bottom-0 left-5 right-0 p-5">
                                                 <a
                                                     onClick={() => handlePlanClick(
@@ -665,7 +680,7 @@ const GraphicPrice = ({handlePlanClick}) => {
 
                             </div>
                         </div>
-                    </div>
+                    </div> */}
 
                 </div>
 

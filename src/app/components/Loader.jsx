@@ -41,7 +41,7 @@ const Loader = () => {
       <div className="loader-wrap-heading flex flex-col items-center gap-2 text-4xl">
         <div className="load-text" style={{ flexGrow: 1, display: 'flex', justifyContent: 'center' }}>
           <span>
-            <img src="assets/imgs/logo-light.png" alt="" />
+            <img className="w-[200px] phone:[300px]" src="assets/imgs/logo-light.png" alt="" />
           </span>
         </div>
         <div className="flex-col tablet:flex-row">

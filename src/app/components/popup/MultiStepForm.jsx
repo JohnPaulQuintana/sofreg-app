@@ -8,21 +8,21 @@ const prices = {
             "name": "GRAPHIC DESIGN + VIDEO EDITING",
             "subcategories": [
                 {
-                    "name": "FULL-TIME",
+                    "name": "FULL-TIME AND PROJECT-BASED",
                     "prices": [
                         { "duration": "Monthly", "price": "1,700K" },
                         { "duration": "Monthly", "price": "2,500K" },
                         { "duration": "Monthly", "price": "4,000K" },
                     ]
                 },
-                {
-                    "name": "PROJECT-BASED",
-                    "prices": [
-                        { "duration": "Monthly", "price": "1,700K" },
-                        { "duration": "Monthly", "price": "3,000K" },
-                        { "duration": "Monthly", "price": "6,000K" },
-                    ]
-                }
+                // {
+                //     "name": "PROJECT-BASED",
+                //     "prices": [
+                //         { "duration": "Monthly", "price": "1,700K" },
+                //         { "duration": "Monthly", "price": "3,000K" },
+                //         { "duration": "Monthly", "price": "6,000K" },
+                //     ]
+                // }
             ]
         },
         {
@@ -42,21 +42,21 @@ const prices = {
             "name": "ALL SERVICES",
             "subcategories": [
                 {
-                    "name": "FULL-TIME",
+                    "name": "FULL-TIME AND PROJECT-BASED",
                     "prices": [
-                        { "duration": "Monthly", "price": "2,720K" },
-                        { "duration": "Monthly", "price": "4,000K" },
-                        { "duration": "Monthly", "price": "6,400K" },
+                        { "duration": "Monthly", "price": "4,960K" },
+                        { "duration": "Monthly", "price": "7,200K" },
+                        { "duration": "Monthly", "price": "11,200K" },
                     ]
                 },
-                {
-                    "name": "PROJECT-BASED",
-                    "prices": [
-                        { "duration": "Monthly", "price": "3,760K" },
-                        { "duration": "Monthly", "price": "6,800K" },
-                        { "duration": "Monthly", "price": "11,600K" },
-                    ]
-                }
+                // {
+                //     "name": "PROJECT-BASED",
+                //     "prices": [
+                //         { "duration": "Monthly", "price": "3,760K" },
+                //         { "duration": "Monthly", "price": "6,800K" },
+                //         { "duration": "Monthly", "price": "11,600K" },
+                //     ]
+                // }
             ]
         }
     ]
