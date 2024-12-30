@@ -50,13 +50,13 @@ const FooterDetailed = () => {
                 </h2>
                 <div className="info mt-40 grid grid-cols-1 tablet:grid-cols-2 gap-2 align-items-center">
                     {/* <h1 className='col-span-2 mb-2 text-xl'>Active Email</h1> */}
-                    <a href="mailto:shereen@sofregsolutions.com" className="butn butn-md butn-bord-thin mb-2 w-full">
+                    {/* <a href="mailto:shereen@sofregsolutions.com" className="butn butn-md butn-bord-thin mb-2 w-full">
                       <span className="text">shereen@sofregsolutions.com</span>
                     </a>
                   
                     <a href="mailto:brijet@sofregsolutions.com" className="butn butn-md butn-bord-thin mb-2 w-full">
                       <span className="text">brijet@sofregsolutions.com</span>
-                    </a>
+                    </a> */}
                   
                     <a href="mailto:info@sofregsolutions.com" className="butn butn-md butn-bord-thin w-full">
                       <span className="text">info@sofregsolutions.com</span>
