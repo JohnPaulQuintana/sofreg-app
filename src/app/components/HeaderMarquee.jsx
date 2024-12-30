@@ -18,9 +18,9 @@ const HeaderMarqueeSection = () => {
       >
       </div>
 
-      <div className="main-marq lrg o-hidden flex flex-col">
+      <div className="main-marq lrg o-hidden flex flex-col opacity-5">
 
-        <div className="slide-har st1">
+        <div className="slide-har st1 mb-12">
           <div className="box">
             <div className="item flex justify-center flex-col gap-2">
               <h4 className="d-flex align-items-center">
@@ -30,7 +30,7 @@ const HeaderMarqueeSection = () => {
                   alt=""
                 />
               </h4>
-              <span className="text-4xl text-center">AI-Assisted</span>
+              {/* <span className="text-4xl text-center">AI-Assisted</span> */}
               {/* <h4 className="d-flex align-items-center">
                 <img
                   className="object-cover w-full h-72"
@@ -48,7 +48,7 @@ const HeaderMarqueeSection = () => {
                   alt=""
                 />
               </h4>
-              <span className="text-4xl text-center">Amazon Listings</span>
+              {/* <span className="text-4xl text-center">Amazon Listings</span> */}
               {/* <h4 className="d-flex align-items-center">
                 <img
                   className="object-cover w-full h-72"
@@ -65,7 +65,7 @@ const HeaderMarqueeSection = () => {
                   alt=""
                 />
               </h4>
-              <span className="text-4xl text-center">Branding</span>
+              {/* <span className="text-4xl text-center">Branding</span> */}
               {/* <h4 className="d-flex align-items-center">
                 <img
                   className="object-cover w-full h-72"
@@ -82,7 +82,7 @@ const HeaderMarqueeSection = () => {
                   alt=""
                 />
               </h4>
-              <span className="text-4xl text-center">Motion & Animation</span>
+              {/* <span className="text-4xl text-center">Motion & Animation</span> */}
               {/* <h4 className="d-flex align-items-center">
                 <img
                   className="object-cover w-full h-72"
@@ -99,7 +99,7 @@ const HeaderMarqueeSection = () => {
                   alt=""
                 />
               </h4>
-              <span className="text-4xl text-center">Packaging</span>
+              {/* <span className="text-4xl text-center">Packaging</span> */}
               {/* <h4 className="d-flex align-items-center">
                 <img
                   className="object-cover w-full h-72"
@@ -116,7 +116,7 @@ const HeaderMarqueeSection = () => {
                   alt=""
                 />
               </h4>
-              <span className="text-4xl text-center">Print Design</span>
+              {/* <span className="text-4xl text-center">Print Design</span> */}
               {/* <h4 className="d-flex align-items-center">
                 <img
                   className="object-cover w-full h-72"
@@ -133,7 +133,7 @@ const HeaderMarqueeSection = () => {
                   alt=""
                 />
               </h4>
-              <span className="text-4xl text-center">Social Media</span>
+              {/* <span className="text-4xl text-center">Social Media</span> */}
               {/* <h4 className="d-flex align-items-center">
                 <img
                   className="object-cover w-full h-72"
@@ -150,7 +150,7 @@ const HeaderMarqueeSection = () => {
                   alt=""
                 />
               </h4>
-              <span className="text-4xl text-center">Sticker Wrap</span>
+              {/* <span className="text-4xl text-center">Sticker Wrap</span> */}
               {/* <h4 className="d-flex align-items-center">
                 <img
                   className="object-cover w-full h-72"
@@ -167,7 +167,7 @@ const HeaderMarqueeSection = () => {
                   alt=""
                 />
               </h4>
-              <span className="text-4xl text-center">UI-UX</span>
+              {/* <span className="text-4xl text-center">UI-UX</span> */}
               {/* <h4 className="d-flex align-items-center">
                 <img
                   className="object-cover w-full h-72"

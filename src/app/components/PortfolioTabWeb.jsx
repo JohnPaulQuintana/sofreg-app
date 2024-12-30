@@ -7,14 +7,14 @@ const projects = [
     category: "Category 1",
     title: "Web Development",
     image: "assets/imgs/web/system_THUMBNAIL.jpg",
-    link: "#",
+    link: "/services?filter=web&source=wb",
   },
   {
     id: "tab-101",
     category: "Category 2",
     title: "System Development",
     image: "assets/imgs/web/wd_1.jpg",
-    link: "#",
+    link: "/services?filter=web&source=software",
   },
  
 ];

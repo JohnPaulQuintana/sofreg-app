@@ -1,7 +1,7 @@
 import React from "react";
 
 const VideoOverlay = ({ imageSrc, onClose }) => {
-    console.log(imageSrc)
+    // console.log(imageSrc)
     return (
         <>
             <div id="video-overlay"></div>

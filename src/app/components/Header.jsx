@@ -20,7 +20,7 @@ const Header = ({onOpenForm}) => {
       >
         <div className="animation-wrapper absolute flex items-center justify-center w-full h-full">
           <div className="sphere-animation flex justify-center items-center">
-            <svg className="sphere w-[60vh] phone:w-[80%] tablet:w-[50%] opacity-85" viewBox="0 0 440 440" stroke="rgba(80,80,80,.35)" fill="currentColor">
+            <svg className="sphere w-[60vh] phone:w-[80%] tablet:w-[50%]" viewBox="0 0 440 440" stroke="rgba(80,80,80,.35)" fill="currentColor">
               <defs>
                 <linearGradient id="sphereGradient" x1="5%" x2="5%" y1="0%" y2="15%">
                   <stop stopColor="#373734" offset="0%" />

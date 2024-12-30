@@ -7,63 +7,63 @@ const projects = [
     category: "Category 1",
     title: "Amazon Listings",
     image: "assets/imgs/amazon_listings/Headphones_1.jpg",
-    link: "#",
+    link: "/services?filter=graphic&source=amazon",
   },
   {
     id: "tab-2",
     category: "Category 2",
     title: "UI/UX Design",
     image: "assets/imgs/ui_ux/UI_F1.jpg",
-    link: "#",
+    link: "/services?filter=graphic&source=ui_ux",
   },
   {
     id: "tab-3",
     category: "Category 3",
     title: "Social Media Ads",
     image: "assets/imgs/social_media/Ramen_1.jpg",
-    link: "#",
+    link: "/services?filter=graphic&source=social_media",
   },
   {
     id: "tab-4",
     category: "Category 4",
     title: "Branding & Visual Identity",
     image: "assets/imgs/motion/Delta_1.jpg",
-    link: "#",
+    link: "/services?filter=graphic&source=branding",
   },
   {
     id: "tab-5",
     category: "Category 5",
     title: "Motion & Animation",
     image: "assets/imgs/branding/BRANDING_H_1.jpg",
-    link: "#",
+    link: "/services?filter=graphic&source=motion",
   },
   {
     id: "tab-6",
     category: "Category 6",
     title: "Packaging Design",
     image: "assets/imgs/packaging/AVENUE_1.jpg",
-    link: "#",
+    link: "/services?filter=graphic&source=packaging",
   },
   {
     id: "tab-7",
     category: "Category 7",
     title: "Print Design",
     image: "assets/imgs/print/Events_1.jpg",
-    link: "#",
+    link: "/services?filter=graphic&source=printing",
   },
   {
     id: "tab-8",
     category: "Category 8",
     title: "AI-Assisted Design",
     image: "assets/imgs/ai/aie_1.jpg",
-    link: "#",
+    link: "/services?filter=graphic&source=ai",
   },
   {
     id: "tab-9",
     category: "Category 9",
     title: "Sticker Wrap",
     image: "assets/imgs/sticker/StickerWrap_Thumbnail.jpg",
-    link: "#",
+    link: "/services?filter=graphic&source=sticker",
   },
 ];
 
@@ -140,9 +140,9 @@ const PortfolioTabGraphics = () => {
                   <img src={project.image} alt={project.title} />
                 </div>
                 <div className="more-btn more text-u ls1 fz-12">
-                  <a href={project.link}>
+                  <Link to={project.link}>
                     View Project <i className="ml-15 ti-arrow-top-right"></i>
-                  </a>
+                  </Link>
                 </div>
               </div>
             ))}

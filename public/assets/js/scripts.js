@@ -801,19 +801,19 @@ $(document).ready(function(){
     -----------------------------  isotope Masonery   ------------------------------
     ============================================================================= */
 
-    $('.gallery').isotope({
-        itemSelector: '.items'
-    });
+    // $('.gallery').isotope({
+    //     itemSelector: '.items'
+    // });
 
-    // isotope
-    $('.gallery2').isotope({
-        // options
-        itemSelector: '.items',
-        masonry: {
-            // use element for option
-            columnWidth: '.width2'
-        }
-    });
+    // // isotope
+    // $('.gallery2').isotope({
+    //     // options
+    //     itemSelector: '.items',
+    //     masonry: {
+    //         // use element for option
+    //         columnWidth: '.width2'
+    //     }
+    // });
 
     // var $gallery = $('.gallery , .gallery2').isotope();
 

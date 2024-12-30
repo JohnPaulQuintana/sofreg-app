@@ -57,7 +57,7 @@ const Navbar = () => {
 
         {/* Sidebar Toggle */}
         <div className="topnav">
-          <div className="menu-icon cursor-pointer">
+          <div className="menu-icon cursor-pointer block laptop:hidden">
             <span className="icon ti-align-right"></span>
           </div>
         </div>
