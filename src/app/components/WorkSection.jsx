@@ -92,13 +92,17 @@ const WorkSection = ({openModal}) => {
         percentPosition: true,  // Ensures that items are correctly positioned relative to their parent
       });
 
+      setIsotopeInstance(instance);
       // Wait for images to load before layout
       imagesLoaded(galleryRef.current, () => {
-        isotopeInstance.arrange(); // Ensure arrange is applied after images are loaded
-        isotopeInstance.layout();  // Ensure layout recalculates
+        console.log("Images loaded, applying layout...");
+        // Only arrange and layout after the isotopeInstance is properly set
+        if (isotopeInstance) {
+          isotopeInstance.arrange();  // Apply the filter and arrange the items
+          isotopeInstance.layout();   // Recalculate the layout
+        }
       });
 
-      setIsotopeInstance(instance);
 
       return () => {
       if (isotopeInstance) {
