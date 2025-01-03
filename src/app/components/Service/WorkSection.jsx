@@ -51,7 +51,7 @@ const WorkSection = ({openModal}) => {
     { id: 43, category: 'graphic', sub: 'sticker', imgSrc: ['assets/imgs/sticker/TRAILER_1.jpg','assets/imgs/sticker/TRAILER_2.jpg'], title: 'Sticker Wrap', categoryLabel: 'Graphic Design', type: 'image' },
     { id: 44, category: 'graphic', sub: 'sticker', imgSrc: ['assets/imgs/sticker/VAN_1.jpg','assets/imgs/sticker/VAN_2.jpg'], title: 'Sticker Wrap', categoryLabel: 'Graphic Design', type: 'image' },
     { id: 45, category: 'graphic', sub: 'sticker', imgSrc: ['assets/imgs/sticker/WRAP_A1.jpg','assets/imgs/sticker/WRAP_A2.jpg'], title: 'Sticker Wrap', categoryLabel: 'Graphic Design', type: 'image' },
-    { id: 46, category: 'web', sub: 'wb', imgSrc: ['assets/imgs/web/web_precision.jpg', 'https://jkkg54w5fr.wpdns.site/'], title: 'Precision Motor Sport', categoryLabel: 'Website Development', type: 'web' },
+    { id: 46, category: 'web', sub: 'wb', imgSrc: ['assets/imgs/web/web_precision_motor.jpg', 'https://jkkg54w5fr.wpdns.site/'], title: 'Precision Motor Sport', categoryLabel: 'Website Development', type: 'web' },
     { id: 47, category: 'web', sub: 'wb', imgSrc: ['assets/imgs/web/web_961motorsport.jpg', 'https://961motorsport.com/'], title: '961 Motor Sport', categoryLabel: 'Website Development', type: 'web' },
     { id: 48, category: 'web', sub: 'wb', imgSrc: ['assets/imgs/web/web_motors.jpg', 'https://motorsportgrowth.com/'], title: 'Motor Sport Growth', categoryLabel: 'Website Development', type: 'web' },
     { id: 49, category: 'web', sub: 'wb', imgSrc: ['assets/imgs/web/web_S4T.jpg', 'https://stage4tuning.com/'], title: 'Stage4tuning', categoryLabel: 'Website Development', type: 'web' },

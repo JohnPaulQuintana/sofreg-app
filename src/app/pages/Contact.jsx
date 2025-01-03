@@ -3,7 +3,7 @@ import Loader from "../components/Loader";
 import Navbar from "../components/Navbar";
 import ProgressScrollButton from "../components/ProgressScrollButton";
 import Sidebar from "../components/Sidebar";
-import ContactHeader from "../components/ContactHeader";
+import ContactHeader from "../components/Contact/ContactHeader";
 import ContactForm from "../components/ContactForm";
 import GoogleMap from "../components/GoogleMap";
 import Footer from "../components/Footer";

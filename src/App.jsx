@@ -21,9 +21,9 @@ function App() {
   // }, [location.pathname]); // Only run when pathname changes
 
   if (process.env.NODE_ENV === 'development') {
-    console.log = () => {}; // Disable console.log
-    console.warn = () => {}; // Disable console.warn
-    console.error = () => {}; // Disable console.error
+    // console.log = () => {}; // Disable console.log
+    // console.warn = () => {}; // Disable console.warn
+    // console.error = () => {}; // Disable console.error
   }
   
 
@@ -38,7 +38,7 @@ function App() {
           <Route path='/about' element={<About />} />
           <Route path='/pricing' element={<Pricing />} />
           <Route path='/contact' element={<Contact />} />
-          <Route path='/career' element={<NotFound />} />
+          <Route path='/career' element={<Career />} />
       </Routes>
       
     </BrowserRouter>

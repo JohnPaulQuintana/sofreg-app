@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 import Loader from "../components/Loader";
 import Navbar from "../components/Navbar";
-import WorkHeader from "../components/WorkHeader";
-import WorkSection from "../components/WorkSection";
+import WorkHeader from "../components/Service/WorkHeader";
+import WorkSection from "../components/Service/WorkSection";
 import Footer from "../components/Footer";
 import ProgressScrollButton from "../components/ProgressScrollButton";
 import ImageScale from "../components/ImageScale";

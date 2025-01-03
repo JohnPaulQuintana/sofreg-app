@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import HeaderMarqueeSection from "./HeaderMarquee";
-import HeaderMarqueeSection2 from "./HeaderMarquee2";
+// import HeaderMarqueeSection2 from "./HeaderMarquee2";
 
 // import '/assets/css/sphere.css'
 const Header = ({onOpenForm}) => {

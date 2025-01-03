@@ -318,7 +318,7 @@ const GraphicPrice = ({handlePlanClick}) => {
                                 Graphic Design + Video Editing
                             </h3>
                             <p className="text-2xl wide:text-4xl">
-                                Monthly and Project-Based Retainer Plans
+                                Monthly Retainer and Project-Based Plans
                             </p>
                             {/* <a href="page-contact.html" className="butn butn-md butn-bord radius-30 mt-40">
                         <span>Let's Contact</span>
@@ -547,7 +547,7 @@ const GraphicPrice = ({handlePlanClick}) => {
                             Web Solutions (All Services)
                             </h3>
                             <p className="text-2xl wide:text-4xl">
-                                Monthly Retainer Plans <span className="text-color-primary-blue">20% OFF</span>
+                                Monthly Retainer and Project-Based Plans <span className="text-color-primary-blue">20% OFF</span>
                             </p>
                             {/* <a href="page-contact.html" className="butn butn-md butn-bord radius-30 mt-40">
                         <span>Let's Contact</span>
